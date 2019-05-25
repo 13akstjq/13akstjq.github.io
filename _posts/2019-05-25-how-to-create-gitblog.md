@@ -47,12 +47,20 @@ setting메뉴로 가서 repository의 이름을 git닉네임.github.io로 바꿔
 
 그다음에, url주소를 변경해주어야 한다. 
 'config.yml'로 가서 코드를 수정해주어야 한다. 
-
+baseurl: "" 
+url: "http://13akstjq.github.io"
 {% highlight html %}
 {% raw %}{% highlight javascript %}    
 baseurl: "" 
 url: "http://13akstjq.github.io"
 {% endhighlight %}{% endraw %}
+
+위의 내용을 추가했다면 
+url의 주소로 블로그를 이용할 수 있다. 
+
+
+
+
 
 
 
