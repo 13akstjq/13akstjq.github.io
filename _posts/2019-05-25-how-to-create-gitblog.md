@@ -19,7 +19,7 @@ tags:	jekyll welcome
 repository 이름은 **github닉네임.github.io** 라는 형태로 작성한다. 
 
 
-![image](https://user-images.githubusercontent.com/46010705/58370243-3d529400-7f3f-11e9-9e47-6ca4f3c1500c.png)
+![image](https://user-images.githubusercontent.com/46010705/58370259-6b37d880-7f3f-11e9-93dc-dbe4aa8a07ef.png)
 
 위 사진처럼 git repository를 만들어준다. gitblog를 작성할 프로젝트라고 생각하면 된다.
 
