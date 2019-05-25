@@ -16,8 +16,12 @@ tags:	jekyll welcome
 ## 1.repository 만들기 
 
 일단은 github 아이디가 있다는 전제 하에 글을 쓰겠다. 우선 gitblog를 개설하려면 github repository가 있어야한다.
-repository 이름은 github닉네임.github.io 라는 형태로 작성한다. 
+repository 이름은 **github닉네임.github.io** 라는 형태로 작성한다. 
 
+
+![image](https://user-images.githubusercontent.com/46010705/58370243-3d529400-7f3f-11e9-9e47-6ca4f3c1500c.png)
+
+위 사진처럼 git repository를 만들어준다. gitblog를 작성할 프로젝트라고 생각하면 된다.
 
 
 
