@@ -4,7 +4,7 @@ title:  "jekyll 테마로 git blog 만들기"
 date:   2019-05-25 22:28:59
 author: 한만섭
 categories: Jekyll
-tags:	jekyll welcome
+tags:	gitblog github.io jekyell
 ---
 
 
