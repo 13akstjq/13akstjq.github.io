@@ -47,6 +47,7 @@ setting메뉴로 가서 repository의 이름을 git닉네임.github.io로 바꿔
 
 그다음에, url주소를 변경해주어야 한다. 
 'config.yml'로 가서 코드를 수정해주어야 한다. 
+
 baseurl: "" 
 url: "http://13akstjq.github.io"
 
