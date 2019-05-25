@@ -19,9 +19,10 @@ tags:	jekyll welcome
 직접 repository를 만들어서 작성해도 되지만 [jekyell](http://jekyllthemes.org/) 에 있는 테마 중에서 용도에 알맞은 테마를 사용하려고 한다. 
 
 내가 사용한 테마는 [centrarium](http://jekyllthemes.org/themes/centrarium/)이라는 테마를 사용했다.  
+테마를 고를 때는 위 사진과 같이 `MIT License` 가 있는걸 사용하라고 하던데 이유는 잘 모르겠다.
+
 ![image](https://user-images.githubusercontent.com/46010705/58370345-50199880-7f40-11e9-91ec-6c798a58d2b5.png)
 
-테마를 고를 때는 위 사진과 같이 `MIT License` 가 있는걸 사용하라고 하던데 이유는 잘 모르겠다.
 
 ## 2.jekyell 테마 가져오기
 아무튼, 원하는 테마를 골랐다면 이제 그 테마를 내 git repository에 fork해야한다.(fork는 import라고 생각하면 될거같음)
