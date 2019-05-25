@@ -8,7 +8,7 @@ tags:	gitblog github.io jekyell
 ---
 
 
->지금까지 네이버 블로그를 통해 개발 과정에서 있었던 이슈나 과정을 기록했었는데, 최근 개발자분과 대화할 수 있는 자리를 통해 github blog를 꼭 했으면 좋겠다는 얘기를 들었다. 그래서 오늘부터 나만의 `git blog`를 제작해보려한다.
+> 지금까지 네이버 블로그를 통해 개발 과정에서 있었던 이슈나 과정을 기록했었는데, 최근 개발자분과 대화할 수 있는 자리를 통해 github blog를 꼭 했으면 좋겠다는 얘기를 들었다. 그래서 오늘부터 나만의 `git blog`를 제작해보려한다.
 
 구글링을 했을 때 git command로 blog 를 제작하시는 분들이 많은데 필자는 아직 `git command`에 대한 지식이 없기 때문에 
 나와 같이 개발에 막 입문한 분들을 위해 `command`를 전혀 모른다는 입장으로 만들어보려한다. 
@@ -49,6 +49,7 @@ setting메뉴로 가서 repository의 이름을 git닉네임.github.io로 바꿔
 'config.yml'로 가서 코드를 수정해주어야 한다. 
 
 baseurl: "" 
+
 url: "http://13akstjq.github.io"
 
 
