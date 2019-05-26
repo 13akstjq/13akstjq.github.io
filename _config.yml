@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: 기술 블로그 
-subtitle: "우아한 개발자가 되기까지의 모든 기록"
+title: 우아한 개발자가 될 사람의 기술 블로그 
+subtitle: "2019"
 email: 13akstjq@gmail.com
 name: ManSub Han
 description: >
