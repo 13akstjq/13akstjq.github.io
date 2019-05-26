@@ -55,7 +55,7 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
  
   - cat: GitBlog
-    desc: "A to Z about gitblog"
+    desc: "A to Z about gitblog."
     
 # Social icons and sharing options
 #
