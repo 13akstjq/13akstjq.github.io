@@ -53,7 +53,7 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
-  - cat: html/css
+  - cat: html css
     desc: "Just some placeholder posts, lorem ipsum and the rest."
   - cat: javascript
     desc: "Just some placeholder posts, lorem ipsum and the rest."
