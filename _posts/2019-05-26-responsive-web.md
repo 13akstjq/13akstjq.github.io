@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "반응형 웹을 위한 미디어쿼리"
-date:   {{ page.date | date: “%m/%d/%Y” }}
+date:   2019-05-25 22:28:59
 author: 한만섭
 categories: html/css
 tags:	html css responsiveweb
