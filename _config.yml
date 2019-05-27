@@ -48,6 +48,8 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
+
+  
   - cat: jekyll
     desc: "Posts describing Jekyll setup techniques."
 
@@ -55,14 +57,17 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
     
   - cat: html/css
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+    desc: ""
     
   - cat: javascript
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+    desc: ""
     
   - cat: jquery
-    desc: "Just some placeholder posts, lorem ipsum and the rest."  
+    desc: ""  
     
+  - cat: aws
+    desc: "how to resgister AWS server"    
+  
   - cat: GitBlog
     desc: "A to Z about gitblog."
     
