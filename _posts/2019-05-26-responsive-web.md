@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "반응형 웹을 위한 미디어쿼리"
+title:  "[responsive web] media query"
 date:   2019-05-26 22:28:59
 author: 한만섭
 categories: html/css
