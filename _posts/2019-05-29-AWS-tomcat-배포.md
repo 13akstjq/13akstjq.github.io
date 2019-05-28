@@ -30,7 +30,7 @@ tags:AWS tomcat8 war
 
 ## ubuntu tomcat에 war파일 배포하기 
 
-#### 1.인스턴스를 생성해야한다. 
+### 1.인스턴스를 생성해야한다. 
 ![image](https://user-images.githubusercontent.com/46010705/58495735-29af6380-81b3-11e9-92e9-873419aec222.png)
 ![image](https://user-images.githubusercontent.com/46010705/58495769-4350ab00-81b3-11e9-9281-588f90cf2fa7.png)
 ![image](https://user-images.githubusercontent.com/46010705/58495818-6b400e80-81b3-11e9-8074-44101b2f837d.png)  
@@ -39,7 +39,7 @@ tags:AWS tomcat8 war
 `linux`를 사용할떄는 `SSH`로 하면된다 . 
 
 
-#### 2. 인스턴스에 접속하기 
+### 2. 인스턴스에 접속하기 
 
 필자는 [xshell](https://www.netsarang.com/ko/xshell/)을 사용했다.  
 실행시켜서 새로만들기를 누르면 아래와 같은 이미지를 볼 수 있다. 
@@ -53,7 +53,7 @@ tags:AWS tomcat8 war
 
 위와 같이 하고 생성해주면 된다. 
 
-#### 3. 인스턴스에 java jdk 설치하기 
+### 3. 인스턴스에 java jdk 설치하기 
 
 필자가 아직 git command 와 linux command에 익숙하지가 않아서 command 공부는 추가로 해서 업로드 하려고한다...
 
@@ -121,7 +121,7 @@ $JAVA_HOME/bin/javac -version
 ```
 
 
-#### 4. 인스턴스에 tomcat8 설치하기 
+### 4. 인스턴스에 tomcat8 설치하기 
 
 ```
 apt-get install tomcat8
@@ -145,7 +145,7 @@ tomcat을 실행시켰다면 `인스턴스ip:8080'으로 접속해서 확인해�
 이런 화면이 나오면 성공적으로 설치된 것이다. 
 
 
-#### 5. 프로젝트 옮기기 
+### 5. 프로젝트 옮기기 
 
 인스턴스에 필요한 것을 모두 설치했다. 그러면 이제 서버에 올려놓고 싶은 프로젝트를 war형식으로 넘겨줄 차례이다.   
 우선 프로젝트를 war로 빼놓는다.   
@@ -195,7 +195,7 @@ chmod [변경될 퍼미션값] [변경할 파일]
 chown [변경할 소유자],[변경할 그룹] [변경할 파일]
 ```
 
-#### 6. tomcat command
+### 6. tomcat command
 
 
 tomcat start/stop
