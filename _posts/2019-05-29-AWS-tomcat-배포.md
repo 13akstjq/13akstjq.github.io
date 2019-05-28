@@ -11,7 +11,7 @@ tags:AWS tomcat8 war
 ## AWS란?
 
 `AWS(amazon web Service)` 란 아마존에서 제공하는 클라우드서비스이다.  
-######왜 개발자들은 AWS를 이용하는 것일까? 
+##### 왜 개발자들은 AWS를 이용하는 것일까? 
 웹 프로젝트를 제작하면 서버를 필요로한다. 내가 알기론 예전엔 컴퓨터를 이용해 직접 서버를 운영했는데 비용적인 즉면 , 안정성을 고려해서 클라우스 서버를
 운영하는 것 같다.
 
@@ -26,7 +26,7 @@ tags:AWS tomcat8 war
 3. legarcy 프로젝트라면 war파일을 `linux`의 tomcat에 넣고 tomcat start
 4. boot 프로젝트라면 원격 git 에서 `linux`로 clone 한 후에 mvvn을 통해서 jar파일로 변환하고 실행  
 
-대략적으로 이런 흐름인 것 같다. (아직 DB를 어디에 올려야 하는지는 모름)
+대략적으로 이런 흐름인 것 같다. (아직 DB를 어디에 올려야 하는지는 모름)  
 
 ## ubuntu tomcat에 war파일 배포하기 
 
