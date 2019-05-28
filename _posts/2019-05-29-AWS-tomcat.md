@@ -3,7 +3,7 @@ layout: post
 title:  "[AWS] ubunto tomcat8에 war배포하기"
 date:   2019-05-28 22:28:59
 author: 한만섭
-categories: Aws
+categories: aws
 tags:AWS tomcat8 war
 ---
 
