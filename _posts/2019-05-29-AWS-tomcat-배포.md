@@ -218,3 +218,4 @@ http://서버ip:8080/SocketTest(프로젝트명)/파일이나 url
 [zulu설치 참고 사이트](http://geeks.underslow.com/36/)
 [tomcat 배포참고 사이트](http://blog.naver.com/PostView.nhn?blogId=loverman85&logNo=221073024524&categoryNo=35&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
 [권한 command 참고 사이트](https://conory.com/blog/19194)
+
