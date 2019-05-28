@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[AWS] ubunto tomcat8에 war배포하기"
+title:  "[AWS] ubuntu tomcat8에 war배포하기"
 date:   2019-05-29 08:28:59
 author: 한만섭
 categories: aws
