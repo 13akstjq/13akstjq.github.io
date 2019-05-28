@@ -39,6 +39,7 @@ tags:AWS tomcat8 war
 `linux`를 사용할떄는 `SSH`로 하면된다 . 
 
 
+
 ### 2. 인스턴스에 접속하기 
 
 필자는 [xshell](https://www.netsarang.com/ko/xshell/)을 사용했다.  
