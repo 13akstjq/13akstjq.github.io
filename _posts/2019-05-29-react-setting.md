@@ -3,7 +3,7 @@ layout: post
 title:  "[React] React setting"
 date:   2019-05-29 08:28:59
 author: 한만섭
-categories: React
+categories: react
 tags: React
 ---
 
