@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[React] React 정리"
+title:  "[React] React setting"
 date:   2019-05-29 08:28:59
 author: 한만섭
 categories: React
