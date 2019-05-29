@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: TIL
 title:  "[React] event setState 및 bind 개념  "
 date:   2019-05-29 21:27:59
 author: 한만섭
