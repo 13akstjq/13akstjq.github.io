@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[React] React Component 모듈화 하기 "
-date:   2019-05-29 20:49:59
+date:   2019-05-29 21:27:59
 author: 한만섭
 categories: react
 tags: React Component module
