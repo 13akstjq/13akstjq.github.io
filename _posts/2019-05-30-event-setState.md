@@ -30,10 +30,11 @@ this로 접근할 수 있다고 생각했지만 아니였다. this는 함수 내
 받았기 때문에 this로 사용할 수 있다는 뜻이다.   
 
 
-추가로 react는 유사 JavaScript이기 때문에 문법이 모두 일치하지 않는다.
+추가로 react는 유사 JavaScript이기 때문에 문법이 모두 일치하지 않는다.  
+```java
 js -> onclick()
 react -> onClick={function(){}}
-
+```
 
 
 ## setState
