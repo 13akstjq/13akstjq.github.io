@@ -17,6 +17,7 @@ tags: React Component module
 - Content 컴포넌트를 모듈하기  
   react가 필요하기 때문에 import 해주고  
   이 파일을 사용할 수 있도록 export 해주는 것 말고는 특별한것은 없다. 
+  
 ```
 import React ,{Component} from "react";
 
@@ -30,13 +31,12 @@ class Content extends Component{
       );
       }
   }
-
   export default Content;
-  ```
+```
   
   - App.js에서 import 해서 사용하기  
     놓여진 파일 경로만 맞춰주면 import해서 사용할 수 있다. 
-  ```
+ ```
   import TOC from "./components/TOC";
   import Subject from "./components/Subject";
   import Content from "./components/Content";
