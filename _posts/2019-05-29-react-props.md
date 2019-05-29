@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[React] props 사용해보기 "
-date:   2019-05-29 19:50:59
+date:   2019-05-29 20:49:59
 author: 한만섭
 categories: react
 tags: React props 
