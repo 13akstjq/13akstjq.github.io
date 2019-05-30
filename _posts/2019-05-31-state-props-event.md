@@ -8,7 +8,7 @@ tags: react state props
 ---
 
 
-> state와 props의 비교 
+> **state**와 **props**의 비교 
 간단하게 설명하자면  
 `props`는 부모 컴포넌트가 자식 컴포넌트에게 주는 값이다. 자식 컴포넌트는 props를 수정할 수 없다. `readonly`  
 `state`는 컴포넌트 내에서 선언하는 것이며 값을 변경할 수 있다. 
