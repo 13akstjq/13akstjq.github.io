@@ -3,7 +3,7 @@ layout: post
 title:  "[react] state와 props 비교  "
 date:   2019-05-31 20:00:59
 author: 한만섭
-categories: reㄷ
+categories: react
 tags: react state props
 ---
 
