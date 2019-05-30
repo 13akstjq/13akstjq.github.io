@@ -20,12 +20,12 @@ description: >
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://13akstjq.github.io" # the base hostname & protocol for your site
-cover: "/assets/header_image.jpg"
+cover: ""
 logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 10
 paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
