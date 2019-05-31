@@ -13,7 +13,7 @@ tags:	css
 
 ## css structure
 
-```
+```css
 h1 {
   color: blue;
 }
@@ -35,7 +35,7 @@ opacity: 0.5; // 0으로 가면 아예 안보임 1로가면 투명도 0
 
 ## background-image
 
-```
+```css
 .image{
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/soccer.jpeg");
 }
