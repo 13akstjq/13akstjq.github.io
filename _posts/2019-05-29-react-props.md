@@ -22,12 +22,12 @@ subject라는 component를 사용할 때 항상 똑같은 component를 사용한
 즉, 데이터가 들어가야할 구멍들을 의미한다. ( 추후에, 통신해서 받아온 데이터를 끼워 넣는 곳이 될것 같다.)  
 
 title과 sub라는 props 정의하기
-```
+```javascript
 <Subject title="WEB" sub="world wide web!!"></Subject>
 ```
 
 정의를 했다면 끼워 넣을 공간을 할당해야하지 않을까?  
-```
+```javascript
 class Subject extends Component{
   render(){
     return(
