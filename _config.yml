@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: 개발자국  
-subtitle: "2019-01 ~ ing"
+title: 공부하는 프론트엔드 개발자
+subtitle: "#Java #JavaScript #React #ReactNaive #AWS "
 email: 13akstjq@gmail.com
 name: ManSub Han
 description: >
