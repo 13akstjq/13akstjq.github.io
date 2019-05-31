@@ -14,7 +14,7 @@ tags: React Component module
 그때 이벤트 함수는 컴포넌트의 state에 어떻게 접근해야하는가?  
 this로 접근할 수 있다고 생각했지만 아니였다. this는 함수 내의 선언되지 않은 this를 의미했다.  
 그래서 함수가 컴포넌트를 `this`라고 인식할 수 있게 해주어야했다. 
-```
+```javascript
 <a href="/" onClick={function(e){
                 console.log(e);
                 e.preventDefault();
@@ -31,7 +31,7 @@ this로 접근할 수 있다고 생각했지만 아니였다. this는 함수 내
 
 
 추가로 react는 유사 JavaScript이기 때문에 문법이 모두 일치하지 않는다.  
-```java
+```javascript
 js -> onclick()
 react -> onClick={function(){}}
 ```
@@ -43,7 +43,7 @@ react -> onClick={function(){}}
 동적인 페이지를 만들기 위해서 이벤트를 사용할텐데 이벤트를 사용해서 컴포넌트의 state를 변경하려고 할때 조심해야한다.  
 
 일반적으로 변수같기 때문에 그냥 담으려고 한다.
-```java
+```javascript
 this.state.mode = 'welcome';
 ```
 하지만 위의 코드는 리액트가 알지 못한다. `constructor`를 만들 때는 생성자 개념이라 바로 state값을 초기화하는 것이 가능하지만,  
