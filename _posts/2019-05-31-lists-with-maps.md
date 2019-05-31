@@ -15,7 +15,9 @@ tags: react state props
 
 - map을 사용하기 전 코드  
   map을 사용하지 않으면 배열의 길이만큼 코드를 반복해야하는 비효율성이 있다.  
-```
+  
+  {% highlight html %}
+{% raw %}{% highlight javascript %}    
 const movieTitles=[
   'matix',
   'full Metal jacket',
@@ -41,13 +43,17 @@ class App extends Component {
     );
   }
 }
-```
+{% endhighlight %}{% endraw %}
+{% endhighlight %}
+
+
 
 
 - map을 사용한 후 코드  
   map을 사용하게 되면  **title**과 **poster**를 key로 가지고 있는 객체 배열을 `map`으로 반복하여  
   `<movie/>`태그를 만들어준다. *movies*객체를 돌면서 *movie*의 **title**과 **poster**를 movie tag의 props로 넘겨준다. 
-```java
+  {% highlight html %}
+{% raw %}{% highlight javascript %}    
 const movies = [
   {
     title:"matrix",
@@ -75,7 +81,8 @@ class App extends Component {
     );
   }
 }
-```
+{% endhighlight %}{% endraw %}
+{% endhighlight %}
 
 
 
