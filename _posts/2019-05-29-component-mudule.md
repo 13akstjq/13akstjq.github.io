@@ -18,7 +18,7 @@ tags: React Component module
   react가 필요하기 때문에 import 해주고  
   이 파일을 사용할 수 있도록 export 해주는 것 말고는 특별한것은 없다. 
   
-```
+```javascript
 import React ,{Component} from "react";
 
 class Content extends Component{
@@ -36,7 +36,7 @@ class Content extends Component{
   
   - App.js에서 import 해서 사용하기  
     놓여진 파일 경로만 맞춰주면 import해서 사용할 수 있다. 
- ```
+ ```javascript
   import TOC from "./components/TOC";
   import Subject from "./components/Subject";
   import Content from "./components/Content";
