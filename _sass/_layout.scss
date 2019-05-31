@@ -18,7 +18,7 @@ html, body {
 	padding: 0;
 	width: 100%;
 	background-color: rgb(30,34,39);
-	
+	color : white;
 }
 
 ol.default {
@@ -39,7 +39,9 @@ code {
 pre code.hljs {
 	font-size: modular-scale(-1);
 }
-
+.highlighter-rouge{
+	color : rgb(51, 51, 51);
+}
 .page-divider {
 	$divider-color: $light-gray;
   display: block;
