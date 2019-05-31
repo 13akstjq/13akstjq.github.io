@@ -18,10 +18,13 @@ html, body {
 	padding: 0;
 	width: 100%;
 	background-color: rgb(30,34,39);
+	
+}
+.post-header{
 	color : rgb(255,255,255);
 }
-.highlighter-rouge{
-	color : rgb(30,34,39);
+p{
+	color : rgb(255,255,255);
 }
 ol.default {
   @extend %default-ol;
