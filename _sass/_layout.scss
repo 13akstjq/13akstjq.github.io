@@ -43,7 +43,9 @@ code.highlighter-rouge{
 	background-color : rgb(204, 204, 204);
 	font-weight : bold;
 }
-
+.highlight code{
+	color : rgb(0, 0, 0);
+}
 pre code.hljs {
 	font-size: modular-scale(-1);
 }
