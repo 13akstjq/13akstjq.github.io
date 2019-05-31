@@ -37,7 +37,9 @@ code {
    border-radius: 3px;
    padding: 0 3px;
 }
-
+.highlight code{
+	color:#FFFFFF;
+}
 code.highlighter-rouge{
    color : #2980b9;
    background-color : rgb(204, 204, 204);
