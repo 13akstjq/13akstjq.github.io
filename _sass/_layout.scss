@@ -17,38 +17,27 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: rgb(30,34,39);
-	
 }
 
 ol.default {
   @extend %default-ol;
 }
-h1,h2,h3,h4,h5,h6,li,p,.post-header{
-	color : rgb(255,255,255);
-}
+
 ul.default {
 	@extend %default-ul;
 }
 
 code {
-	background-color : rgb(204, 204, 204);
+	background-color: #eee;
 	display: inline-block;
 	border-radius: 3px;
 	padding: 0 3px;
 }
 
-code.highlighter-rouge{
-	color : #2980b9;
-	background-color : rgb(204, 204, 204);
-	font-weight : bold;
-}
-.highlight code{
-	color : rgb(0, 0, 0);
-}
 pre code.hljs {
 	font-size: modular-scale(-1);
 }
+
 .page-divider {
 	$divider-color: $light-gray;
   display: block;
@@ -85,6 +74,7 @@ pre code.hljs {
 	text-align: center;
 	&.has-cover {
 		color: $white;
+		text-shadow: 0 2px 1px rgba(0,0,0,0.67) !important;
 		background-position: 50% 50%;
 		background-size: cover;
 		.title {
@@ -105,16 +95,12 @@ pre code.hljs {
 		}
 	}
 }
-.site-header-container .scrim.has-cover, .post-header-container .scrim.has-cover{
-			background-color: rgb(30,34,39);
-			height : 350px;
-}
+
 /*
 *	Header
 */
 .navigation {
-	
-	box-shadow: 0 2px #70aad0;
+	box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
 	/*
@@ -167,8 +153,6 @@ pre code.hljs {
     overflow: visible;
     padding: 0;
     width: 100%;
-		font-size: 20px;
-    font-weight: bold;
     @include media ($tablet) {
       display: block;
       margin: 0;
