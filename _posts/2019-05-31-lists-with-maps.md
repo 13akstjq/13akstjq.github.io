@@ -16,7 +16,7 @@ tags: react state props
 - map을 사용하기 전 코드  
   map을 사용하지 않으면 배열의 길이만큼 코드를 반복해야하는 비효율성이 있다.  
   
-```
+```javascript
 const movieTitles=[
   'matix',
   'full Metal jacket',
