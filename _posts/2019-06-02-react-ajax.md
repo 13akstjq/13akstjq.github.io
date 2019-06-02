@@ -13,11 +13,11 @@ tags:	react ajax
 Ajax(Asynchronous JavaScript and XML, 에이잭스)는 비동기로 xml 파일을 가져올 수 있는 매우 좋은 기술이다.  하지만, 최근엔 xml 파일을 위한 것이 아니라 
 json 파일을 위해 사용되고 있기 때문에 `ajaj`라고 부르는 개발자들도 있다고 한다.  
 
-> react의 ajax
+> ### react의 ajax
 jquery 에서 사용하던 ajax 보다 굉장히 심플하다.  
 아직 잘 모르지만 `fetch`를 이용해서 하면 매우 심플하게 작성할 수 있다고 한다.  
 
-### api이용해보기 
+> ### api이용해보기 
 
 ajax를 사용해보기 위해서는 api서버가 있어야 하는데, 영화 페이지를 제작하고 있었기 때문에 영화 정보를 제공하는 [YTS](https://yts.am/api)를 이용해보려고 한다. 
 
