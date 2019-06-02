@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[react] react에서 state사용해보기 "
+title:  "[React] react에서 state사용해보기 "
 date:   2019-06-02 
 author: 한만섭
 categories: react
