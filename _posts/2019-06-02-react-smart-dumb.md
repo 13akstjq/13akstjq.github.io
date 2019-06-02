@@ -32,7 +32,7 @@ class MoviePoster extends Component{
 
 
 function과 proptype 선언 
-```
+```javascript
 function MoviePoster({poster}){
     return (
         <img width= "100px" src={poster}></img>
@@ -42,4 +42,40 @@ function MoviePoster({poster}){
 MoviePoster.propTypes = {
     poster : PropTypes.string.isRequired
 }
+```
+
+
+
+
+## class를 function으로 바꾼 결과 
+```
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Movie.css';
+
+function Movie({title , poster}){
+    return(
+        <div>
+            <MoviePoster poster={poster}></MoviePoster>
+            <h1>{title}</h1>
+        </div>
+    )
+}
+
+function MoviePoster({poster}){
+    return (
+        <img width= "100px" src={poster}></img>
+    )
+}
+
+Movie.propTypes = {
+    title : PropTypes.string.isRequired,
+    poster : PropTypes.string.isRequired
+}
+
+MoviePoster.propTypes = {
+    poster : PropTypes.string.isRequired
+}
+export default Movie;
+
 ```
