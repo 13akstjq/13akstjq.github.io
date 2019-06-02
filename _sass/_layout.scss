@@ -37,8 +37,14 @@ code {
    border-radius: 3px;
    padding: 0 3px;
 }
+
+// 작성 코드 
 .highlight code{
 	color:#FFFFFF !important;
+}
+.blockquate p{
+	    border-left: 3px #2980b9 solid;
+    padding-left: 20px;
 }
 code.highlighter-rouge{
    color : #ff3e67;
@@ -47,6 +53,7 @@ code.highlighter-rouge{
 .highlight code{
    color : rgb(0, 0, 0);
 }
+// 작성코드 end
 pre code.hljs {
    font-size: modular-scale(-1);
 }
