@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[react] map을 이용해 쉽게 출력하기  "
+title:  "[React] map을 이용해 쉽게 출력하기  "
 date:   2019-05-31 22:00:59
 author: 한만섭
 categories: react
