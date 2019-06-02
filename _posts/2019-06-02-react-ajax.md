@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[React] react에서 ajax사용하기"
-date:   2015-04-18 08:43:59
+date:   2019-06-02-21:43:59
 author: 한만섭
 categories: react
 tags:	react ajax
