@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[react] smart와 dumb비교 "
+title:  "[React] smart와 dumb비교 "
 date:   2019-06-02 17:50:00
 author: 한만섭
 categories: react
