@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "first"
 date:   2015-04-17 08:43:59
-author: Ben Centra
-categories: Jekyll
+author: 한만섭
+categories: react
 tags:	jekyll welcome
 cover:  "/assets/instacode.png"
 ---
