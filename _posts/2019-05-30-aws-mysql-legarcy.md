@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[aws] ubuntu에 spring 프로젝트와 mysql 연결하기  "
+title:  "[AWS] ubuntu에 spring 프로젝트와 mysql 연결하기  "
 date:   2019-05-30 20:00:59
 author: 한만섭
 categories: aws
