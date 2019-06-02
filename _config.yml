@@ -93,7 +93,7 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url: 
     desc: Follow me on Twitter
     share: false
 
@@ -114,7 +114,7 @@ social:
   - name: LinkedIn
     icon: linkedin
     username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    url: 
     desc: Connect with me on LinkedIn
     share: false
 
