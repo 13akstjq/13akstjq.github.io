@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[ReactNative] 4.AndroidStudio 환경변수 설정  "
+title:  "[ReactNative] 4. AndroidStudio 환경변수 설정  "
 date:   2019-06-03 22:13:00
 author: 한만섭
 categories: reactnative
