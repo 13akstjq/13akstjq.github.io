@@ -30,4 +30,4 @@ npm -v
 
 node.js 를 설치했으므로 이제 npm을 이용해서 react-native-app을 설치해보려한다. 
 
-[2.react-native-app 설치하기]()
+[2.react-native-app 설치하기](https://13akstjq.github.io/reactnative/2019/06/03/reactnative-rna-install.html)
