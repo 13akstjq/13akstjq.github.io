@@ -71,12 +71,38 @@ Android SDK build tools 을 다운 받는다.
 다음 코드를 넣어주면 실제 핸드폰 개발자 환경에서 usbDebugging을 풀어주는 것과 같다. 
 
 
+> ## emulator 만들기 
+
+
+> ## 19000 , 19001 포트 인바운드 허용해주기 
+- 방화벽 들어가기 
+![image](https://user-images.githubusercontent.com/46010705/58807833-c9f20600-8653-11e9-9e8a-b92c0c4af154.png)  
+
+- 규칙 만들어주기 
+![image](https://user-images.githubusercontent.com/46010705/58807943-032a7600-8654-11e9-8354-38147281a7aa.png)
 
 
 
+> ## Expo 핸드폰 이슈 
+QR 코드 이용해서 디바이스에서 실행시,
 
+network response timed out 
 
+발생.
 
+1) 디바이스와 같은 wi-fi 사용중인지 확인
 
+2) wi-fi  public 에서 private 로 변경
 
+3) 방화벽 인바인드 규칙에 19000 과 19001 포트 규칙 추가.
+
+그래도 안된다면,
+
+https://github.com/react-community/create-react-native-app/issues/144#issuecomment-308394689   확인.
+
+IPv4 주소 값으로 세팅.
+
+ set REACT_NATIVE_PACKAGER_HOSTNAME=my-custom-ip-address
+
+unix ) set 대신 export
 
