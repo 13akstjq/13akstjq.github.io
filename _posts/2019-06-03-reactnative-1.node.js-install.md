@@ -7,6 +7,13 @@ categories: reactnative
 tags: reactnative node.js
 ---
 
+> ## Native EXPO 연동하기 
+`1. Node.js npm 설치하기` 
+2. React-Native-App 설치하기 
+3. Expo 설치 및 프로젝트 생성
+4. AndroidStudio 환경변수 설정
+5. ADB Manager를 이용해 실행시키기  
+
 
 > ## node.js 설치하기 `
 `reactnative expo`를 설치하기 위해서는 npm 을 사용해야하는데 npm은 node.js를 설치해야 사용가능하다. 그렇기 때문에 node.js를 설치해보려 한다.  
