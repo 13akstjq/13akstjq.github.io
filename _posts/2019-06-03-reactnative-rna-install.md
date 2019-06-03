@@ -39,4 +39,4 @@ $ npm start
 > ## 끝으로...
 이제 npm을 통해서 create-react-native-app 까지 설치를 완료했다. 이제는 RN의 능력을 더욱 극대화 해줄 Expo를 설치하려고 한다. 
 
-[3. Expo 설치하러가기 ]()
+[3. Expo 설치하러가기 ](https://13akstjq.github.io/reactnative/2019/06/03/reactnative-Expo-install.html)
