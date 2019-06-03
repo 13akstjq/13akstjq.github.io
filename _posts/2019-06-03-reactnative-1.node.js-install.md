@@ -8,11 +8,11 @@ tags: reactnative node.js
 ---
 
 > ## Native EXPO 연동하기 
-`1. Node.js npm 설치하기` 
-2. React-Native-App 설치하기 
-3. Expo 설치 및 프로젝트 생성
-4. AndroidStudio 환경변수 설정
-5. ADB Manager를 이용해 실행시키기  
+`1. Node.js npm 설치하기`   
+2. React-Native-App 설치하기   
+3. Expo 설치 및 프로젝트 생성  
+4. AndroidStudio 환경변수 설정  
+5. ADB Manager를 이용해 실행시키기    
 
 
 > ## node.js 설치하기 `
