@@ -28,5 +28,5 @@ $ expo start
 $ expo start --android
 ```
 
-[ AndroidStudio 환경변수 설정하기]()
+[ AndroidStudio 환경변수 설정하기](https://13akstjq.github.io/reactnative/2019/06/03/ReactNative-androidstudio.html)
 
