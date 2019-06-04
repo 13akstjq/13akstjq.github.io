@@ -11,3 +11,10 @@ permalink: /projects/
 			<h1>프로젝트 있음.</h1>
     {% endif %}
 <br>
+{% if site.categories == null %}
+			<h1>카테고리 없음</h1>
+    {% endif %}
+{% if site.categories != null %}
+			<h1>카테고리 있음.</h1>
+    {% endif %}
+<br>
