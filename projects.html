@@ -18,3 +18,9 @@ permalink: /projects/
 			<h1>카테고리 있음.</h1>
     {% endif %}
 <br>
+
+  {% for type in site.project-types %}
+      <p class="desc"><em>{{type}}</em></p>
+  {% endfor %}
+  
+<br>
