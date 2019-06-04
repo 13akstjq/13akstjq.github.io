@@ -47,7 +47,8 @@ jekyll-archives:
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
-
+defaults:
+  project-types : ["big-one","small-one"]
 # Category descriptions (for archive pages)
 descriptions:
   
