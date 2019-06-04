@@ -4,5 +4,8 @@ title: "Projects"
 permalink: /projects/
 ---
 
-
-sadfsadf
+{% for project-type in site.project-types %}
+  {% capture pt %}{{ project-type | first }}{% endcapture %}
+  <h2 id="{{pt}}">{{ pt | capitalize }}</h2>
+{% endfor %}
+<br>
