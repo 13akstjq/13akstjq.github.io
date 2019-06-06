@@ -24,4 +24,16 @@ render함수 내에서 const로 state의 변수를 사용할 때 {}사이에 넣
 error log에서 export를 잊은거 아니냐고 알려주니 확인해볼 것.
 ```
 C:\Users\mshan\Desktop\rn\weather-app\node_modules\react-native\Libraries\Core\ExceptionsManager.js:84 Warning: React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+```  
+
+- propTypes 대소문자 틀림   
+functionName.`P`ropTypes라고 하면 노란 창으로 알려주니까 읽고 수정할 것 
+```
+Weather.propTypes={
+    temp : PropTypes.number.isRequired
+}
+```
+import 방법 
+```
+import PropTypes from "prop-types";
 ```
