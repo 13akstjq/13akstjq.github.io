@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[ReactNative] 안드로이드 geolocation timeout 이슈 해결하기 "
+title:  "[ReactNative] 안드로이드 geolocation 사용하기(timeout 이슈 해결) "
 date:   2019-06-06 16:35:00
 author: 한만섭
 categories: reactnative
