@@ -4,23 +4,9 @@ title: "Projects"
 permalink: /projects/
 ---
 
-{% if site.project-types == null %}
-			<h1>프로젝트 없음</h1>
-    {% endif %}
-{% if site.project-types != null %}
-			<h1>프로젝트 있음.</h1>
-    {% endif %}
-<br>
-{% if site.categories == null %}
-			<h1>카테고리 없음</h1>
-    {% endif %}
-{% if site.categories != null %}
-			<h1>카테고리 있음.</h1>
-    {% endif %}
-<br>
 
   {% for type in site.project-types %}
-      <p class="desc"><em>{{type.man}}</em></p>
+			<h2 id="{{cat}}">{{ type.man | capitalize }}</h2>
   {% endfor %}
   
 <br>
