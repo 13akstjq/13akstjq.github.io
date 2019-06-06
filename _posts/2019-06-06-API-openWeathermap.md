@@ -3,14 +3,14 @@ layout: post
 title:  "[API] ReactNative에서 openWeathermap API사용하기 "
 date:   2019-06-06 17:46:00
 author: 한만섭
-categories: reactnative
+categories: API
 tags: reactnative openweathermap
 ---
 
 > ## 날씨 API사용하기
 ReactNative에서 날씨를 알려주는 App을 만들기 위해 날씨 API를 필요로 했다.  
 날씨 정보를 제공하는 [OpenWeatherMap](https://openweathermap.org/)을 사용했다. 
-현재 위치의 경도와 위도를 기반으로 하기 때문에 혹시 현재 위치정보를 불러오지 못했다면 [현재위치정보 불러오기](https://13akstjq.github.io/reactnative/2019/06/06/reactnative-geolocation-solution.html)를 보고오는 것을 추천한다. 
+현재 위치의 경도와 위도를 기반으로 하기 때문에 혹시 현재 위치정보를 불러오지 못했다면 [ReactNative에서 현재위치 ](https://13akstjq.github.io/reactnative/2019/06/06/reactnative-geolocation-solution.html)를 보고오는 것을 추천한다. 
 
 > ## openWeatherMap API사용방법
 
