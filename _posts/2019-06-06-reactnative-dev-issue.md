@@ -19,3 +19,9 @@ render함수 내에서 const로 state의 변수를 사용할 때 {}사이에 넣
 - `Ionicons` 를 `ionIcons` 낙타형식으로 써서 에러...
  [expo icon 사이트](https://expo.github.io/vector-icons/)
  
+- `export default (function or class Name)`
+따로 파일형태로 만든 class 혹은 function은 export를 꼭 해주어야한다.  
+error log에서 export를 잊은거 아니냐고 알려주니 확인해볼 것.
+```
+C:\Users\mshan\Desktop\rn\weather-app\node_modules\react-native\Libraries\Core\ExceptionsManager.js:84 Warning: React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+```
