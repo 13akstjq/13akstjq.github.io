@@ -51,9 +51,9 @@ Object {
 
 
 ```
-_getWeather = (lat,lon) =>{
+  _getWeather = (lat,lon) =>{
     console.log(lat + lon);
-    fetch('http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&APPID={API_KEY}')
+    fetch('http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&APPID='+API_KEY)
     .then(response => response.json())
     .then(json => {
       console.log(json)
