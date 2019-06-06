@@ -107,4 +107,4 @@ IPv4 주소 값으로 세팅.
 unix ) set 대신 export
 
 
-[5. ADB Manager를 이용해 프로젝트 실행시키기] (https://13akstjq.github.io/reactnative/2019/06/03/reactnative-5.excute-project.html)
+[5. ADB Manager를 이용해 프로젝트 실행시키기](https://13akstjq.github.io/reactnative/2019/06/03/reactnative-5.excute-project.html)
