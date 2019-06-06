@@ -17,3 +17,5 @@ tags: reactnative
 render함수 내에서 const로 state의 변수를 사용할 때 {}사이에 넣어주어야한다. ( react,rn에서의 {}의 의미에 대해서 좀 더 이해할 필요있음)
 
 - `Ionicons` 를 `ionIcons` 낙타형식으로 써서 에러...
+ [expo icon 사이트](https://expo.github.io/vector-icons/)
+ 
