@@ -27,7 +27,19 @@ navigator.geolocation.getCurrentPosition(
 > ### 이슈 해결 방법
 아래와 같이 작성하면 안드로이드 스튜디오의 콘솔에서 위치정보를 불러오는 것을 확인할 수 있다.  
 
-
+```
+  componentDidMount(){ 
+    console.log("didMount");
+    navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position);
+  
+  }, (err) => {
+      console.log(err);
+  
+  }, { enableHighAccuracy: true, timeout: 2000, maximumAge: 3600000 })
+    
+  }
+```
 - 안드로이드 스튜디오 콘솔 화면  
 
 
