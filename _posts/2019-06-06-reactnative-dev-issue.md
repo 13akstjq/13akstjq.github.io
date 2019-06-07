@@ -36,4 +36,11 @@ Weather.propTypes={
 import 방법 
 ```
 import PropTypes from "prop-types";
+```  
+
+- render내에서 state사용시 주의
+component의 `state`를 render()에서 사용하기 위해서는 아래와 같이 render내에서 this.state를 변수로 갖고 있어야한다. 
 ```
+const {newToDo} = this.state;
+```
+
