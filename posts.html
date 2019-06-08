@@ -6,6 +6,7 @@ permalink: /posts/
 
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
+	{% if cat != "project" %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
@@ -23,5 +24,6 @@ permalink: /posts/
   {% endfor %}
   </ul>
   {% if forloop.last == false %}<hr>{% endif %}
+	{% endif %}
 {% endfor %}
 <br>
