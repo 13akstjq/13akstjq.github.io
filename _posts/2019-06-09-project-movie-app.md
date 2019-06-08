@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "기준별 영화 순위알려주는 사이트"
+title:  "영화 순위 사이트"
 date:   2019-06-07 19:16:00
 author: 한만섭
 categories: SmallStuff
-tags: reactnative code review
+desc : 조회수, 평점, 좋아요등등 기준별 영화순위를 알려주는 사이트입니다.
+tags: ReactJs 
 ---
 
 > ## 영화 사이트~~
