@@ -6,7 +6,7 @@ permalink: /posts/
 
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
-	{% if( (cat != "BigProject") and (cat != "SmallStuff") ) %}
+	{% if( (cat != "BigProject") && (cat != "SmallStuff") ) %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
