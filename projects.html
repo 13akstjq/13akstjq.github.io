@@ -5,13 +5,13 @@ permalink: /projects/
 ---
 
 
-  {% for type in site.project-types %}
+<!--   {% for type in site.project-types %}
 			<h2 id="{{cat}}">{{ type.man | capitalize }} : </h2>
   {% endfor %}
-  
+   -->
 	{% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
-	{% if cat == "project" %}
+	{% if cat == "Big Project" %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
