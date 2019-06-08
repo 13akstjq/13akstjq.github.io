@@ -24,8 +24,10 @@ permalink: /projects/
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </strong><br>
-      <span class="post-date">사용 기술 :  {{ post.desc }}</span>
-    </li>
+      <span class="post-date"> {{ post.desc }}</span>
+    	<br><br>
+			<span class="post-date">Language :  {{ post.tag }}</span>
+		</li>
   {% endfor %}
   </ul>
   {% if forloop.last == false %}<hr>{% endif %}
