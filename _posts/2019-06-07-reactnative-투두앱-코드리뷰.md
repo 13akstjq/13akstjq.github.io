@@ -89,8 +89,8 @@ const {text,deleteToDo,id ,isCompleted} = this.props;
 > ### TouchableOpacity 에서 click event 
 ```
 <TouchableOpacity onPressOut={this._toggleComplete}>
-                        <View style={[styles.circle, isCompleted ? styles.completeCircle : styles.uncompletedCircle]}></View>
-                    </TouchableOpacity>
+      <View style={[styles.circle, isCompleted ? styles.completeCircle : styles.uncompletedCircle]}></View>
+</TouchableOpacity>
 ```
 
 
