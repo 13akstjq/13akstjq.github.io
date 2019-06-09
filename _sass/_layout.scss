@@ -22,6 +22,7 @@ a {
 	position : relative;
   animation-name: example;
   animation-duration: 0.3s;
+	animation-direction : reverse;
 }
 @keyframes example {
   0%   {color:rgba(0,0,0,.87); left:0px; top:0px;}
