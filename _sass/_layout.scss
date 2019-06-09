@@ -190,7 +190,8 @@ pre code.hljs {
   li.nav-link {
   	a {
 // 			color : $google-red !important;
-			color : #2980b9;
+				color : rgba(0,0,0,0.87);
+// 			color : #2980b9;
 	    display: inline-block;
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
