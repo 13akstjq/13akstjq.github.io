@@ -20,7 +20,7 @@ a {
 	text-decoration:none !important;
 }
 a:hover{
-	color: darken(rgba(0,0,0,.87), 10%);
+	color: darken(rgba(0,0,0,.87), 10%) !important;
 }
 .page-content .page .posts-list li:hover{
 	position : relative;
