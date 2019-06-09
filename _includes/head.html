@@ -76,6 +76,7 @@
 	
 	<script>
 		$(document).ready(function(){
+			body.fadin("fast");
 			$(".nav-link").mouseover(function(){
 				$(this).css("position","relative");
 				$(this).animate({opacity: '0.5'},"fast");
@@ -86,7 +87,7 @@
 			});
 				$(".post-link").mouseover(function(){
 				$(this).css("position","relative");
-				$(this).animate({"left": "10px"},"fast");
+				$(this).animate({"left": "20px"},"fast");
 			});
 			$(".post-link").mouseleave(function(){
 				$(this).css("position","relative");
