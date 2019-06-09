@@ -3,10 +3,7 @@
   @include prefixer(text-decoration, $value, moz);
 }
 
-@mixin text-decoration-line($line: none) {
-// none || underline || overline || line-through
-  @include prefixer(text-decoration-line, $line, moz);
-}
+
 
 @mixin text-decoration-style($style: solid) {
 // solid || double || dotted || dashed || wavy
