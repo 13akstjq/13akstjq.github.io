@@ -21,7 +21,7 @@ a {
 .page-content ul.post-list a.post-link:hover{
 	position : relative;
   animation-name: example;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 	animation-direction : reverse;
 }
 @keyframes example {
