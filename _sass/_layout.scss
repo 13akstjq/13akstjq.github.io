@@ -19,9 +19,7 @@ a {
 	color : rgba(0,0,0,.87);
 	text-decoration:none !important;
 }
-a:hover{
-	color: #c4c4c4 !important;
-}
+
 .page-content .page .posts-list li:hover{
 	position : relative;
   animation-name: example;
@@ -35,9 +33,9 @@ a:hover{
 	animation-direction : alternate;
 }
 @keyframes example {
-  0%   {left:0px; top:0px;}
-  50%  { left:10px; top:0px;}
-	100%   { left:0px; top:0px;}
+  0%   {color : rgba(0,0,0,.87)!important;left:0px; top:0px;}
+  50%  {color : #c4c4c4!important; left:10px; top:0px;}
+	100%   {color : #c4c4c4 !important; left:0px; top:0px;}
 }
 // @keyframes example {
 //   0%   { width : 100px; }
