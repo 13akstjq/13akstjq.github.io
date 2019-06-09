@@ -20,14 +20,16 @@ permalink: /projects/
   {% endfor %}
   <ul class="posts-list">
   {% for post in site.categories[cat] %}
-    <li>
+    <a href="{{ post.domain }}">
+		<li>
       <strong>
-				<a href="{{ post.domain }}"><h3>{{ post.title }}</h3></a>
+				<h3>{{ post.title }}</h3>
       </strong>
       <span class="post-date"> {{ post.desc }}</span>
     	<br><br>
 			<span class="post-date">Language :  {{ post.language }}</span>
 		</li>
+		</a>
   {% endfor %}
   </ul>
   {% if forloop.last == false %}<hr>{% endif %}
