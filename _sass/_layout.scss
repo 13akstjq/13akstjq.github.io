@@ -18,7 +18,7 @@ $desktop: $b1;
 a {
 	color : rgba(0,0,0,.87);
 }
-.page-content ul.post-list h2:hover{
+.page-content ul.post-list li:hover{
   animation-name: example;
   animation-duration: 0.5s;
 }
@@ -26,7 +26,7 @@ a {
   from {color: rgba(0,0,0,.87);}
   to {color: $google-blue;}
 }
-.navigation li.nav-link a:hover{
+.navigation li.nav-link:hover{
   animation-name: example;
   animation-duration: 0.5s;
 }
