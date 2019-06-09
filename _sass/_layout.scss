@@ -20,33 +20,29 @@ a {
 	text-decoration:none !important;
 }
 
-.page-content .page .posts-list li:hover{
-	position : relative;
-  animation-name: example;
-  animation-duration: 1s;
-	animation-direction : alternate;
-}
-.page-content ul.post-list li:hover{
-	position : relative;
-  animation-name: example;
-  animation-duration: 1s;
-	animation-direction : alternate;
-}
-@keyframes example {
-  0%   {color : rgba(0,0,0,.87)!important;left:0px; top:0px;}
-  50%  {color : #c4c4c4!important; left:10px; top:0px;}
-	100%   {color : #c4c4c4 !important; left:0px; top:0px;}
-}
-// @keyframes example {
-//   0%   { width : 100px; }
-//   50%  { width : 300px;}
-// 	100%   { width : 100px;}
+// .page-content .page .posts-list li:hover{
+// 	position : relative;
+//   animation-name: example;
+//   animation-duration: 1s;
+// 	animation-direction : alternate;
 // }
-.navigation li.nav-link a:hover{
-	position : relative;
-  animation-name: example;
-  animation-duration: 0.5s;
-}
+// .page-content ul.post-list li:hover{
+// 	position : relative;
+//   animation-name: example;
+//   animation-duration: 1s;
+// 	animation-direction : alternate;
+// }
+// @keyframes example {
+//   0%   {color : rgba(0,0,0,.87)!important;left:0px; top:0px;}
+//   50%  {color : #c4c4c4!important; left:10px; top:0px;}
+// 	100%   {color : #c4c4c4 !important; left:0px; top:0px;}
+// }
+
+// .navigation li.nav-link a:hover{
+// 	position : relative;
+//   animation-name: example;
+//   animation-duration: 0.5s;
+// }
 //만든거 끝
 
 
