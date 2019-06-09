@@ -17,9 +17,9 @@ permalink: /posts/
   {% for post in site.categories[cat] %}
     <li>
       <strong>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
       </strong>
-      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span></a>
     </li>
   {% endfor %}
   </ul>
