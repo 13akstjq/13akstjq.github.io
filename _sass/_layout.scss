@@ -19,7 +19,7 @@ a {
 	color : rgba(0,0,0,.87);
 	text-decoration:none !important;
 }
-.page-content ul.post-list a.post-link:hover{
+.page-content ul.post-list li:hover{
 	position : relative;
   animation-name: example;
   animation-duration: 1s;
