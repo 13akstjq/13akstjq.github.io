@@ -76,10 +76,10 @@ require('../../assets/fonts/BMHANNAPro.ttf')});
 하시는 분들도 경로만 조심하시면 별 문제 없이 작동할것 같습니다~~
 
 > ### 적용전 화면 
-![image](https://user-images.githubusercontent.com/46010705/59156488-4fa00680-8ad7-11e9-9fc8-5dd54145cf68.png){: .center}
+![image](https://user-images.githubusercontent.com/46010705/59156488-4fa00680-8ad7-11e9-9fc8-5dd54145cf68.png){: width="100" height="600px"}{: .center}
 
 
 
 > ### 적용후 화면
-![image](https://user-images.githubusercontent.com/46010705/59156386-4d3cad00-8ad5-11e9-870f-cca28fec6017.png){: width="100" height="500px"}{: .center}
+![image](https://user-images.githubusercontent.com/46010705/59156386-4d3cad00-8ad5-11e9-870f-cca28fec6017.png){: width="100" height="600px"}{: .center}
 
