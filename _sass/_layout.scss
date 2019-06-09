@@ -199,6 +199,15 @@ pre code.hljs {
 	    @include media ($tablet) {
 	      padding-right: 1.5em;
 	    }
+			a:mouseover {
+				font-size : 20px;
+// 			color : $google-red !important;
+				color : rgba(0,0,0,0.87);
+// 			color : #2980b9;
+	    display: inline-block;
+	    @include media ($tablet) {
+	      padding-right: 1.5em;
+	    }
 	  }
 	  &:last-child a {
 	  	@include media ($tablet) {
