@@ -76,7 +76,7 @@ require('../../assets/fonts/BMHANNAPro.ttf')});
 하시는 분들도 경로만 조심하시면 별 문제 없이 작동할것 같습니다~~
 
 > ### 적용전 화면 
-![image](https://user-images.githubusercontent.com/46010705/59156470-00f26c80-8ad7-11e9-9e21-b8fc4b4561fb.png){: .center}
+![image](https://user-images.githubusercontent.com/46010705/59156488-4fa00680-8ad7-11e9-9fc8-5dd54145cf68.png){: .center}
 
 
 
