@@ -67,7 +67,6 @@ Font.loadAsync({
 
 여기서 저는 파일 경로 때문에 시간을 좀 썼네요,,,,  
 ![image](https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png)
-<image src = "https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png" width : 50%>
 
 저는 index.js에서 assets/fonts/에 있는 배민폰트를 불러야했는데 상대 경로를 표시하는 것 때문에 동작을 안했습니다.  
 ```
@@ -77,7 +76,7 @@ require('../../assets/fonts/BMHANNAPro.ttf')});
 하시는 분들도 경로만 조심하시면 별 문제 없이 작동할것 같습니다~~
 
 > ### 적용전 화면 
-![image](https://user-images.githubusercontent.com/46010705/59156393-67768b00-8ad5-11e9-82d7-af168d84bc2f.png){: width="100" height="100"}
+![image](https://user-images.githubusercontent.com/46010705/59156393-67768b00-8ad5-11e9-82d7-af168d84bc2f.png){:width : 20%}
 
 
 > ### 적용후 화면
