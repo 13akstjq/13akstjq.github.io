@@ -19,6 +19,7 @@ a {
 	color : rgba(0,0,0,.87);
 }
 .page-content ul.post-list a.post-link:hover{
+	position : relative;
   animation-name: example;
   animation-duration: 0.3s;
 }
@@ -27,6 +28,7 @@ a {
   100%  {color:$google-blue; left:10px; top:0px;}
 }
 .navigation li.nav-link a:hover{
+	position : relative;
   animation-name: example;
   animation-duration: 0.5s;
 }
