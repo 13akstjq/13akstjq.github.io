@@ -28,7 +28,7 @@ font적용도 사실 할 생각은 없고 쉽겠지..? 라는 생각으로 나�
 > ## 2. 프로젝트에 위치시키기 
 폰트를 다운로드 받았다면 프로젝트에 위치시켜야겠죠. reactnative 프로젝트를 기준으로 말씀드리겠습니다.  
 `assets/fonts/`에 다운 받은 `.ttf`형식의 파일을 위치시키겠습니다. 
-![image](https://user-images.githubusercontent.com/46010705/59156309-fd111b00-8ad3-11e9-9c02-a111fddf70e8.png)
+![image](https://user-images.githubusercontent.com/46010705/59156309-fd111b00-8ad3-11e9-9c02-a111fddf70e8.png){: .center}
 
 
 
@@ -66,7 +66,7 @@ Font.loadAsync({
 왼쪽에 폰트를 사용할 이름을 적고 `require`을 local경로에 맞춰서 해주면 font를 사용할 수 있습니다.  
 
 여기서 저는 파일 경로 때문에 시간을 좀 썼네요,,,,  
-![image](https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png)
+![image](https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png){: .center}
 
 저는 index.js에서 assets/fonts/에 있는 배민폰트를 불러야했는데 상대 경로를 표시하는 것 때문에 동작을 안했습니다.  
 ```
@@ -76,10 +76,10 @@ require('../../assets/fonts/BMHANNAPro.ttf')});
 하시는 분들도 경로만 조심하시면 별 문제 없이 작동할것 같습니다~~
 
 > ### 적용전 화면 
-![image](https://user-images.githubusercontent.com/46010705/59156470-00f26c80-8ad7-11e9-9e21-b8fc4b4561fb.png)
+![image](https://user-images.githubusercontent.com/46010705/59156470-00f26c80-8ad7-11e9-9e21-b8fc4b4561fb.png){: .center}
 
 
 
 > ### 적용후 화면
-![image](https://user-images.githubusercontent.com/46010705/59156386-4d3cad00-8ad5-11e9-870f-cca28fec6017.png){: width="100" height="500px"}{: 
+![image](https://user-images.githubusercontent.com/46010705/59156386-4d3cad00-8ad5-11e9-870f-cca28fec6017.png){: width="100" height="500px"}{: .center}
 
