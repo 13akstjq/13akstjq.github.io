@@ -19,6 +19,15 @@ a {
 	color : rgba(0,0,0,.87);
 	text-decoration:none !important;
 }
+a:hover{
+	color: darken(rgba(0,0,0,.87), 10%);
+}
+.page-content .page .posts-list li:hover{
+	position : relative;
+  animation-name: example;
+  animation-duration: 1s;
+	animation-direction : alternate;
+}
 .page-content ul.post-list li:hover{
 	position : relative;
   animation-name: example;
