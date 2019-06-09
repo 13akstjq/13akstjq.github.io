@@ -28,7 +28,7 @@ font적용도 사실 할 생각은 없고 쉽겠지..? 라는 생각으로 나�
 > ## 2. 프로젝트에 위치시키기 
 폰트를 다운로드 받았다면 프로젝트에 위치시켜야겠죠. reactnative 프로젝트를 기준으로 말씀드리겠습니다.  
 `assets/fonts/`에 다운 받은 `.ttf`형식의 파일을 위치시키겠습니다. 
-![image](https://user-images.githubusercontent.com/46010705/59156309-fd111b00-8ad3-11e9-9c02-a111fddf70e8.png){: width="100" height="100"}  
+![image](https://user-images.githubusercontent.com/46010705/59156309-fd111b00-8ad3-11e9-9c02-a111fddf70e8.png)
 
 
 
@@ -76,7 +76,7 @@ require('../../assets/fonts/BMHANNAPro.ttf')});
 하시는 분들도 경로만 조심하시면 별 문제 없이 작동할것 같습니다~~
 
 > ### 적용전 화면 
-![image](https://user-images.githubusercontent.com/46010705/59156393-67768b00-8ad5-11e9-82d7-af168d84bc2f.png){:width : 20%}
+![image](https://user-images.githubusercontent.com/46010705/59156393-67768b00-8ad5-11e9-82d7-af168d84bc2f.png){:width : "200px"}
 
 
 > ### 적용후 화면
