@@ -15,7 +15,7 @@ permalink: /posts/
   {% endfor %}
   <ul class="posts-list">
   {% for post in site.categories[cat] %}
-    <li>
+    <li data-aos="fade-in">
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
       </strong>
