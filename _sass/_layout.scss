@@ -222,13 +222,13 @@ pre code.hljs {
 // 			color : #2980b9;
 	    display: inline-block;
 	    @include media ($tablet) {
-	      padding-right: 1.5em;
+// 	      padding-right: 1.5em;
 	    }
 			
 	  }
 	  &:last-child a {
 	  	@include media ($tablet) {
-    		padding-right: 1em;
+//     		padding-right: 1em;
     	}
     }
   }
