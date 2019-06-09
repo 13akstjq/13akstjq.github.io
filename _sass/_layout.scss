@@ -17,13 +17,18 @@ $desktop: $b1;
 //만든거 
 a {
 	color : rgba(0,0,0,.87);
-	transition: font-size 0.5s;
 }
 .page-content ul.post-list a.post-link:hover{
-	color : $google-blue;
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+@keyframes example {
+  from {color: rgba(0,0,0,.87);}
+  to {color: $google-blue;}
 }
 .navigation li.nav-link a:hover{
-	font-size : 18px;
+  animation-name: example;
+  animation-duration: 0.5s;
 }
 //만든거 끝
 
