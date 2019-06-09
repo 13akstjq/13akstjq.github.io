@@ -17,12 +17,13 @@ $desktop: $b1;
 //만든거 
 a {
 	color : rgba(0,0,0,.87);
+	transition: font-size 0.5s;
 }
 .page-content ul.post-list a.post-link:hover{
 	color : $google-blue;
 }
 .navigation li.nav-link a:hover{
-	font-size : 20px;
+	font-size : 18px;
 }
 //만든거 끝
 
