@@ -204,6 +204,7 @@ pre code.hljs {
   }
   // Nav items
   ul li.nav-link {
+		marign-right: 1.5em;
     display: block;
     text-align: right;
     width: 100%;
@@ -216,7 +217,7 @@ pre code.hljs {
     }
   }
   li.nav-link {
-		marign-right: 1.5em;
+		
   	a {
 // 			color : $google-red !important;
 				color : rgba(0,0,0,0.87);
