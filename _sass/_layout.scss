@@ -68,7 +68,10 @@ pre code.hljs {
     border-radius: 50%;
   }
 }
-
+.center { 
+	display : block;
+	margin : auto;
+}
 .site-header-container, .post-header-container {
 	width: 100%;
 	text-align: center;
