@@ -66,7 +66,8 @@ Font.loadAsync({
 왼쪽에 폰트를 사용할 이름을 적고 `require`을 local경로에 맞춰서 해주면 font를 사용할 수 있습니다.  
 
 여기서 저는 파일 경로 때문에 시간을 좀 썼네요,,,,  
-![image](https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png){: width="100" height="100"}  
+![image](https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png)
+<image src = "https://user-images.githubusercontent.com/46010705/59156360-f2a35100-8ad4-11e9-8d1f-dc713a7993cf.png" width : 50%>
 
 저는 index.js에서 assets/fonts/에 있는 배민폰트를 불러야했는데 상대 경로를 표시하는 것 때문에 동작을 안했습니다.  
 ```
