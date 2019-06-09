@@ -18,15 +18,15 @@ $desktop: $b1;
 a {
 	color : rgba(0,0,0,.87);
 }
-.page-content ul.post-list li:hover{
+.page-content ul.post-list h2:hover{
   animation-name: example;
   animation-duration: 0.5s;
 }
 @keyframes example {
-  from {color: rgba(0,0,0,.87);}
-  to {color: $google-blue;}
+  0%   {background-color:rgba(0,0,0,.87); left:0px; top:0px;}
+  100%  {background-color:$google-blue; left:10px; top:0px;}
 }
-.navigation li.nav-link:hover{
+.navigation li.nav-link a:hover{
   animation-name: example;
   animation-duration: 0.5s;
 }
