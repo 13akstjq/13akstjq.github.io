@@ -46,6 +46,7 @@ export default class App extends React.Component {
 
 　  
 > ### presenter.js
+
 ```
 import React , {Component} from "react";
 import {View,Text,StyleSheet,StatusBar} from "react-native";
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
     }
 })
 export default connect(mapStateToProps)(Timer); // export default Timer; 대신에 connect해서 export해야하는 것이 문제였음. 
-```  
+```
 
 * 처음에는 아래와 같이 Timer 클래스를 export했는데 이렇게 할 경우 connect가 되지 않은 상태로 App.js에서 import를 해서 사용하였다.
 ```
