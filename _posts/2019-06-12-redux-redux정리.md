@@ -27,6 +27,7 @@ tags: react reactnative redux
  
  이럴 때 로그인 정보를 담고 있는 `State Container`가 있다면 거기서 꺼내서 사용하면 되는 것이다.  
  이렇게 하위 컴포넌트에게 state를 전달하기 위해 불필요한 과정을 생략하기 위해 Shared Stated를 Container에 묶어놓는 것 이것을 redux라고 하는 것이다.    
+ 
  *****
  
  > ### redux는 어떻게 사용하는가?  
