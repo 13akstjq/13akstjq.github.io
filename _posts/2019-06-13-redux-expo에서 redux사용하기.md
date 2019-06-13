@@ -19,7 +19,7 @@ redux를 사용하려고 이것저것 시도해봤는데 redux에 대한 개념�
 > ### App.js 
 우선 각 파일 별로 코드를 먼저 살펴보겠다.  
 
-```
+```javascript
 import React  from 'react'; // react import
 import Timer from "./components/Timer/presenter"; //Timer component를 사용하기위해 import 
 import reducer from "./reducer"; // 직접 만든 reducer를 사용하기 위함. 
@@ -47,7 +47,7 @@ export default class App extends React.Component {
 　  
 > ### presenter.js
 
-```
+```javascript
 import React , {Component} from "react";
 import {View,Text,StyleSheet,StatusBar} from "react-native";
 // import * as Font from "expo-font";
@@ -118,13 +118,13 @@ export default connect(mapStateToProps)(Timer); // export default Timer; 대신�
 ```
 
 * 처음에는 아래와 같이 Timer 클래스를 export했는데 이렇게 할 경우 connect가 되지 않은 상태로 App.js에서 import를 해서 사용하였다.
-```
+```javascript
 export default Timer;
 ```
 
 * 해결방법   
   Timer component를 store에 연결한 채로 export 해야했기 때문에 아래 코드로 export를 변경하여야 했다.  
- ```
+ ```javascript
  export default connect(mapStateToProps)(Timer);
  ```
  
