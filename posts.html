@@ -7,7 +7,7 @@ permalink: /posts/
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
 	{% if cat != "BigProject" and cat != "SmallStuff"  %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  <h2 data-aos="fade-up" id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
