@@ -121,7 +121,7 @@ export default Timer;
 ```
 
 * 해결방법 
-- Timer component를 store에 연결한 채로 export 해야했기 때문에 아래 코드로 export를 변경하여야 했다.  
+  Timer component를 store에 연결한 채로 export 해야했기 때문에 아래 코드로 export를 변경하여야 했다.  
  ```
  export default connect(mapStateToProps)(Timer);
  ```
