@@ -18,6 +18,7 @@ redux를 사용하려고 이것저것 시도해봤는데 redux에 대한 개념�
    
 > ### App.js 
 우선 각 파일 별로 코드를 먼저 살펴보겠다.  
+
 ```
 import React  from 'react'; // react import
 import Timer from "./components/Timer/presenter"; //Timer component를 사용하기위해 import 
@@ -38,7 +39,7 @@ export default class App extends React.Component {
     );  
   }
 }
-```  
+```
 　  
 
 ***
