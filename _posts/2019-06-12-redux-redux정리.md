@@ -18,7 +18,7 @@ tags: react reactnative redux
 
 그래서 redux를 `State Container`라고 부르는 것이다.  
 
-
+　  
 ***  
 　  
    
