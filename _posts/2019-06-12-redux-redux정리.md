@@ -17,7 +17,9 @@ tags: react reactnative redux
 - 공유해야하는 `Global State`를 특정 장소에 저장해놓고 쉽게 불러 쓴다면 어떨까? 라는 생각에서 시작한것 같다.  
 
 그래서 redux를 `State Container`라고 부르는 것이다.  
+
 *****
+
 > ### redux를 언제 사용해야하는가? 
 리덕스를 사용하지 않을 경우를 말해보려한다. 블로그 게시물의 댓글을 달 때 로그인 정보가 필요한데 댓글에서 필요한 로그인 정보를 위해 게시물 컴포넌트를
 댓글 컴포넌트에게 로그인정보를 전달하는 것은 `useless state`가 발생하기 때문에 좋지 않다. 혹은, navbar에서 "akstjq님 환영합니다."라는 문구를 띄우고
@@ -26,6 +28,7 @@ tags: react reactnative redux
  이럴 때 로그인 정보를 담고 있는 `State Container`가 있다면 거기서 꺼내서 사용하면 되는 것이다.  
  이렇게 하위 컴포넌트에게 state를 전달하기 위해 불필요한 과정을 생략하기 위해 Shared Stated를 Container에 묶어놓는 것 이것을 redux라고 하는 것이다.    
  *****
+ 
  > ### redux는 어떻게 사용하는가?  
  redux는 State를 담고있는 Store이다. 객체(object)를 관리하고 있기 때문에 굉장히 엄격하다. 그래서 직접적으로 수정이 불가능하다. `reducer`라는 중간점
  이 있다. 우리는 reducer에게 `action`을 보내게 되고 그 `action`을 받아 `reducer`가 store안의 object를 수정해주는 것이다.  
