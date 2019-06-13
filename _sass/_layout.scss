@@ -15,6 +15,18 @@ $desktop: $b1;
 */
 
 //만든거 
+
+blockquote h2{
+	    border-left: 5px #FF6600 solid;
+    padding-left: 10px;
+}
+blockquote{
+	margin-left : 0px;
+}
+blockquote h3{
+	    border-left: 3px #2980b9 solid;
+    padding-left: 10px;
+}
 a {
 	color : rgba(0,0,0,.87);
 	text-decoration:none !important;
