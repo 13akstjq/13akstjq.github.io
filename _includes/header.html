@@ -11,10 +11,10 @@
       <i class="fa fa-bars"></i>
     </a>
     <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
+      <ul data-aos="fade-left" id="js-navigation-menu" class="navigation-menu show">
         {% for page in site.pages %}
           {% if page.title and page.main_nav != false %}
-          <li data-aos="fade-left" class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
+          <li  class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}" >{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </ul>
