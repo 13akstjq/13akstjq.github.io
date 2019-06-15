@@ -24,14 +24,4 @@ tags: js function DOM
   * getItem(key)  
     localStorage에서 데이터를 꺼내는 법
     
-* ### eventPreventDefault()
-  
-  아래와 같이 이벤트를 호출했을 경우 **input 값이 사라지는 것** 을 막아줄 수 있음. 
-  ```javascript
-  function handleSubmit(event){
-      event.preventDefault();
-      const currentValue = input.value;
-      saveName(currentValue);
-      printGreeting(currentValue);
-  }
-  ```
+
