@@ -18,7 +18,7 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   window.addEventListener("resize",handleResize);
   ```
   
-  위와 같이 코드를 작성하면 화면이 새로고침되어도 console이 찍히지 않고 화면 크기가 조정될 때만 console에 **resize!!!!** 가 찍힌다. 
+  위와 같이 코드를 작성하면 화면이 새로고침되어도 console이 찍히지 않고 화면 크기가 조정될 때만 console에 **resize!!!!** 가 찍힌다.  
   　  
   
   ***
@@ -34,7 +34,7 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   window.addEventListener("resize",handleResize());
   ```
   이렇게 작성하면 화면이 새로고침 되자마자 console에 **resize!!!!** 가 찍히는 것을 볼 수 있다.  
-  그리고 이렇게 작성하면 callback 형식이 아니라서 화면크기가 바뀌어도 console에 찍히지 않는다. 
+  그리고 이렇게 작성하면 callback 형식이 아니라서 화면크기가 바뀌어도 console에 찍히지 않는다.  
 　  
   
   ***
@@ -45,6 +45,7 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   원하는 태그에 이벤트를 추가해야할 일은 필수이다. 그럴땐 **addEventListener**를 사용하자.  
   
   아래 코드는 **id**가 **title**인 tag에 **click** event를 추가하는 코드입니다. 역시 콜백에는 `()`를 붙히지 않습니다. 
+  
   ```javascript
   const title = document.querySelector("#title");
   function handleClick(){
@@ -59,7 +60,7 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   　  
 > ### color를 colsole에 찍으면 **rgb(41, 128, 185)** 형태로 나오니까 값이 적용이 안되는 것들은 console찍어보기!  
 
-  [event MDN](https://developer.mozilla.org/ko/docs/Web/Events)
+  [event MDN](https://developer.mozilla.org/ko/docs/Web/Events)  
   　  
   
   ***
