@@ -31,7 +31,7 @@ tags: js var let data
   
   다음과 같이 작성하면 
   
-  ```console
+  ```error
   Uncaught TypeError: Assignment to constant variable.
     at index.js:2
   (anonymous) @ index.js:2
