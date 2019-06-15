@@ -22,7 +22,7 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   
 * #### 이벤트가 발생하기도 전에 함수 호출 
   
-  ```
+  ```javascript
   function handleResize(){
     console.log("resize!!!!");
   }
