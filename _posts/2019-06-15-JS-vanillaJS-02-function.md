@@ -19,9 +19,9 @@ tags: js function DOM
 
 * ### localStorage 
   윈도우에서 정보를 저장해놓기 위한 방법으로 사용된다. 
-  * setItem(key,value)
+  * setItem(key,value)  
     localStorage에 데이터를 저장하는 법 
-  * getItem(key)
+  * getItem(key)  
     localStorage에서 데이터를 꺼내는 법
     
 * ### eventPreventDefault()
