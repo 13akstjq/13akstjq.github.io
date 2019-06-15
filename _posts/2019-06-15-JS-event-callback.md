@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[JS] vanillaJS 02 - JS event  "
-date:   2019-06-15 18:37:00
+date:   2019-06-15 12:37:00
 author: 한만섭
 categories: js
 tags: js function event callback
