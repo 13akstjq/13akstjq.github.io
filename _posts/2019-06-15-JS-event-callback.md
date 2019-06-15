@@ -9,7 +9,7 @@ tags: js function event callback
 
 event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 한다. 
 
-> ### 이벤트가 발생할 때 함수 호출 
+> ### 올바른 CallBack 문법
   
   ```javascript
   function handleResize(){
@@ -25,7 +25,7 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   
   　  
   
-> ### 이벤트가 발생하기도 전에 함수 호출 
+> ### 잘못된 CallBack 문법
   
   ```javascript
   function handleResize(){
