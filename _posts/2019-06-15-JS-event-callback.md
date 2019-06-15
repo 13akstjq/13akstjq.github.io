@@ -43,3 +43,5 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   }
   title.addEventListener("click",handleClick);
   ```
+  
+* #### color를 colsole에 찍으면 **rgb(41, 128, 185)** 형태로 나오니까 값이 적용이 안되는 것들은 console찍어보기!  
