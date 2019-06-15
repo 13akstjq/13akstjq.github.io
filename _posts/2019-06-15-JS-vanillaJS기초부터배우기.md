@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[JS] vanillaJS 01 - 변수와 데이터 타입 "
-date:   2019-06-15 11:48:00
+date:   2019-06-15-11:48:00
 author: 한만섭
 categories: js
 tags: js var let data 
