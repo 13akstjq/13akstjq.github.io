@@ -18,10 +18,10 @@ tags: js var let data
  　  
 > ## JS의 데이터 타입 
  
-* ####let 
+* #### let 
   수정이 가능한 변수 
 
-* ####const  
+* #### const  
   수정이 불가능한 변수 ( 완전히 불가능하진 않지만 이해하기 쉽게 표현 )
   
   ```javascript
