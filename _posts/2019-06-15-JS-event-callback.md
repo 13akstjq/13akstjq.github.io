@@ -28,4 +28,5 @@ event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 
   }
   window.addEventListener("resize",handleResize());
   ```
-  이렇게 작성하면 화면이 새로고침 되자마자 console에 **resize!!!!**가 찍히는 것을 볼 수 있다. 
+  이렇게 작성하면 화면이 새로고침 되자마자 console에 **resize!!!!**가 찍히는 것을 볼 수 있다.  
+  그리고 이렇게 작성하면 callback 형식이 아니라서 화면크기가 바뀌어도 console에 찍히지 않는다. 
