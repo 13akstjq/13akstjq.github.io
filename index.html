@@ -15,7 +15,7 @@ layout: default
 <div class="wrapper">
 <ul class="post-list">
   {% for post in paginator.posts %}
-	{% if post.domain.size == 0  %}
+	{% if post.domain == null  %}
 	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
   <li data-aos="fade-up">
     
