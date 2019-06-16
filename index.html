@@ -15,6 +15,7 @@ layout: default
 <div class="wrapper">
 <ul class="post-list">
   {% for post in paginator.posts %}
+	{% if post.categories != "BigProject" and post.categories != "SmallStuff"  %}
 	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
   <li data-aos="fade-up">
     
@@ -40,6 +41,7 @@ layout: default
   {% if forloop.last == false %}
   <hr>
   {% endif %}
+	{% endif %}
   {% endfor %}
 </ul>
 
