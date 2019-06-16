@@ -4,6 +4,7 @@ title: "Posts"
 permalink: /posts/
 ---
 
+
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
 	{% if cat != "BigProject" and cat != "SmallStuff"  %}
