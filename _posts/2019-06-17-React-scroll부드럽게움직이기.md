@@ -3,7 +3,7 @@ layout: post
 title:  "[React] 스크롤 부드럽게 움직이기"
 date:   2019-06-17 11:24:00
 author: 한만섭
-categories: reactd
+categories: react
 tags: react scroll smooth
 ---
 
