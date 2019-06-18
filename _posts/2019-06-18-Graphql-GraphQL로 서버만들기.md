@@ -115,5 +115,26 @@ console.log("hello");
 ```
 npm install --save-dev @babel/node
 ```
+
+* .babelrc 파일만들기 
+```
+{
+    "presets": ["env","stage-3"]
+}
+```
+
+* 마무리설치하기 
+
+```
+npm install babel-cli babel-preset-env babel-preset-stage-3 --save-dev
+```
   
+  
+* pakage.json 
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js"
+  },
+```
   
