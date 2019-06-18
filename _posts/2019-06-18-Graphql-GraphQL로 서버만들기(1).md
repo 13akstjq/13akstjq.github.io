@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GraphQL] graphQL "
+title:  "[GraphQL] GraphQL로 서버만들기(1) "
 date:   2019-06-18-20:31:00
 author: 한만섭
 categories: GraphQL
