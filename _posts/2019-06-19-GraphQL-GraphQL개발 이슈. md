@@ -24,7 +24,19 @@ tags: GraphQL
 　  
 
 > ### 2. resolver에서 query 선언하기 
+	
   ```
   person : (_,{id}) => getById(id)
   ```
   위와 같이 첫번째 인자는 아직 사용하지 않기 떄문에 자세히 잘 모르기 때문에 `_`로 사용하고, 두번째에 인자를 적어넣는다. {id} == args.id
+
+
+> ### 3. filter를 하면 배열 형태로 나오기 때문에 하나를 원하면 [0]해야함.
+	
+	```
+	export const getById = (id) => {
+	    const filteredmovies = movies.filter(movie => movie.id === id);
+	    // console.log(filteredpeople );
+	    return filteredmovies[0]; 
+	}
+	```
