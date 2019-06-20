@@ -53,7 +53,7 @@ tags: graphql apollo boost
 > ### apolloClient.js 만들기 
     
    * ApolloClient.js
-  
+      **uri**에 적는 주소는 **GraphQL**서버의 주소입니다. 저는 localhost:4000에 켜놨기 때문에 아래와 같이 작성했습니다. 
       ```
       import ApolloClient from 'apollo-boost';
 
@@ -86,3 +86,8 @@ tags: graphql apollo boost
 
     ```
  
+    **npm start**로 실행시키면 
+    ![image](https://user-images.githubusercontent.com/46010705/59844159-1dbf5780-9395-11e9-928b-beb2c9ddd0de.png)
+    위와 같은 화면이 나올 것 입니다. 화면에서 사용한 tool은 [apollo dev tools](https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm)에서 설치할 수 있습니다.  
+    
+    
