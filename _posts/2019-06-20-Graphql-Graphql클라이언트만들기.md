@@ -13,10 +13,10 @@ tags: graphql apollo boost
   
 > ### 프로젝트 만들기 
   * 우선 프로젝트를 만들어야 합니다. 기본 CRA 프로젝트 setting 하는 방법은 항상 동일합니다.  
-      1. 콘솔에서 **CRA**프로젝트 만들어주기  
-      2. **Git Repository**만들기  
-      3. CRA프로젝트에서 필요없는 파일들 **지우기**  
-      4. CRA와 Git **연동하기**  
+      * 콘솔에서 **CRA**프로젝트 만들어주기  
+      *  **Git Repository**만들기  
+      * CRA프로젝트에서 필요없는 파일들 **지우기**  
+      * CRA와 Git **연동하기**  
   이렇게 하면 기본적인 프로젝트 생성은 완성입니다.  
   
 > ### 라이브러리 설치하기 
@@ -28,6 +28,7 @@ tags: graphql apollo boost
     ```
     
   2. **react Apollo** 설치하기 
+  
     react-apollo는 [github](https://github.com/apollographql/react-apollo)에 있는 커맨드를 입력해 설치를 해야합니다.  
     **Apollo-boost**는 GraphQL Client를 사용하기위해 모든 것을 대신 셋업해주는 라이브러리라고 생각하시면 됩니다.  
     
