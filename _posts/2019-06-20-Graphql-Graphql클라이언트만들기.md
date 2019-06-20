@@ -52,7 +52,7 @@ tags: graphql apollo boost
  　  
 > ### apolloClient.js 만들기 
     
-    * ApolloClient.js
+   * ApolloClient.js
   
       ```
       import ApolloClient from 'apollo-boost';
