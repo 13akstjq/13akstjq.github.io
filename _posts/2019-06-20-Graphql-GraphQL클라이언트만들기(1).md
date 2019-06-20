@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Graphql] Graphql 클라이언트 만드는 방법"
+title:  "[Graphql] GraphQL클라이언트만들기(2)"
 date:   2019-06-20-19:04:00
 author: 한만섭
 categories: graphql
