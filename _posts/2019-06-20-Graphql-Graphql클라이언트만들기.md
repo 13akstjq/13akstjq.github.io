@@ -32,7 +32,7 @@ tags: graphql apollo boost
     npm add react-router-dom
     ```
     
-  #### 2. **react Apollo** 설치하기 
+  #### 2. react Apollo 설치하기 
   
   react-apollo는 [github](https://github.com/apollographql/react-apollo)에 있는 커맨드를 입력해 설치를 해야합니다.  
     **Apollo-boost**는 GraphQL Client를 사용하기위해 모든 것을 대신 셋업해주는 라이브러리라고 생각하시면 됩니다.    
