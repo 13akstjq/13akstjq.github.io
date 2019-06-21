@@ -20,12 +20,12 @@ tags: graphql
     
 
 > ### 프로젝트 셋팅
-  * #### Git과 react기본프로젝트 셋팅
+  * ### Git과 react기본프로젝트 셋팅
     
     Gitrepo를 만드는 점은 동일하지만 이번에는 create-react-app 을 이용해서 프로젝트를 만드는 것이 아니라, npx create-react-app 으로 
     프로젝트를 만들어주면 됩니다.  
     
-  * #### 라이브러리 설치  
+  * ### 라이브러리 설치  
     
     ```
     npm add apollo-cache-inmemory apollo-client apollo-link graphql react-apollo styled-components apollo-link-state react-apollo
