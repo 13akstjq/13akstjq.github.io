@@ -18,6 +18,7 @@ tags: graphql
 > ### input값이 없는 query 만들기 
   
   * graphql 서버에서 작성하는 방식으로 작성하면 됩니다. 
+  
   ```
     export  const HOME_PAGE = gql`
       {
@@ -35,6 +36,7 @@ tags: graphql
   
   * 기존의 graphql에서 작성하는 방식과는 약간 다릅니다. **{}**로 **query**를 감싸는 대신에 **query**라는 객체를 만들어서 감싸줍니다. 
     함수명은 상관 없고 인자를 사용할 때는 **$ParameterName**으로 적어주면 됩니다. 
+    
   ```
   export const MOVIE_DETAILS = gql`
   query getMovieDetails($movieId: Int!) {
