@@ -3,7 +3,7 @@ layout: post
 title:  "[GraphQL] GraphQL Setting 요약 "
 date:   2019-06-19-12:17:00
 author: 한만섭
-categories: GraphQL
+categories: graphql
 tags: GraphQL
 ---
 
