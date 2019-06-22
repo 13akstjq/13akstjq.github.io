@@ -3,7 +3,7 @@ layout: post
 title:  "[GraphQL] graphQL로 서버만들기(3) "
 date:   2019-06-18-22:30:00
 author: 한만섭
-categories: GraphQL
+categories: graphql
 tags: GraphQL
 ---
 
