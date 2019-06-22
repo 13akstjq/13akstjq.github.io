@@ -3,7 +3,7 @@ layout: post
 title:  "[CSS] StyledComponent Backgound-image url에 props넣기 "
 date:   2019-06-21-00:45:00
 author: 한만섭
-categories: css
+categories: html/css
 tags: styledcomponent
 ---
 
