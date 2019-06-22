@@ -3,7 +3,7 @@ layout: post
 title:  "[API] ReactNative에서 openWeathermap API사용하기 "
 date:   2019-06-06 17:46:00
 author: 한만섭
-categories: API
+categories: api
 tags: reactnative openweathermap
 ---
 
