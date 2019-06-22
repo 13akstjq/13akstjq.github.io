@@ -46,7 +46,7 @@ jekyll-archives:
 # disqus_shortname: bencentra
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-142485698-1"
 project-types : 
   - man: Big One
   - man: Small Stuff
