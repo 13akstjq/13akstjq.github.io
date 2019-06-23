@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[인스타클론코딩] [Server].5 - graphql에서 prisma model 사용하기  "
+title:  "[인스타클론코딩] [Server].6 - graphql에서 prisma model 사용하기  "
 date:   2019-06-23-15:01:00
 author: 한만섭
 categories: clonecoding
