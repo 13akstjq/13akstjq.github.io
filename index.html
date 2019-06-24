@@ -5,7 +5,7 @@ layout: default
 
 <div  class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
   <div  class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header data-aos="fade-right" class="site-header">
+    <header data-aos="fade-right" style="overflow-x: hidden" class="site-header">
       <h1  class="title">{{ site.title }}</h1>
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
     </header>
@@ -17,7 +17,7 @@ layout: default
   {% for post in paginator.posts %}
 	{% if post.domain == null  %}
 	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-  <li data-aos="fade-up">
+  <li data-aos="fade-up" style="overflow-x: hidden">
     
       <h2>{{ post.title }}</h2>
     
