@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[인스타클론코딩] [Server].8 -  nodemailer와 sendgrid로 메일보내기"
+title:  "[인스타클론코딩] [Server].8 - 로그인인증 메일보내기(1)"
 date:   2019-06-23-19:28:00
 author: 한만섭
 categories: clonecoding
