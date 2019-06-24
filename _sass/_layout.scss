@@ -13,59 +13,6 @@ $desktop: $b1;
 /*
 *	Globals
 */
-
-//만든거 
-
-.language-error{ // error highlighting
-	color : red; 
-}
-.highlighter-rouge{
-	    color: #e96900;
-    font-weight: 900;
-}
-blockquote h2{
-	    border-left: 5px #FF6600 solid;
-    padding-left: 10px;
-}
-blockquote{
-	margin-left : 0px;
-}
-blockquote h3{
-	    border-left: 3px #2980b9 solid;
-    padding-left: 10px;
-}
-a {
-	color : rgba(0,0,0,.87);
-	text-decoration:none !important;
-}
-
-// .page-content .page .posts-list li:hover{
-// 	position : relative;
-//   animation-name: example;
-//   animation-duration: 1s;
-// 	animation-direction : alternate;
-// }
-// .page-content ul.post-list li:hover{
-// 	position : relative;
-//   animation-name: example;
-//   animation-duration: 1s;
-// 	animation-direction : alternate;
-// }
-// @keyframes example {
-//   0%   {color : rgba(0,0,0,.87)!important;left:0px; top:0px;}
-//   50%  {color : #c4c4c4!important; left:10px; top:0px;}
-// 	100%   {color : #c4c4c4 !important; left:0px; top:0px;}
-// }
-
-// .navigation li.nav-link a:hover{
-// 	position : relative;
-//   animation-name: example;
-//   animation-duration: 0.5s;
-// }
-//만든거 끝
-
-
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -121,16 +68,12 @@ pre code.hljs {
     border-radius: 50%;
   }
 }
-.center { 
-	display : block;
-	margin : auto;
-}
+
 .site-header-container, .post-header-container {
 	width: 100%;
 	text-align: center;
 	&.has-cover {
 		color: $white;
-		text-shadow: 0 2px 1px rgba(0,0,0,0.1) !important;
 		background-position: 50% 50%;
 		background-size: cover;
 		.title {
@@ -143,7 +86,7 @@ pre code.hljs {
 	.scrim {
 		padding: 3em 1em;
 		&.has-cover {
-// 			background-color: rgba(0,0,0,0.2);
+			background-color: #ffffff;
 			padding: 6em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
@@ -156,6 +99,7 @@ pre code.hljs {
 *	Header
 */
 .navigation {
+	box-shadow: 0 2px $highlight-color;
 	padding: 0 1em;
 	margin: 0;
 	/*
@@ -219,7 +163,6 @@ pre code.hljs {
   }
   // Nav items
   ul li.nav-link {
-		margin-right : 40px;
     display: block;
     text-align: right;
     width: 100%;
@@ -232,20 +175,15 @@ pre code.hljs {
     }
   }
   li.nav-link {
-		
   	a {
-// 			color : $google-red !important;
-				color : rgba(0,0,0,0.87);
-// 			color : #2980b9;
 	    display: inline-block;
 	    @include media ($tablet) {
-// 	      padding-right: 1.5em;
+	      padding-right: 1.5em;
 	    }
-			
 	  }
 	  &:last-child a {
 	  	@include media ($tablet) {
-//     		padding-right: 1em;
+    		padding-right: 1em;
     	}
     }
   }
@@ -295,14 +233,13 @@ pre code.hljs {
 	}
 	.site-header-container {
 		color: #000000;
-		text-shadow: 0 2px 1px rgba(0,0,0,0.1);
+		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
 		background-color: #ffffff;
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
 			}
 			.subtitle {
-				font-style: italic;
 				font-size: modular-scale(1);
 			}
 		}
@@ -411,13 +348,12 @@ pre code.hljs {
 *	Footer
 */
 .site-footer {
-	$link-color: $white;
+	$link-color: #000000;
 	padding: 1em 1em 2em 1em;
-	border-top : 1px solid #D8E0E7;
-	background-color:#f6f9fc;
-	color: #8898aa;
+	background-color: #ffffff;
+	color: $white;
 	a {
-	  color: #8898aa;
+	  color: $link-color;
 	  &:active,
 	  &:focus,
 	  &:hover {
