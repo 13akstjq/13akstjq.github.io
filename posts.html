@@ -8,7 +8,7 @@ permalink: /posts/
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
 	{% if cat != "BigProject" and cat != "SmallStuff"  %}
-  <h2 data-aos="fade-up" id="{{cat}}">{{ cat | capitalize }}</h2>
+  <h2 data-aos="fade-up" style="overflow-x: hidden" id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
@@ -16,7 +16,7 @@ permalink: /posts/
   {% endfor %}
   <ul class="posts-list">
   {% for post in site.categories[cat] %}
-    <li data-aos="fade-up">
+    <li data-aos="fade-up" style="overflow-x: hidden">
       <strong>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
       </strong>
@@ -27,4 +27,4 @@ permalink: /posts/
   {% if forloop.last == false %}<hr>{% endif %}
 	{% endif %}
 {% endfor %}
-<br data-aos="fade-up">
+<br data-aos="fade-up" style="overflow-x: hidden">
