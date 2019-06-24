@@ -5,7 +5,7 @@ layout: default
 
 <div  class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
   <div  class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header data-aos="fade-in" style="overflow-x: hidden" class="site-header">
+    <header data-aos-delay="500" data-aos-duration="1000" data-aos="fade-in" style="overflow-x: hidden" class="site-header">
       <h1  class="title">{{ site.title }}</h1>
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
     </header>
