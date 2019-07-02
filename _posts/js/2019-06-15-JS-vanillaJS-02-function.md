@@ -37,3 +37,22 @@ tags: js function DOM
   이 함수는 **String**형식의 파일을 **Object** 형태로 변환해줍니다. LocalStorage에 저장해야하는 데이터들은 객체(Object)가 아니라 String 형태여야
   하기 때문에 LocalStorage에서 데이터를 꺼내면 String 형태입니다. 그것을 Object로 사용해야할 때가 많은데 그 때 이 메소드를 사용하면 
   `Stirng -> Object`를 할 수 있습니다. 
+  
+  
+  > ### a tag로 png파일 다운로드 하기 
+a태그는 다운로드를 할때도 사용할 수 있습니다. 제가 다운로드 받을 파일은 캔버스로 그린 그림입니다. canvas의 그림에 대한 URL은 `toDataURL()`로 
+구할 수 있습니다. 그리고 `a`tag를 만들고 그 a tag에 **link** 와 **download**를 추가해줘야 합니다. **link** 는 위에서 toDataURL로 구한 URL주소입니다. 
+**download**는 다운로드 받아질 때의 파일명입니다. 마지막으로 a 태그 객체인 link를 강제로 click해주는 트릭을 이용하면 해당함수로 파일을 다운로드 할 수 
+있습니다. 
+
+```javascript
+function saveFile(event){
+    const image = canvas.toDataURL();
+    console.log(image);
+    const link = document.createElement('a');
+    link.href = image;
+    link.download = 'picture';
+    console.log(link);
+    link.click();
+}
+```
