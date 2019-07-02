@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[React] 리액트를 공부하기 전에 알면 좋을 것들 "
+title:  "[React] 리액트를 개발 이슈 "
 date:   2019-06-07 01:30:00
 author: 한만섭
 categories: react
@@ -44,3 +44,10 @@ updateCount = () => {
 위처럼 사용하면 count에 4를 담을 수 있다. 
 
 
+> ### React를 import하지 않을 경우 발생하는 에러 
+
+  ![image](https://user-images.githubusercontent.com/46010705/60530520-e311d380-9d33-11e9-894d-fe41a3573aa5.png)
+  이 코드를 넣으면 해결됩니다.  
+  ```
+  import React from "react";
+  ```
