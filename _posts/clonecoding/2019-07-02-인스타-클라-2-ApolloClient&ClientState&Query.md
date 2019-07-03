@@ -80,7 +80,8 @@ clientState를 만들기 전에 **ApolloClient**를 **index.js**로 옮기려고
 **logUserIn** Mutation은 **token,cache**를 인자로 받아서  저장해줍니다.  
 **logUserOut** Mutation은 **token,cache**를 초기화해줍니다.  
 
-* **localState.js**
+* **localState.js**  
+
 ```
 export const defaults = {
   isLoggedIn: localStorage.getItem("token") !== null ? true : false
