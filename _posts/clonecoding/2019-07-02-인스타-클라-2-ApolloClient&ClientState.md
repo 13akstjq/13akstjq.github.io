@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[인스타클론코딩] [FrontEnd].2 - Apollo "
+title:  "[인스타클론코딩] [FrontEnd].2 - ApolloClient & ClientState "
 date:   2019-07-03-:09:52:00
 author: 한만섭
 categories: clonecoding
