@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "[인스타클론코딩] [FrontEnd].1 - 프로젝트 셋팅 "
+date:   2019-07-03-:09:52:00
+author: 한만섭
+categories: clonecoding
+tags: react instagram
+---
+
+> ## Apollo-Client
+
+로그인을 확인하기 위해 사용합니다. **apollo-boost**가 **Apollo client**를 쉽게 사용할 수 있게 해주는 라이브러리 입니다. 
+
+> ### 1-1. Apollo Client 만들기 
+
+클라이언트 프로젝트에서 `Apollo/Client.js`를 만들어서 내부에서 **apollo-boost**의 **ApolloClient**를 이용해서 
+클라이언트를 쉽게 제작할 수 있습니다. 
+
+![image](https://user-images.githubusercontent.com/46010705/60556335-c26d6c00-9d7b-11e9-8aeb-a336ef3bd80f.png)
+
+**apollo-boost**의 **ApolloClient**를 import해서 새로운 **ApolloClient**를 사용합니다. uri는 서버의 주소인 `localhost:4000`를 사용합니다.  
+
+```
+import ApolloClient from "apollo-boost";
+
+export default new ApolloClient({
+  uri: "http://localhost:4000"
+});
+
+```
