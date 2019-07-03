@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[인스타클론코딩] [FrontEnd].2 - ApolloClient & ClientState "
+title:  "[인스타클론코딩] [FrontEnd].2 - ApolloClient & ClientState &  "
 date:   2019-07-03-:09:52:00
 author: 한만섭
 categories: clonecoding
@@ -121,9 +121,92 @@ export default new ApolloClient({
 });
 ```
 
+***
 
+> ## 2. Qeury
+ 
+**Graphql**로 만들었던 bakcend의 Query를 호출하기 위해서는 client단에서 Query를 작성해놔야 합니다.  
 
+Query를 만들기 위해서는 아래 import가 필요합니다.  
 
+> ### gql
+
+* import 
+
+```
+import {gql} from 'apollo-boost';
+```
+
+* Query 작성코드 
+```
+const QUERY = gql`
+  {
+    isLoggedIn @client
+  }
+`;
+```
+
+> ### useQuery로 Query 사용하기 
+
+* import  
+
+```
+import {userQuery} from 'react-apollo-hooks';
+```
+
+* Query 사용코드   
+
+```
+const {data} = useQuery(QUERY);
+```
+
+***
+
+> ### 최종 App.js 
+
+  ```
+  import Theme from "../Styles/Theme";
+  import AppRouter from "./AppRouter";
+  import { gql } from "apollo-boost";
+  import { useQuery } from "react-apollo-hooks";
+
+  const QUERY = gql`
+    {
+      isLoggedIn @client
+    }
+  `;
+
+  export default () => {
+    const { data } = useQuery(QUERY);
+    return (
+      <ThemeProvider theme={Theme}>
+        <>
+          <GlobalStyles />
+          <AppRouter isLoggedIn={data.isLoggedIn} />
+        </>
+      </ThemeProvider>
+    );
+  };
+  ```
+
+로그인 상태일 경우 아래와 같이 Feed 페이지를 보여줍니다.   
+![image](https://user-images.githubusercontent.com/46010705/60563356-6c59f200-9d96-11e9-979d-e3a95f9bc368.png)
+
+로그아웃 상태일 경우 아래와 같이 Auth 페이지를 보여줍니다.   
+![image](https://user-images.githubusercontent.com/46010705/60563398-a9be7f80-9d96-11e9-9014-dc4bb45e2b72.png)  
+
+***
+
+> ## 정리 
+
+> ### Client  
+
+apolloClient를 쉽게 제작할 수 있는 **apollo-boost**를 사용해서 Client를 만듭니다. **Client**는 uri와 clientState를 가질 수 있습니다. uri는 서버의 주소를 말하고, clientState는 App이 실행되기 전에 동작하는 State입니다. **defaults**와 **resolvers**를 담고 있는 **LocalState.js**를 만듭니다. **LocalState.js**에서는 **isLoggedIn** 변수를 localStroage의 **token**에 따라 true,false를 결정시켜주게 됩니다. client는 client prop을 필요로 하는 **apolloProvider**를 통해서 만들어집니다. **apolloProvider**은 **index.js**에서 작성합니다. 
+
+> ### Query 
+
+query는 apollo-boost의 **gql**을 사용해서 작성합니다. 작성한 Query는 **react-apollo-hooks**의 **useQuery**를 이용해서 사용할 수 있습니다. Query를 사용할 때는 API에 호출하지 못하도록 
+`@client`를 해줘야 합니다.  
 
 
 
