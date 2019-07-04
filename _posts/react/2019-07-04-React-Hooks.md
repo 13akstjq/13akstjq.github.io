@@ -29,7 +29,126 @@ axios는 http라이브러리 인데 fetch보다 괜춘함.
 
 useEffect는 componenetDidMount()를 위해서 있당.  
 
+> ### 버튼으로 숫자 증가 감소 
 
+```
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+const numb = (ini) => {
+  const [num, setNum] = useState(ini);
+  return {
+    num,
+    setNum
+  }
+} 
+
+function App() {
+  const {num,setNum} = numb(1);
+  return (
+    <div className="App">
+      <h1>Hello </h1>
+      {num}
+      <button onClick={() => setNum(num+1)}>증가</button>
+      <button onClick={() => setNum(num-1)}>감소</button>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+```
+
+
+> ### useState를 사용해서 Input Value값 셋팅하기 , 변경 감지, 유효성 체크 
+
+{...name} 은 spreadoperator를 사용해서 name을 펼쳐서 보여주게 됩니다. 혹은 `value={name.value}`라고 적어도 됩니다.  
+
+
+```
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+// valitating function 이 true면 return 하기
+// validating fuctnion 만들기
+
+const useInput = (initial, validateFuc) => {
+  const [value, setValue] = useState(initial);
+  const onChange = event => {
+    const {
+      target: { value }
+    } = event;
+    let willUpdate = true;
+    if (typeof validateFuc === "function") {
+      willUpdate = validateFuc(value.length);
+    }
+    if (willUpdate) {
+    setValue(value);
+    }
+  };
+
+  return { value, onChange };
+};
+
+function App() {
+  const maxLen = value => value <= 10;
+  const name = useInput("Mr. ", maxLen);
+  return (
+    <div className="App">
+      <h1>Hello </h1>
+      <input {...name} />
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+```
+
+
+> ### useTab
+
+```
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+const posts = [
+  { title: "first", content: "first_content" },
+  { title: "second", content: "second_content" }
+];
+
+const useTab = (initialIndex, allPosts) => {
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+
+  return {
+    currentItem: allPosts[currentIndex],
+    onChange: setCurrentIndex
+  };
+};
+
+function App() {
+  const { currentItem, onChange } = useTab(0, posts);
+  console.log(currentItem);
+  return (
+    <div className="App">
+      <h1>Hello </h1>
+      {posts.map((post, index) => (
+        <button onClick={()=>onChange(index)}>{post.title}</button>
+      ))}
+      {currentItem.content}
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+```
 
 
 
