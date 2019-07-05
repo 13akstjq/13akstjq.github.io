@@ -12,4 +12,4 @@ tags: react instagram
 - [] useMutation 사용하기 
 - [] 이메일이 무조건 보내졌던 이슈 해결 
 - [] {}-> [] 디버깅 
-- [] 
+- [] useState를 이용해서 useInput만들기 
