@@ -53,7 +53,7 @@ Query를 만들었다면 AuthContainer에서 사용해야 합니다. 제가 만�
 
 > ### Auth/AuthContainer.js  
 
-```
+```javascript
 (...중략...)
 
   const createAccountMutation = useMutation(CREATE_ACCOUNT, {
@@ -73,7 +73,7 @@ input의 value를 가져오기 위해 **useStat**를 이용해 **useInput**이�
 
 > ### Hooks/useInput.js  
 
-```
+```javascript
 import { useState } from "react";
 
 export default (defaultValue, type = "text") => {
@@ -93,7 +93,7 @@ export default (defaultValue, type = "text") => {
 `useinput`에는 input 에 사용될 **defaultValue**와 input의 **type**을 입력받습니다. 또한 input에 사용자가 입력하는 것을 알기 위해 **onChange**라는 
 메소드도 만들어 놓습니다.  
 
-```
+```javascript
 const onChange = e => {
     const {
       target: { value }
@@ -104,7 +104,7 @@ const onChange = e => {
 
 이 부분을 보게 되면 **e**라는 이벤트를 받게 됩니다. e는 아래와 같은 구조로 되어 있습니다.  
 
-```
+```javascript
 e { 
   target : {
     value : {???}
@@ -114,7 +114,7 @@ e {
 
 여기서 value가 input의 value를 뜻하게 됩니다. 그렇기 때문에 e.target.value를 변경시켜주면 input의 value가 변경되게 되는 것입니다. 그래서 아래와 같은 함수를 작성하는 것이기도 합니다.  
 
-```
+```javascript
  const {
       target: { value }
     } = e;
@@ -127,7 +127,7 @@ e {
 
 > ### Auth/AuthContainer.js  
 
-```
+```javascript
  const onSubmit = async e => {
 
 (...중략...)
