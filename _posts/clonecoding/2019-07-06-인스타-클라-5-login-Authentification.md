@@ -11,8 +11,8 @@ tags: react instagram
 > ## To Do 
 
 - [X] CreateAccount 
-- [] ConfirmSecret
-- [] @client Mutation 
+- [x] ConfirmSecret
+- [X] @client Mutation 
 　  
 
 ***
@@ -357,6 +357,36 @@ export default AppRouter;
 LocalStorage에 넣어주면 isLoggedIn이 true가 될 것이고 AppRouter는 logedInRouter를 경로로 지정할 것입니다.  
 
 이것을 해보려고 합니다. 지금까지 Query를 만든 방식과는 약간 다릅니다. 왜냐하면 client에서 LocalState에 만든 Mutation을 사용하기 때문이죠.  
+　  
 
+***
+
+　  
+
+> ## @Client Mutation사용하기  
+
+token도 얻었겠다. 예전에 만들었던 LocalState에 정의했던 **Mutation**만 사용하면 됩니다.  
+
+그렇다면 AuthQueries에 또 정의를 해야겠죠?  아래와 같이 정의해줍니다.  
+다른부분은 같지만 마지막에 `@client`를 사용하는 것이 다릅니다. 정확히 이해하지는 못했지만 아마 client의 Mutation을 사용한다는 의미인것 같습니다.  개발은 직감도 중요하다고 생각하기 때문에 일단 넘어가고 나중에 정리하도록 하겠습니다.  
+
+```javascript
+export const LOCAL_LOG_IN = gql`
+  mutation logUserIn($token: String!) {
+    logUserIn(token: $token) @client
+  }
+`;
+```
+
+```javascript
+const logInMutation = useMutation(LOCAL_LOG_IN);
+```
+
+variables를 위에서 넣지 않고 여기서 넣은 이유는 token은 confirmSecret을 하기전까지 없는 값이기 때문입니다.  
+
+```javascript
+await logInMutation({ variables: { token } });
+toast.success("Success confirm secret!! ");
+```
 
 
