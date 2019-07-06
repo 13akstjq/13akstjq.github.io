@@ -23,8 +23,9 @@ tags: react instagram
 
 계정을 만들기 위해선 우선 Query를 만들어야합니다. 저는 Qeury를 **Auth/AuthQueries.js**에 작성하고 있습니다.  
 
-> ### Auth/AuthQueries.js
-```
+> ### Auth/AuthQueries.js  
+
+```javascript
 (...중략...)
 
 export const CREATE_ACCOUNT = gql`
@@ -44,12 +45,14 @@ export const CREATE_ACCOUNT = gql`
 `;
 
 (...중략...)
-```
+```  
+
 
 Query를 만들었다면 AuthContainer에서 사용해야 합니다. 제가 만든 것은 Mutation이기 때문에 mutation을 사용하는 방법을 알아야 합니다. [react-apollo-hooks](https://github.com/trojanowski/react-apollo-hooks) 
 에서 사용 방법을 확인할 수 있습니다. 간단하게 **useMutation**을 사용하고 **variables**로 인자를 전달하는 방식입니다.  
 
 > ### Auth/AuthContainer.js  
+
 ```
 (...중략...)
 
@@ -64,10 +67,12 @@ Query를 만들었다면 AuthContainer에서 사용해야 합니다. 제가 만�
   
 (...중략...)
 ```
+
 전달 하는 variables를 주의해서 봐야할 것 같습니다. 회원가입을 할 경우 4개의 input에 입력한 value를 사용해서 회원가입을 하게 되는데, 그 때 
 input의 value를 가져오기 위해 **useStat**를 이용해 **useInput**이라는 Hook을 사용했습니다. 여기서 useInput에 대해 간단하게 정리만 하도록 하겠습니다.  
 
 > ### Hooks/useInput.js  
+
 ```
 import { useState } from "react";
 
@@ -84,6 +89,7 @@ export default (defaultValue, type = "text") => {
 };
 
 ```
+
 `useinput`에는 input 에 사용될 **defaultValue**와 input의 **type**을 입력받습니다. 또한 input에 사용자가 입력하는 것을 알기 위해 **onChange**라는 
 메소드도 만들어 놓습니다.  
 
@@ -95,7 +101,9 @@ const onChange = e => {
     setValue(value);
   };
 ```
+
 이 부분을 보게 되면 **e**라는 이벤트를 받게 됩니다. e는 아래와 같은 구조로 되어 있습니다.  
+
 ```
 e { 
   target : {
@@ -103,7 +111,9 @@ e {
     }
   }
 ```
+
 여기서 value가 input의 value를 뜻하게 됩니다. 그렇기 때문에 e.target.value를 변경시켜주면 input의 value가 변경되게 되는 것입니다. 그래서 아래와 같은 함수를 작성하는 것이기도 합니다.  
+
 ```
  const {
       target: { value }
@@ -116,6 +126,7 @@ e {
 발생하는 submit 부분입니다.  
 
 > ### Auth/AuthContainer.js  
+
 ```
  const onSubmit = async e => {
 
