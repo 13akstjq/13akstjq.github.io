@@ -172,4 +172,191 @@ await에 실패했을 경우 **catch**를 동작하고 await에서 에러가 발
 ***
 
 　  
-> ## ConfirmSecret
+> ## ConfirmSecret   
+
+confirmSecret도 같은 방식으로 제작할 수 있습니다.  
+
+* Queries에 Mutation만들기  
+
+```javascript
+export const CONFIRM_SECRET = gql`
+  mutation confirmSecret($secret: String!, $email: String!) {
+    confirmSecret(secret: $secret, email: $email)
+  }
+`;
+```
+
+**confirmSecret**은 **email**과 **secret**을 argument로 받습니다. 혹시 까먹었다면 아래화면에서 확인할 수 있습니다.  
+
+![image](https://user-images.githubusercontent.com/46010705/60752667-73d20300-a003-11e9-86a0-20f6cddf8258.png)  
+
+signUp을 했던 방식과 똑같이 Container에서 불러와 사용합니다. 사용할 때는 useMutation을 사용하겠죠.  
+
+```javascript
+const confirmSecretMutation = useMutation(CONFIRM_SECRET, {
+    variables: {
+      email: email.value,
+      secret: secret.value
+    }
+  });
+```
+
+그 다음은 인증하기 버튼을 눌렀을 때 발생하는 onSubmit함수에서 현재 Action이 confirm이면 실행을 해야하기 때문에 아래와 같이 작성해줍니다.  
+
+```javascript
+(...중략...)
+
+ else if (action === "confirm") {
+        try {
+          const { data: confirmSecret } = await confirmSecretMutation();
+          console.log(confirmSecret);
+          if (confirmSecret) {
+            toast.success("Success confirm secret!! ");
+          } else {
+            toast.error("Paste your correct scret!!");
+          }
+        } catch {
+          toast.error("Paste your correct scret!!");
+        }
+      }
+      
+(...중략...)
+```
+
+위 코드에서도 보다시피 `await`를 사용해서 동기방식으로 기다린 후에 data의 confirmSecret을 confirmSecret변수에 집어 넣습니다. 변수의 상태에 따라서 토스트 메세지를 보여줍니다.  
+지금과 같은 경우는 confirmSecret의 return 은 token이기 때문에 이제 token과 cache를  localStorage에 저장해주는 Mutation이 필요하다는 것을 알 수 있습니다.  
+
+현재 제 프로젝트에서 Auth라는 page를 보여주고 있는 곳은 아래 코드입니다.  
+
+```javascript
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import GlobalStyles from "../Styles/GlobalStyles";
+import styled, { ThemeProvider } from "styled-components";
+import Theme from "../Styles/Theme";
+import AppRouter from "./AppRouter";
+import { gql } from "apollo-boost";
+import { useQuery } from "react-apollo-hooks";
+import Footer from "./Footer";
+
+const QUERY = gql`
+  {
+    isLoggedIn @client
+  }
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 935px;
+  width: 100%;
+  height: 100vh;
+`;
+export default () => {
+  const {
+    data: { isLoggedIn }
+  } = useQuery(QUERY);
+  return (
+    <ThemeProvider theme={Theme}>
+      <Wrapper>
+        <GlobalStyles />
+        <AppRouter isLoggedIn={isLoggedIn} />
+        <Footer />
+        <ToastContainer position={"bottom-left"} />
+      </Wrapper>
+    </ThemeProvider>
+  );
+};
+
+```
+
+App.js에서 `isLoggedIn`변수를 Query를 통해서 불러오고 있습니다. Query는 아래와 같이 @client에서 isLoggedin변수를 가져오고 있습니다.  
+
+```javascript
+const QUERY = gql`
+  {
+    isLoggedIn @client
+  }
+`;
+```
+
+그렇다면 `isLoggedIn`변수는 어떻게 결정되는지 알아봐야겠죠? 아래 코드를 보면 localStorage의 **token**이 존재하면 true 아니면 false를 리턴해주고 있습니다. 현재는 당연히 localStorage에 **token**이 없기 때문에 **false**를 리턴해줍니다.  
+
+Apollo/LocalState.js
+```javascript
+export const defaults = {
+  isLoggedIn: Boolean(localStorage.getItem("token")) || false
+};
+
+export const resolvers = {
+  Mutation: {
+    logUserIn: (_, { token }, { cache }) => {
+      localStorage.setItem("token", token);
+      cache.writeData({
+        data: {
+          isLoggedIn: true
+        }
+      });
+      return null;
+    },
+    logUserOut: (_, __, { cache }) => {
+      localStorage.removeItem("token");
+      window.location.reload();
+      return null;
+    }
+  }
+};
+
+```
+
+그렇다면 false일 경우 `<AppRouter>`는 어떤 페이지를 보여질지 확인 해봐야겠죠?  
+
+```javascript
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import Feed from "../Routes/Feed";
+import Auth from "../Routes/Auth";
+import PropType from "prop-types";
+const LogedInRouter = () => (
+  <>
+    <Route exact path="/" component={Feed} />
+  </>
+);
+const LogedOutRouter = () => (
+  <>
+    <Route exact path="/" component={Auth} />
+  </>
+);
+
+const AppRouter = ({ isLoggedIn }) => (
+  <Router>
+    <Switch>{isLoggedIn ? <LogedInRouter /> : <LogedOutRouter />}</Switch>
+  </Router>
+);
+
+AppRouter.prototype = {
+  isLoggedIn: PropType.bool.isRequired
+};
+
+export default AppRouter;
+
+```
+
+* logedInRouter : 로그인이 되어있을 경우 보여지는 Router 현재는 **Feed**Component를 보여주고 있네요.  
+* logedOutRouter : 로그인이 되어있지 않을 경우 보여지는 Router 현재는 **Auth** Component를 보여주고 있어요.  
+
+* AppRouter : isLoggedIn이라는 argument를 받아서 true일경우 **logedInRouter** false일경우 **logedOutRouter**를 보여줍니다. 정리를 해보자면  
+
+현재 localStorage에 token은 저장되어있지 않기 때문에 `isloggedIn = false` false를 받은 `<AppRouter>`는 `logedOutRouter`를 경로로 보여줍니다. 
+`logedOutRouter`는 Auth컴포넌트를 보여주고 있고, 그렇기 때문에 로그인, 회원가입, 인증을 하는 Auth를 보여주게 되겠죠.  
+
+자, 그러면 이 얘기를 왜 했느냐하면 비밀번호 인증까지 마쳤기 때문에 이제 로그인이 성공해서 Feed를 보여줘야합니다. 그렇다면 발급 받은 token을 
+LocalStorage에 넣어주면 isLoggedIn이 true가 될 것이고 AppRouter는 logedInRouter를 경로로 지정할 것입니다.  
+
+이것을 해보려고 합니다. 지금까지 Query를 만든 방식과는 약간 다릅니다. 왜냐하면 client에서 LocalState에 만든 Mutation을 사용하기 때문이죠.  
+
+
+
