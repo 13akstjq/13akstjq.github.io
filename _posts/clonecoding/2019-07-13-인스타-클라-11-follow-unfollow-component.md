@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[인스타클론코딩] [FrontEnd].8 - follow btn Compoenent 만들기 "
+title:  "[인스타클론코딩] [FrontEnd].11 - follow btn Compoenent 만들기 "
 date:   2019-07-06-22:57:00
 author: 한만섭
 categories: clonecoding
