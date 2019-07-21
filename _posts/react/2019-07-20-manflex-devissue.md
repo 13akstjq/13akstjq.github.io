@@ -5,8 +5,6 @@ date:   2019-07-21 18:47:00
 author: 한만섭
 categories: react
 tags: react 
-typora-root-url: ..\..\assets\image
-
 ---
 
 > #### tail router 방법 
@@ -172,18 +170,4 @@ height: calc(100vh - 50px);
           <title>Search | MANFLEX</title>
   </Helmet>
   ```
-
-  
-
-
-
-![1563702033065](/1563702033065.png)
-
-![1563702096179](/1563702135615.png)
-
-![1563702121739](/1563702121739.png)
-
-![1563702163362](/1563702163362.png)
-
-![1563702274290](/1563702274290.png)
 
