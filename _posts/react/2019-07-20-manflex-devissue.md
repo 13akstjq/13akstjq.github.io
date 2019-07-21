@@ -6,7 +6,6 @@ author: 한만섭
 categories: react
 tags: react 
 typora-root-url: ..\..\assets\image
-
 ---
 
 > #### tail router 방법 
