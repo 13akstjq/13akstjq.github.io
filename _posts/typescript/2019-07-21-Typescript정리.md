@@ -4,7 +4,7 @@ title:  "[typescript] typescript 정리"
 date:   2019-07-21 20:21:00
 author: 한만섭
 categories: typescript
-tags: react typescript
+tags: react typescript styledcomponents
 ---
 
 
