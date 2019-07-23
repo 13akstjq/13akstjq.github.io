@@ -70,6 +70,7 @@ git merge dev
 
 
 
+
 ## Rebase
 
 그렇다면 `rebase`를 사용하면 어떻게 되는지 확인해보겠습니다.  
