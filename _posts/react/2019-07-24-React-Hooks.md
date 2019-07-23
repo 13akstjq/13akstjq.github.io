@@ -136,16 +136,6 @@ export const useFunctions = () => {
 export default UserContextProvider;
 ```
 
-`Header.js`
-
-```javascript
-import React from "react";
-import { useUser } from "./context";
-export default () => {
-  const user = useUser();
-  return <span>your name is {user.name} </span>;
-};
-```
 
 
 
