@@ -17,7 +17,7 @@ tags: react hooks useContext mobx redux
 
 `App.js`  
 
-```js
+```javascript
 import React from "react";
 import Screen from "./Screen";
 function App() {
@@ -28,7 +28,7 @@ export default App;
 
 `Screen.js`  
 
-```js
+```javascript
 import React from "react";
 import Header from "./Header";
 export default ({ name }) => {
@@ -38,7 +38,7 @@ export default ({ name }) => {
 
 `Header.js`  
 
-```js
+```javascript
 import React from "react";
 export default ({ name }) => {
   return <span>your name is {name}</span>;
@@ -55,7 +55,7 @@ export default ({ name }) => {
 > ### Context 생성하기 
  `context.js`파일 생성   
  
-```js
+```javascript
 import React, { useState, createContext } from "react";
 // user의 정보를 담아줄 수 있는 Context 생성
 export const UserContext = createContext();
@@ -82,7 +82,7 @@ export default UserContextProvider;
 
 `Header.js` 
 
-```js
+```javascript
 import React, { useContext } from "react";
 import { UserContext } from "./context";
 export default () => {
@@ -99,7 +99,7 @@ export default () => {
 
 `context.js`
 
-```js
+```javascript
 import React, { useState, useContext, createContext } from "react";
 // user의 정보를 담아줄 수 있는 Context 생성
 export const UserContext = createContext();
@@ -131,7 +131,7 @@ export default UserContextProvider;
 
 `Header.js`
 
-```js
+```javascript
 import React from "react";
 import { useUser } from "./context";
 export default () => {
@@ -144,7 +144,7 @@ export default () => {
 
 `Screen.js`
 
-```js
+```javascript
 import React from "react";
 import Header from "./Header";
 import { useFunctions, useUser } from "./context";
