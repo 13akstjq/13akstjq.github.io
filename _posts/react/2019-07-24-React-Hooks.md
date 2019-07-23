@@ -112,18 +112,6 @@ import React, { useState, useContext, createContext } from "react";
 // user의 정보를 담아줄 수 있는 Context 생성
 export const UserContext = createContext();
 // userContext를 하위 컴포넌트에게 전달해줄 Provider생성
-const UserContextProvider = ({ children }) => {
-  const [user, setUser] = useState({
-    name: "mansub",
-    isLoggedIn: false
-  });
-  const loggedUserIn = () => setUser({ ...user, isLoggedIn: true });
-  return (
-    <UserContext.Provider value={{ user, setUser, fns: { loggedUserIn } }}>
-      {children}
-    </UserContext.Provider>
-  );
-};
 
 ```
 
