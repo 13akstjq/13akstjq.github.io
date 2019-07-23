@@ -119,6 +119,9 @@ const UserContextProvider = ({ children }) => {
   });
   const loggedUserIn = () => setUser({ ...user, isLoggedIn: true });
   return (
+  <UserContext.Provider value={{ user, setUser, fns: { loggedUserIn } }}>
+      {children}
+    </UserContext.Provider>
   );
 };
 ```
