@@ -8,7 +8,7 @@ tags: git github rebase issue
 ---
 
 
-# Git Rebase 사용해보기 
+> ##  Git Rebase 사용해보기 
 
 평소에는 `master`branch에서 새로운 `branch`를 만들어서 작성을 하다가 기능이 완성되면 `master`에서 `merge`를 하는 방식으로 개발을 했었는데, 이번에 팀원들과 프로젝트를 진행하면서 `rebase`와 `squash` `issue`를 사용해서 좀 더 깊이 있게 사용해보려고 합니다.  
 
