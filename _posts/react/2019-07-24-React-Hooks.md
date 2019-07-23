@@ -147,25 +147,6 @@ export default () => {
 };
 ```
 
-`Header`에서 `useContext`를 호출하지 않게 되니 좀더 코드를 깔끔하게 작성할 수 있습니다.  
 
-`Screen.js`
-
-```javascript
-import React from "react";
-import Header from "./Header";
-import { useFunctions, useUser } from "./context";
-export default () => {
-  const { loggedUserIn } = useFunctions();
-  const user = useUser();
-  return (
-    <>
-      <Header />
-      <span>you are {user.isLoggedIn ? "loggedIn" : "annonymous"} </span>
-      <button onClick={() => loggedUserIn()}>로그인</button>
-    </>
-  );
-};
-```
 
 
