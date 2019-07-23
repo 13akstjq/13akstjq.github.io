@@ -107,7 +107,7 @@ export default () => {
 `context.js`
 
 
-```react
+```js
 import React, { useState, useContext, createContext } from "react";
 // user의 정보를 담아줄 수 있는 Context 생성
 export const UserContext = createContext();
