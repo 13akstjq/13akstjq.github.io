@@ -106,8 +106,7 @@ export default () => {
 
 `context.js`
 
-
-```js
+```react
 import React, { useState, useContext, createContext } from "react";
 // user의 정보를 담아줄 수 있는 Context 생성
 export const UserContext = createContext();
@@ -120,9 +119,63 @@ const UserContextProvider = ({ children }) => {
   const loggedUserIn = () => setUser({ ...user, isLoggedIn: true });
   return (
     <UserContext.Provider value={ user, setUser, fns: { loggedUserIn } }>
+      {children}
     </UserContext.Provider>
+  );
+};
+// use User
+export const useUser = () => {
+  const { user } = useContext(UserContext);
+  return user;
+};
+// use functions
+export const useFunctions = () => {
+  const { fns } = useContext(UserContext);
+  return fns;
+};
+export default UserContextProvider;
+```
+
+`Header.js`
+
+```javascript
+import React from "react";
+import { useUser } from "./context";
+export default () => {
+  const user = useUser();
+  return <span>your name is {user.name} </span>;
+};
+```
+
+`Header`에서 `useContext`를 호출하지 않게 되니 좀더 코드를 깔끔하게 작성할 수 있습니다.  
+
+`Screen.js`
+
+```javascript
+import React from "react";
+import Header from "./Header";
+import { useFunctions, useUser } from "./context";
+export default () => {
+  const { loggedUserIn } = useFunctions();
+  const user = useUser();
+  return (
+    <>
+      <Header />
+      <span>you are {user.isLoggedIn ? "loggedIn" : "annonymous"} </span>
+      <button onClick={() => loggedUserIn()}>로그인</button>
+    </>
   );
 };
 ```
 
+여기서도 `user`와 `loggedUserIn`이라는 것을 Context에서 가져오는 함수를 Context에 만들어 놨기 때문에 코드를 깔끔하게 작성할 수 있었습니다.  
+여기서 `user`는 `{}`가 없는데 `{loggedUserIn}`은 있는 이유는 `useFunctions`는 함수 객체를 return 하기 때문에 그 중에서 하나인 loggedUserIn을 destructuring으로 받아온 것이고 `useUser`은 user만 return 하기때문에 저렇게 작성하는 것입니다.  
 
+------
+
+> ### 정리 
+
+1. `context.js` 파일 만들기 
+2. createContext를 이용해서 context만들기 (대문자 및 export const 주의)  
+3. Provider 만들기 (대문자 주의 )
+4. 필요한 태그 위에 넣어주면 children 들은 useContext를 통해서 사용가능 
