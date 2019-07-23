@@ -22,7 +22,6 @@ tags: git github rebase issue
 
 ![image](https://user-images.githubusercontent.com/46010705/61695458-7ad07380-ad6e-11e9-91b4-1bc15c52896c.png)
 
-​																	`기존상태`
 
 위와 같이 `master branch`와 3개의 `commit`객체가 있는 상황에서 
 
@@ -36,9 +35,6 @@ git checkout -b dev
 
 ![image](https://user-images.githubusercontent.com/46010705/61695738-01855080-ad6f-11e9-960b-47def2045d58.png)
 
-​																	`commit 2번 한 상황 `
-
-
 
 위 상황에서 `dev branch`를 `master branch`로 병합하는 명령어를 실행해봅니다.  
 
@@ -50,7 +46,6 @@ git merge dev
 ![1563870476869](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\1563870476869.png)
 
 `commit2`를 가르키고 있던 `master` branch가 `merge`를 통해서 `fast-forward`되어서 `dev`와 같은 `branch`를 가리킵니다.  
-
 
 
 이렇게 보면 `merge`만 사용해도 이상적인 commit graph를 나타낸다고 생각할 수 도 있습니다. 하지만 제가 branch를 만들어서 작업을 하는 도중 팀원이 커밋을 진행했을 경우 아래와 같은 그래프를 나타납니다.  
@@ -67,7 +62,6 @@ git merge dev
 ![1563870725722](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\1563870725722.png)
 
 이렇게 하게되면 `fast-forward`가 아닌 새로운 merge commit을 남기게 됩니다.  
-
 
 
 
