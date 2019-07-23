@@ -168,14 +168,4 @@ export default () => {
 };
 ```
 
-여기서도 `user`와 `loggedUserIn`이라는 것을 Context에서 가져오는 함수를 Context에 만들어 놨기 때문에 코드를 깔끔하게 작성할 수 있었습니다.  
-여기서 `user`는 `{}`가 없는데 `{loggedUserIn}`은 있는 이유는 `useFunctions`는 함수 객체를 return 하기 때문에 그 중에서 하나인 loggedUserIn을 destructuring으로 받아온 것이고 `useUser`은 user만 return 하기때문에 저렇게 작성하는 것입니다.  
 
-------
-
-> ### 정리 
-
-1. `context.js` 파일 만들기 
-2. createContext를 이용해서 context만들기 (대문자 및 export const 주의)  
-3. Provider 만들기 (대문자 주의 )
-4. 필요한 태그 위에 넣어주면 children 들은 useContext를 통해서 사용가능 
