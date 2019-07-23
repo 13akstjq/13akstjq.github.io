@@ -124,17 +124,7 @@ const UserContextProvider = ({ children }) => {
     </UserContext.Provider>
   );
 };
-// use User
-export const useUser = () => {
-  const { user } = useContext(UserContext);
-  return user;
-};
-// use functions
-export const useFunctions = () => {
-  const { fns } = useContext(UserContext);
-  return fns;
-};
-export default UserContextProvider;
+
 ```
 
 
