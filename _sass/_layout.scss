@@ -79,13 +79,7 @@ a {
 //   50%  {color : #c4c4c4!important; left:10px; top:0px;}
 // 	100%   {color : #c4c4c4 !important; left:0px; top:0px;}
 // }
-.navigation li.nav-link a{
-	border-bottom : 2px solid rbga(0,0,0,0);
-	transition : 0.2s linear;
-}
-.navigation li.nav-link a:hover{
-	border-bottom : 2px solid #8565fc;
-}
+
 //만든거 끝
 
 
@@ -261,6 +255,8 @@ pre code.hljs {
   	a {
 // 			color : $google-red !important;
 				color : rgba(0,0,0,0.87);
+				border-bottom : 2px solid rgba(0,0,0,0);
+				transition : 0.2s linear;
 // 			color : #2980b9;
 	    display: inline-block;
 	    @include media ($tablet) {
@@ -268,6 +264,9 @@ pre code.hljs {
 	    }
 			
 	  }
+		a:hover{
+			border-bottom : 2px solid #8565fc;
+		}
 	  &:last-child a {
 	  	@include media ($tablet) {
 //     		padding-right: 1em;
