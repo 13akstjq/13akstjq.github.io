@@ -29,8 +29,11 @@ p{
 	  font-size: 17px;
     word-spacing: 0.1em;
 }
-
-.post-link:hover{
+.post-item {
+	padding : 0 5px;
+	transition :0.2s linear;
+}
+.post-item:hover{
 	border-left : 2px solid #8565fc;
 }
 //만든거 
