@@ -14,7 +14,7 @@ $desktop: $b1;
 *	Global
 */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	color :  #333e4c;
 	line-height : 1.5 !important;
 }
@@ -38,6 +38,9 @@ hr {
 	   color : #8565fc;
     font-weight: 900;
 	background-color : #f7f8f8;
+}
+hljs{
+	font-weight: 100;
 }
 blockquote h2{
 	    border-left: 5px #8565fc solid;
