@@ -16,14 +16,15 @@ layout: default
 <ul class="post-list">
   {% for post in paginator.posts %}
 	{% if post.domain == null  %}
+	<div class="post-item">
 	<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
   <li data-aos="fade-up" style="overflow-x: hidden">
     
       <h2>{{ post.title }}</h2>
     
-    <section class="post-excerpt" itemprop="description">
+<!--     <section class="post-excerpt" itemprop="description">
       <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
+    </section> -->
     <section class="post-meta">
       <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
       <div class="post-categories">
@@ -45,6 +46,7 @@ layout: default
     </section>
   </li>
 	</a>
+	</div>
   {% if forloop.last == false %}
   <hr>
   {% endif %}
