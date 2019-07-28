@@ -140,3 +140,11 @@ export default createAppContainer(AuthNavigation);
 ```
 
 이것으로 보아 prop로 넘겨받은 `navigate`를 사용할 때는 나에게 navigation을 넘겨준 `stackNavigation`에 있는 `Route`에게만 이동이 가능한 것 같습니다.
+
+
+
+
+
+
+
+> ### 

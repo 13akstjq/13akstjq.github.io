@@ -26,7 +26,9 @@ tags: react instagram app Navigation
 
 
 
-> ### 2. TabNavigation  
+> ## 2. MainNavigation 
+
+### 2-1. TabNavigation  
 
 * Home
 * Search
@@ -37,22 +39,36 @@ tags: react instagram app Navigation
 
 
 
-> ### 3. PhotoTabs
+### 2-2. PhotoNavigation
 
-* TakePhoto
-* selectPhoto
+* **photoTabs**
 
-이것들은 `topTabNavigation`으로 사용됩니다.  
+  * TakePhoto
+  * selectPhoto
+
+  이것들은 `topTabNavigation`으로 사용됩니다.  
+
+* **UpLoad**
+  * 이미지를 업로드하는 컴포넌트입니다. 
+
+photo Tab과 upload를 하나의 stackNavigation으로 만들어 사용합니다.  
 
 
 
-> ### 4. UpLoad
+### 2-3. MessagesNavigation
+
+* Messages
+* Message
 
 
 
-3.photo Tab과 4. upload를 하나의 stackNavigation으로 만들어 사용합니다.  
+***
 
 
+
+### 흐름도 
+
+tabnavigation의 add를 누르면 
 
 
 
@@ -68,6 +84,53 @@ tags: react instagram app Navigation
     }
 ```
 
-`.navigate()`로 이동 할 수 있는 곳은 해당 navigation안에 있는 곳만 이동 가능 하다.  
+`.navigate()`로 이동 할 수 있는 곳은 해당 navigation안에 정의한 Route로만 이동가능하다.  
 
-photoNavation 에서 AuthNavigation으로 이동하는 것은 안됨.
+따라서 
+
+```js
+const MainNavigation = createStackNavigator(
+  {
+    TabNavigation,
+    PhotoNavigation,
+    MessagesNavigation
+  },
+  {
+    headerMode: "none"
+  }
+);
+
+```
+
+위에 존재하는 Navigation이 아니면 이동할 수 없음. ( 정해진 Router가 아닌 경우 이동할 수 없는 사황과 비슷함. )
+
+#### `photoNavigation`으로 이동하면 어느 화면을 보여주는가 ?
+
+`PhotoNavigation.js`
+
+```js
+import {
+  createStackNavigator,
+  createMaterialTopTabNavigator
+} from "react-navigation";
+import TakePhoto from "../screens/Photo/TakePhoto";
+import SelectPhoto from "../screens/Photo/SelectPhoto";
+import UpLoad from "../screens/Photo/UpLoad";
+const PhotoTabs = createMaterialTopTabNavigator(
+  {
+    TakePhoto,
+    SelectPhoto
+  },
+  {
+    tabBarPosition: "bottom"
+  }
+);
+
+export default createStackNavigator({
+  PhotoTabs,
+  UpLoad
+});
+
+```
+
+`PhotoNavigation.js`에서 initailScreen이 TakePhoto이기 때문에 TakePhoto를 보여줌. 즉, 해당 Navigation으로 이동하면 그 navigation이 보여주기로한 screen을 보여주는 것임. 
