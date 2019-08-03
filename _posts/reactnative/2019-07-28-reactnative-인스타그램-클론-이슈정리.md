@@ -110,3 +110,41 @@ const AuthInput = ({ value, onChange, placeholder, keyboardType }) => {
 Reactnative의 onchange함수는 `onChangeText`입니다..
 
 [TextInput 공식 DOC](https://facebook.github.io/react-native/docs/textinput.html)
+
+
+
+
+
+### 4. cannot read property 'bind' of undefined
+
+위 에러는 아래처럼 써야하는데
+
+```react
+import {gql} from 'apollo-boost';
+```
+
+아래처럼 써서 발생한 에러입니다.  
+
+```react
+import gql from 'apoolo-boost';
+```
+
+
+
+### 5. backend에 보내야 하기 때문에 `setContext`
+
+```react
+ //create apolloClient
+      const client = new ApolloClient({
+        cache,
+        request: async operation => {
+          const token = await AsyncStorage.getItem("jwt");
+          return operation.setContext({
+            headers: { Authorization: `Bearer ${token}` }
+          });
+        },
+        ...apolloClientOptions
+      });
+
+```
+
