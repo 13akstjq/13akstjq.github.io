@@ -14,7 +14,7 @@ tags: reactnative expo git
 분명 몇일 지나면 다시 까먹을테니....  
 
 　  
-   
+
 > ### 1.expo 프로젝트 생성 
 expo 프로젝트를 생성하기 위해서는 커맨드 창을 켜야한다. 그리고 프로젝트를 만들 경로로 이동해야한다.  
 이동하는 방법 =  `cd 파일경로`  
@@ -70,8 +70,22 @@ $ git push origin master
 이렇게 진행하면 github에서 레퍼지토리에 exproject가 추가된 모습을 확인할 수 있습니다.  
 
 　  
-   
- 
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- displayAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2489269721"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
 > ### 가상 emul로 expo project 실행해보기 
 1. 안드로이드 스튜디오를 킨다.  
 2. AVD 매니져를 통해 가상기기를 킨다.  

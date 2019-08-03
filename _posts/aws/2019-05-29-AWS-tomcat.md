@@ -36,7 +36,19 @@ tags: AWS tomcat8 war
 ![image](https://user-images.githubusercontent.com/46010705/58495818-6b400e80-81b3-11e9-8074-44101b2f837d.png)  
 보안 설정은 중요하다. tomcat을 사용할 경우 사용자 지정 TCP 8080포트를 열어주어야 한다. 
 위치 무관으로 한 이유는 개발하는 컴퓨터가 바뀔경우 다른 ip도 허용되어야 하기 때문이다. 실제 할때는 ip를 지정해주는 방식 사용하자 linㅣ
-`linux`를 사용할떄는 `SSH`로 하면된다 . 
+`linux`를 사용할떄는 `SSH`로 하면된다 .   
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- displayAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2489269721"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 
@@ -113,7 +125,7 @@ export CLASS_PATH=$JAVA_HOME/lib/:$CLASS_PATH
 리로드를 해야한다. 
 ```
 $ source /etc/profile
-``` 
+```
 
 환경변수를 학인하는 명령어 
 ```
@@ -142,8 +154,19 @@ service tomcat8 start
 tomcat을 실행시켰다면 `인스턴스ip:8080'으로 접속해서 확인해보자 
 ![image](https://user-images.githubusercontent.com/46010705/58497528-1acab000-81b7-11e9-9a1f-20b220cfc71b.png)  
 
+이런 화면이 나오면 성공적으로 설치된 것이다.   
 
-이런 화면이 나오면 성공적으로 설치된 것이다. 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- displayAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2489269721"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 ### 5. 프로젝트 옮기기 
@@ -163,7 +186,7 @@ war파일은 노트북이나 데스크탑같은 개인 개발환경에 있을 �
 이제 여기서 권한 설정으로 골치아팠던 부분이다. 
 ```
 ls -al
-``` 
+```
 
 아마 home에 war파일이 있을텐데 이것을 `/var/lib/tomcat8/webapps/` 로 옮겨야 한다.
 하지만 권한과 소유가 설정되어 있지 않았다.
@@ -243,7 +266,7 @@ http://서버ip:8080/SocketTest(프로젝트명)/파일이나 url
 
 ## 3. aws 에서 인바운드 설정
 ![image](https://user-images.githubusercontent.com/46010705/58636665-ca289380-832b-11e9-868d-39fac857eda5.png)
-  
+
 보안그룹에서 3306포트를 열어주어야 한다.  
 
 ![image](https://user-images.githubusercontent.com/46010705/58636903-4b802600-832c-11e9-9595-180dd73cad8c.png)
@@ -256,7 +279,7 @@ mysql을 설정할 수 있는 conf로 가기
 ```
  cd /etc/mysql/mysql.conf.d
  vi mysqld.cnf
-``` 
+```
 
 - vi파일을 수정하는 방법
 i를 누르면 수정가능해짐 
@@ -279,7 +302,17 @@ FLUSH PRIVILEGES;
 
 ![image](https://user-images.githubusercontent.com/46010705/58637396-5f785780-832d-11e9-8e8a-065e7e7f31ff.png)  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- displayAd -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2489269721"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 
@@ -290,7 +323,7 @@ FLUSH PRIVILEGES;
 ```
 grant all on *.* to 'root'@'3.16.125.37' identified by 'ssafy';
 FLUSH PRIVILEGES;
-```  
+```
 3. 비밀번호를 재수정해주는 코드 ( 필요하진 않은듯)
 ```
 update mysql.user set plugin = 'mysql_native_password' where User='root';
