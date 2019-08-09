@@ -36,7 +36,9 @@ hompage를 누르면
 
 ![image](https://user-images.githubusercontent.com/46010705/58370402-15fcc680-7f41-11e9-8455-61a03ff28fba.png)
 
-fork를 하게 되면 위와 같이 자신의 repository에 추가가 된다. 
+fork를 하게 되면 위와 같이 자신의 repository에 추가가 된다.   
+
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- displayAd -->
@@ -49,6 +51,8 @@ fork를 하게 되면 위와 같이 자신의 repository에 추가가 된다.
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
 
 ## 3.추가 설정 
 이제 잘 만들어진 theme를 가져왔으니 내 것으로 사용할 차례이다. 

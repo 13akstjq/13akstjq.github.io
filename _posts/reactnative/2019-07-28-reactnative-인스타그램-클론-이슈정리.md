@@ -148,3 +148,48 @@ import gql from 'apoolo-boost';
 
 ```
 
+
+
+
+
+### 6. navigationOptions 
+
+![1565018624154](../../../../assets/image/1565018624154.png)
+
+위에 보이는 navigationOptions는 navigator의 안에 있는 screen 에 넣는 것을 의미한다.  
+
+```react
+const PhotoTabs = createMaterialTopTabNavigator(
+  {
+    Take: {
+      screen: TakePhoto,
+      navigationOptions: {
+        tabBarLabel: "Take"
+      }
+    },
+    Select: {
+      screen: SelectPhoto,
+      navigationOptions: {
+        tabBarLabel: "Select"
+      }
+    }
+  },
+  {
+    tabBarPosition: "bottom",
+    tabBarOptions: {
+      backgroundColor: Theme.lightGreyColor,
+      activeTintColor: Theme.blackColor,
+      inactiveTintColor: Theme.darkGreyColor,
+      indicatorStyle: {
+        backgroundColor: Theme.blackColor
+      },
+      tabStyle: {},
+      style: {
+        marginBottom: 10,
+        backgroundColor: Theme.lightGreyColor
+      }
+    }
+  }
+);
+```
+
