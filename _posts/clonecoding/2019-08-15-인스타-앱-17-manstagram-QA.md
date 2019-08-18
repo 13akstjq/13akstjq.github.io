@@ -1,11 +1,13 @@
-```
+---
 layout: post
 title: "[인스타클론코딩] [App].17 - manstagram QA "
 date: 2019-08-13-18:39:00
 author: 한만섭
 categories: clonecoding
-tags: react instagram netlify
-```
+tags: react instagram 
+---
+
+
 
 
 
