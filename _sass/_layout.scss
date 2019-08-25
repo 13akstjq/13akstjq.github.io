@@ -39,22 +39,25 @@ p{
 
 // 타이틀 왼쪽 border 효과 
 	.post {
-		h1 {
-			border-left: 8px #8565fc solid;
-			padding-left: 10px;
+		.wrapper {
+			h1 {
+				border-left: 8px #8565fc solid;
+				padding-left: 10px;
+			}
+			h2 {
+				border-left: 5px #8565fc solid;
+				padding-left: 10px;
+			}
+			h3 {
+				border-left: 3px #8565fc solid;
+				padding-left: 10px;
+			}
+			h4 {
+				border-left: 1px #8565fc solid;
+				padding-left: 10px;
+			}
 		}
-		h2 {
-			border-left: 5px #8565fc solid;
-			padding-left: 10px;
-		}
-		h3 {
-			border-left: 3px #8565fc solid;
-			padding-left: 10px;
-		}
-		h4 {
-			border-left: 1px #8565fc solid;
-			padding-left: 10px;
-		}
+	
 
 		//리스트 스타일 변경 
 		ul {
