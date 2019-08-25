@@ -57,12 +57,15 @@ p{
 		}
 
 		//리스트 스타일 변경 
-		li {
-		list-style : none;
-			p {
-					 display: inline-block;
+		ul {
+			li {
+			list-style : none;
+				p {
+						 display: inline-block;
+				}
 			}
 		}
+		
 	 li:before {
 			content: ">";
 			display: inline-block;
