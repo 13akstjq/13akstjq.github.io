@@ -83,7 +83,9 @@ npm install react-transition-group --save
 
 
 
-설치를 완료한 후에 Router에 transition을 적용시키기 위해서는 두가지를 사용해야합니다.  **
+설치를 완료한 후에 Router에 transition을 적용시키기 위해서는 두가지를 사용해야합니다.   
+
+
 
 
 
@@ -316,6 +318,8 @@ export default () => (
 - 사이트 처음 route 
 
 ![1566735593235](../../../../assets/image/1566735593235.png)
+
+
 
 * about을 눌렀을 경우 
 
