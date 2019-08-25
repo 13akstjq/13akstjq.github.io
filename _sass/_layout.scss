@@ -67,16 +67,17 @@ p{
 						 display: inline-block;
 				}
 			}
+			li:before {
+				content: ">";
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0px 5px 6px 0px;
+			 font-weight : bold;
+			 color : #8565fc;
+			}
 		}
 		
-	 li:before {
-			content: ">";
-			display: inline-block;
-			vertical-align: middle;
-			padding: 0px 5px 6px 0px;
-		 font-weight : bold;
-		 color : #8565fc;
-		}
+	 
 
 			//이미지 border 및 호버 효과 
 		img {
