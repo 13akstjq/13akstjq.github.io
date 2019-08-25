@@ -43,10 +43,10 @@ Object {
   "cod": "400",
   "message": "${lat} is not a float",
 }
-```  
+```
+
   
-  
-  
+
 그래서 직접 인자로 들어온 `lat` 과 `lon`을 붙혀서 호출하는 방법을 선택했다.  
 
 
