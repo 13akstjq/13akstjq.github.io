@@ -36,6 +36,24 @@ p{
 .post-item:hover{
 	border-left : 5px solid #8565fc;
 }
+
+.post-content  {
+	h1 {
+			border-left: 8px #8565fc solid;
+    padding-left: 10px;
+	}
+	h2 {
+			border-left: 5px #8565fc solid;
+    padding-left: 10px;
+	}
+	h3 {
+			border-left: 3px #8565fc solid;
+    padding-left: 10px;
+	}
+
+}
+
+
 //만든거 
 
 hr {
