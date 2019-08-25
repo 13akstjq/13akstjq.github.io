@@ -37,6 +37,7 @@ p{
 	border-left : 5px solid #8565fc;
 }
 
+// 타이틀 왼쪽 border 효과 
 .post-content  {
 	h1 {
 			border-left: 8px #8565fc solid;
@@ -54,8 +55,12 @@ p{
 		border-left: 1px #8565fc solid;
     padding-left: 10px;
 	}
+	
+	//리스트 스타일 변경 
 	li {
 	list-style : none;
+		p {
+			   display: inline-block;
 	}
  li:before {
     content: ">";
@@ -64,6 +69,8 @@ p{
     padding: 0px 5px 6px 0px;
 	 font-weight : bold;
 	}
+	
+		//이미지 border 및 호버 효과 
 	img {
 		border : 1px solid rgba(0,0,0,0.3);
 		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
