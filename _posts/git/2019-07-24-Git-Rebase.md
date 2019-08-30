@@ -43,7 +43,7 @@ git checkout master
 git merge dev
 ```
 
-![1563870476869](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\1563870476869.png)
+![1567163201108](../../../../assets/image/1567163201108.png)
 
 `commit2`를 가르키고 있던 `master` branch가 `merge`를 통해서 `fast-forward`되어서 `dev`와 같은 `branch`를 가리킵니다.  
 
@@ -59,7 +59,7 @@ git checkout master
 git merge dev
 ```
 
-![1563870725722](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\1563870725722.png)
+![1567163388599](../../../../assets/image/1567163388599.png)
 
 이렇게 하게되면 `fast-forward`가 아닌 새로운 merge commit을 남기게 됩니다.  
 
@@ -69,7 +69,7 @@ git merge dev
 
 그렇다면 `rebase`를 사용하면 어떻게 되는지 확인해보겠습니다.  
 
-![1563870845179](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\1563870845179.png)
+![1567163406817](../../../../assets/image/1567163406817.png)
 
 글의 처음에서 얘기했듯이 `rebase`란 base를 다시 지정하다라는 의미입니다. 현재 `dev` branch의 root는 `commit2`로서 `master`가 가르키고 있는 `commit`보다 뒤에 위치합니다.  
 
@@ -84,7 +84,7 @@ git rebase master
 
 위 명령어는 `dev` branch의 base를 `master`로 사용하겠다는 의미입니다.  
 
-![1563871040273](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\1563871040273.png)
+![1567163420191](../../../../assets/image/1567163420191.png)
 
 그러면 위와 같은 형태의 그래프가 나타나게 됩니다.  
 
