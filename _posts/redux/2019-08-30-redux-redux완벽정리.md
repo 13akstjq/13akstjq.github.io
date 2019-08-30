@@ -15,7 +15,7 @@ tags: react redux action actioncreator dispatch connect mapstatetoprops mapdispa
 
 
 
-## 서론
+
 
 
 > ### redux(State Container)란? 
@@ -40,13 +40,13 @@ redux를 쉽게 표현하자면 `Shared State를 저장하는 Store`라고 표�
  이럴 때 로그인 정보를 담고 있는 `State Container`가 있다면 거기서 꺼내서 사용하면 되는 것이다.  
  이렇게 하위 컴포넌트에게 state를 전달하기 위해 불필요한 과정을 생략하기 위해 Shared Stated를 Container에 묶어놓는 것 이것을 redux라고 하는 것이다.     
 
-### 
+
 
 ***
 
 
 
-## 본론 
+
 
 ## 1. redux 
 
@@ -226,7 +226,9 @@ userReducer에서는 **login, logout, changePw**와 같은 type을 가지고 있
 
 > 
 >
->  #### redux**는 기본적으로 하나의 Store 멀티 Reducer의 형태를 갖는다.  
+> ### redux는 기본적으로 하나의 Store 멀티 Reducer의 형태를 갖는다.  
+>
+> 
 >
 > 
 
