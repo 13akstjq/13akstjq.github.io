@@ -15,6 +15,7 @@ $titleColor : #8565fc;
 /*
 *	Global
 */
+
 body {
 	font-family: 'Noto Sans KR', sans-serif !important;
 	color :  #333e4c;
@@ -37,6 +38,22 @@ p{
 }
 .post-item:hover{
 	border-left : 5px solid $titleColor;
+}
+
+
+// TOC 스타일
+#markdown-toc{
+	color : rgba(0,0,0,0.8) !important;
+	margin-left: 300px;
+	padding-left: 80%;
+	a:hover {
+		color : rgba(0,0,0,0.5) !important;
+	}
+	.page-content .post ul {
+    position: sticky;
+    margin-bottom: 1em;
+    top: 100px;
+	}
 }
 
 // 타이틀 왼쪽 border 효과 
@@ -86,6 +103,7 @@ p{
 		}
 		
 		.post-content {
+				overflow: visible;
 			a {
 				color :  $titleColor;
 			}
