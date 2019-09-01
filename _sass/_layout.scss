@@ -54,22 +54,22 @@ p{
 	
 
 		//리스트 스타일 변경 
-		ul {
-			li {
-			list-style : none;
-				p {
-						 display: inline-block;
-				}
-			}
-			li:before {
-				content: ">";
-				display: inline-block;
-				vertical-align: middle;
-				padding: 0px 5px 6px 0px;
-			 font-weight : bold;
-			 color : $titleColor;
-			}
-		}
+// 		ul {
+// 			li {
+// 			list-style : none;
+// 				p {
+// 						 display: inline-block;
+// 				}
+// 			}
+// 			li:before {
+// 				content: ">";
+// 				display: inline-block;
+// 				vertical-align: middle;
+// 				padding: 0px 5px 6px 0px;
+// 			 font-weight : bold;
+// 			 color : $titleColor;
+// 			}
+// 		}
 		
 	 
 
