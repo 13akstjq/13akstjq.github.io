@@ -166,8 +166,10 @@ ul.default {
 code {
 	background-color: #eee;
 	display: inline-block;
-	border-radius: 3px;
-	padding: 0 3px;
+	border-radius: 4px;
+	font-size : 15px;
+	padding: 0 5px;
+	font-style: oblique;
 }
 
 pre code.hljs {
