@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative expo install issue
 ---
 
+* TOC
+{:toc}
+
 
 > ## expo 설치시 발생하는 에러 
 설치할 파일 경로로 이동 후 

@@ -7,6 +7,9 @@ categories: clonecoding
 tags: react addComment
 ---
 
+* TOC
+{:toc}
+
 > ### 정리할 내용 
 
 AutoSizeTextArea에 댓글을 입력했을 때 로딩화면 후에 곧바로 댓글에 추가가 되는 기능을 구현하려고 합니다.  

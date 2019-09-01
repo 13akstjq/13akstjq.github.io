@@ -7,6 +7,9 @@ categories: clonecoding
 tags: react instagram
 ---
 
+* TOC
+{:toc}
+
 > ### 정리할 내용
 - [X] Container & Presenter & index Queries로 나누기 
 - [X] useMutation 사용하기 

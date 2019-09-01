@@ -7,6 +7,9 @@ categories: react
 tags: react proptype
 ---
 
+* TOC
+{:toc}
+
 ### proptype이란?
 
 proptype이란 component에 들어온 값이 유효한 값인지 prop의 type을 미리 정의해놓는 것이다.  

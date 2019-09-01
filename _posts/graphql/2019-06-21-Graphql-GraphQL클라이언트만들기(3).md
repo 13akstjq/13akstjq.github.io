@@ -7,6 +7,9 @@ categories: graphql
 tags: graphql 
 ---
 
+* TOC
+{:toc}
+
 
 > ### 정리할 내용 
   Graphql을 사용해서 클라이언트를 제작할 경우 Query를 사용하기 때문에 인자가 필요한 경우가 있습니다. 인자를 사용하는 방법을 위주로 정리해보려고 합니다. 

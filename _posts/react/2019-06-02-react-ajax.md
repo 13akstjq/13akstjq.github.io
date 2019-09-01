@@ -7,6 +7,9 @@ categories: react
 tags:	react ajax
 ---
 
+* TOC
+{:toc}
+
 > ## 시작하기 전에...
 
 매일 jquery에서 사용하던 ajax를 이제는 react에서 사용해볼 수 있다는게 너무 기쁘다.  

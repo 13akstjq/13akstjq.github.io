@@ -7,6 +7,9 @@ categories: css
 tags: css Flex
 ---
 
+* TOC
+{:toc}
+
 > ## Flex box
 
 > ### flex-direction

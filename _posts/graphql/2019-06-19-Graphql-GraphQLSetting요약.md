@@ -7,6 +7,9 @@ categories: graphql
 tags: GraphQL
 ---
 
+* TOC
+{:toc}
+
 
 > GraphQL Setting
 GraphQL 설치 방법에 대해서 간단하게 정리해보려고 합니다.  

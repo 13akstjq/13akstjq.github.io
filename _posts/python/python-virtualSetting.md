@@ -7,6 +7,9 @@ categories: python
 tags: Python
 ---
 
+* TOC
+{:toc}
+
 
 
 > 믿고 써도 되는가를 판단하는 기준 - 최근에 업데이트가 되었는가

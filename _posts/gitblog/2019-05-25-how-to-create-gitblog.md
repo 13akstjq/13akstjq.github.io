@@ -7,6 +7,9 @@ categories: gitblog
 tags:	gitblog github.io jekyell
 ---
 
+* TOC
+{:toc}
+
 
 > 지금까지 네이버 블로그를 통해 개발 과정에서 있었던 이슈나 과정을 기록했었는데, 최근 개발자분과 대화할 수 있는 자리를 통해 github blog를 꼭 했으면 좋겠다는 얘기를 들었다. 그래서 오늘부터 나만의 `git blog`를 제작해보려한다.
 

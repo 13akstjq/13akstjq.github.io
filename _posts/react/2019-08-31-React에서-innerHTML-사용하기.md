@@ -9,7 +9,8 @@ tags: react innerHTML dangerouslySetInnerHTML
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 

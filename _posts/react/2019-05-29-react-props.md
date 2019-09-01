@@ -7,6 +7,9 @@ categories: react
 tags: React props 
 ---
 
+* TOC
+{:toc}
+
 ## props 사용해보기 
 
 예전에 잠깐 vue를 사용해봤을 때 `vue`와 `react`가 비슷하다는 얘기를 들었다. 이번에 props를 간단히 써보면서 다시한번 느꼈는데  

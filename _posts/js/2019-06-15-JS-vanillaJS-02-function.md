@@ -7,6 +7,9 @@ categories: js
 tags: js function DOM
 ---
 
+* TOC
+{:toc}
+
 
 * ### DOM에 있는 function 을 사용해서 객체를 가져오면 그것을 DOM(Document Object Model)로 변경 가능하다.  
 

@@ -7,6 +7,9 @@ categories: clonecoding
 tags: react instagram withNavigation, MessageNavigation
 ---
 
+* TOC
+{:toc}
+
 
 
 

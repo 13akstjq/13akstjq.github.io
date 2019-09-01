@@ -7,6 +7,9 @@ categories: react
 tags: React
 ---
 
+* TOC
+{:toc}
+
 ## 1. React 개발환경 셋팅
 
 `React`에 있는 `Create React App`을 `npm`을 이용해서 설치한다.  

@@ -7,6 +7,9 @@ categories: graphql
 tags: GraphQL
 ---
 
+* TOC
+{:toc}
+
 > ### 1. query의 argument를 정하는 방법
 ![image](https://user-images.githubusercontent.com/46010705/59738578-b625e100-929c-11e9-88f4-e2ee76a3ddac.png)
 ```

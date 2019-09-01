@@ -7,6 +7,9 @@ categories: react
 tags: react hooks
 ---
 
+* TOC
+{:toc}
+
 리액트에서 class 를 function으로 사용할 수 있게 해줌. 
 함수형 프로그래밍을 할 수 있게 해주는 것. 
 코드를 더 좋게 만들어 줄 수 있음.  

@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative textinput multiline
 ---
 
+* TOC
+{:toc}
+
 
 >## textline 버그 
 자꾸 TextInput에서 returnkeytype을 done으로 해도 적용이 되지 않길래 봤더니 multiline 속성을 사용하고 있으면  

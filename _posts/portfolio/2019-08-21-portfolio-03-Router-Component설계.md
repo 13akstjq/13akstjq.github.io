@@ -15,7 +15,8 @@ tags: portfolio
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 

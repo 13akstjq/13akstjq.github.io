@@ -7,6 +7,9 @@ categories: react
 tags: react lifecycle
 ---
 
+* TOC
+{:toc}
+
 ## 1. render에서의  lifecycle의 의미 
 
 모든 컴퓨터 언어에서 생성되고 소멸되는 과정이 존저하듯이 `component`에게도 생성되기까지의 과정이 존재한다.  

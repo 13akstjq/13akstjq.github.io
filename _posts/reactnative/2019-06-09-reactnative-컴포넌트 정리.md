@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative component
 ---
 
+* TOC
+{:toc}
+
 > ## TextInput 
 - value : 입력하는 값을 담는 state혹은 prop 넣기
 - placeholderTextColor : 적혀있는 글씨 색 정하기 

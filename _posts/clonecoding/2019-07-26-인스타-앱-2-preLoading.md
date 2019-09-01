@@ -7,7 +7,8 @@ categories: clonecoding
 tags: react instagram app preLoading expoicon
 ---
 
-[TOC]
+* TOC
+{:toc}
 
 ## 1. preLoading이란 ?
 

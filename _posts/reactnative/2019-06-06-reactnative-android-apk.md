@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative android apk
 ---
 
+* TOC
+{:toc}
+
 > ## 시작하기 전에... 
 ios배포는 제가 하지 못하는 관계로 안드로이드만 해보려고 합니다.  
 실제 배포는 앱스토어의 인증체계에 대해 공부한 후에 해보도록 하겠습니다.  

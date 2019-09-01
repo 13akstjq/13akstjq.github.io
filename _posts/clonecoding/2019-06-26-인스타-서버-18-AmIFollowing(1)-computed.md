@@ -7,6 +7,9 @@ categories: clonecoding
 tags: instagram post fragment
 ---
 
+* TOC
+{:toc}
+
 > ## 정리할 내용 
 
 기존 모델에 생성하지 않은 속성이 존재할때 추가해줘야 하는 경우가 있습니다. 예를 들어, **User**모델에서 **FirstName**과 **LastName**을 이용해서

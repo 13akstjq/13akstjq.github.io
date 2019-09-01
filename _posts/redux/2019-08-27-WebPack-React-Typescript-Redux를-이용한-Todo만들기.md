@@ -11,7 +11,8 @@ tags: redux WebPack react Typescript redux
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 

@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative react-navigation
 ---
 
+* TOC
+{:toc}
+
 > ## Navigation
 
 `Navigation`이란 `React`에 존재하는 `Router`와 동일한 역할을 합니다. 기존에 나온 RN에서 제공해주는 navigation이 복잡하다고 해서 다양한 곳에서 navigation라이브러리를 만들었고, 그 중 facebook에서 만든 `react-navigation`을 정리해보도록 하겠습니다.

@@ -7,6 +7,9 @@ categories: react
 tags: react state props
 ---
 
+* TOC
+{:toc}
+
 
 > **state**와 **props**의 비교 
 간단하게 설명하자면  

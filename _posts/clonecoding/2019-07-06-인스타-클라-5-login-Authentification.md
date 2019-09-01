@@ -7,6 +7,9 @@ categories: clonecoding
 tags: react instagram
 ---
 
+* TOC
+{:toc}
+
 
 > ## To Do 
 

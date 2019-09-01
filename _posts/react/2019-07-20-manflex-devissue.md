@@ -7,6 +7,9 @@ categories: react
 tags: react 
 ---
 
+* TOC
+{:toc}
+
 > #### tail router 방법 
 
 `search/121`같은 경로로 이동하기 위해 `/search`에 `exact`속성을 넣어주었음. 

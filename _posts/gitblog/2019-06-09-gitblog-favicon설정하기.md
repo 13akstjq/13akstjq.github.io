@@ -7,6 +7,9 @@ categories: gitblog
 tags: favicon githubio
 ---
 
+* TOC
+{:toc}
+
 > ## 시작하기전에... 
 이번 favicon 수정하면서 우선 사이트 옆에 있는 이미지가 `favicon`이라는 것도 처음 알았다,,, 분명 `config.yml`에서 logo경로를 수정했으니 변해야 한다
 고 생각했는데, 알고보니 `assets/icons/`에 각종 아이콘들이 있었다.. 그래서 이걸 다 수정해줘야 하나 고민하고 찾아본 결과, 이미지를 넣으면 favicon

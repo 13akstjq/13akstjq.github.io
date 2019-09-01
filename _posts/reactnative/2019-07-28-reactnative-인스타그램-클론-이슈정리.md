@@ -7,18 +7,14 @@ categories: reactnative
 tags: reactnative dev issue
 ---
 
+- TOC
+  {:toc}
 
+---
 
-[TOC]
-
-***
-
-
-
-### 1. 하위 컴포넌트에게 함수 넘겨주기 
+### 1. 하위 컴포넌트에게 함수 넘겨주기
 
 ```js
-
 const AuthHome = ({ navigation: { navigate } }) => {
   console.log(constants.width);
   return (
@@ -38,7 +34,7 @@ const AuthHome = ({ navigation: { navigate } }) => {
 };
 ```
 
-`onPress`를 넘겨줄 때 아래와 같이 넘겨주는 게 아니라 콜백방식으로 넘겨줘야함. 
+`onPress`를 넘겨줄 때 아래와 같이 넘겨주는 게 아니라 콜백방식으로 넘겨줘야함.
 
 ```js
 onPress={navigate("Signup")}
@@ -50,17 +46,13 @@ onPress={navigate("Signup")}
 onPress={() => navigate("Signup")}
 ```
 
-
-
-***
-
-
+---
 
 ### 2. Dimension.get("screen")
 
-화면의 크기를 구할 때 사용하는 방식  
+화면의 크기를 구할 때 사용하는 방식
 
-아래와 같이 사용하면 앱이 꺼지는 현상 발생 
+아래와 같이 사용하면 앱이 꺼지는 현상 발생
 
 ```js
 import { Dimensions } from "react-native";
@@ -68,10 +60,9 @@ import { Dimensions } from "react-native";
 const { width, height } = Dimensions;
 
 export default { width, height };
-
 ```
 
-* 옳은 방법   
+- 옳은 방법
 
 ```js
 import { Dimensions } from "react-native";
@@ -79,16 +70,9 @@ import { Dimensions } from "react-native";
 const { width, height } = Dimensions.get("screen");
 
 export default { width, height };
-
 ```
 
-
-
-
-
-***
-
-
+---
 
 ### 3. TextInput OnChangeText
 
@@ -111,10 +95,6 @@ Reactnative의 onchange함수는 `onChangeText`입니다..
 
 [TextInput 공식 DOC](https://facebook.github.io/react-native/docs/textinput.html)
 
-
-
-
-
 ### 4. cannot read property 'bind' of undefined
 
 위 에러는 아래처럼 써야하는데
@@ -123,13 +103,11 @@ Reactnative의 onchange함수는 `onChangeText`입니다..
 import {gql} from 'apollo-boost';
 ```
 
-아래처럼 써서 발생한 에러입니다.  
+아래처럼 써서 발생한 에러입니다.
 
 ```react
 import gql from 'apoolo-boost';
 ```
-
-
 
 ### 5. backend에 보내야 하기 때문에 `setContext`
 
@@ -148,15 +126,11 @@ import gql from 'apoolo-boost';
 
 ```
 
-
-
-
-
-### 6. navigationOptions 
+### 6. navigationOptions
 
 ![1565018624154](../../../../assets/image/1565018624154.png)
 
-위에 보이는 navigationOptions는 navigator의 안에 있는 screen 에 넣는 것을 의미한다.  
+위에 보이는 navigationOptions는 navigator의 안에 있는 screen 에 넣는 것을 의미한다.
 
 ```react
 const PhotoTabs = createMaterialTopTabNavigator(
@@ -192,4 +166,3 @@ const PhotoTabs = createMaterialTopTabNavigator(
   }
 );
 ```
-

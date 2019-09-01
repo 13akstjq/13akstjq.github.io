@@ -7,6 +7,9 @@ categories: react
 tags: React Component module
 ---
 
+* TOC
+{:toc}
+
 # 컴포넌트 모듈화 하기 
 
 지금까지는 컴포넌트를 `App.js`에 모두 넣어 놓았는데, 객체지향에 맞지 않는 방식이라고 생각했다.  

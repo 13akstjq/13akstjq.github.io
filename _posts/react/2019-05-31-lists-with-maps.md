@@ -7,6 +7,9 @@ categories: react
 tags: react state props
 ---
 
+* TOC
+{:toc}
+
 
 ## lists with maps
 

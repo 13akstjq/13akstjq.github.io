@@ -9,7 +9,8 @@ tags: react router Webpack Babel setting
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 

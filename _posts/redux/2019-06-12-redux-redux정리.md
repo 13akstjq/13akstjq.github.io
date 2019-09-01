@@ -7,6 +7,9 @@ categories: redux
 tags: react reactnative redux
 ---
 
+* TOC
+{:toc}
+
 
 > ### redux(State Container)란? 
 우선 리덕스는 리액트만을 위한 것이 아닌 점. 리액트에서 리덕스를 사용하는 줄 알고 있었는데, 모든 곳에서 리덕스를 사용할 수 있다.  

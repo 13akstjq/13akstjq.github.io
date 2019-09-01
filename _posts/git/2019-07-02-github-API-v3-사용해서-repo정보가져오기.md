@@ -7,6 +7,9 @@ categories: git
 tags: git API
 ---
 
+* TOC
+{:toc}
+
 > ### 정리할 내용 
 
   git 정보를 REST API를 통해서 가져오는 방법을 정리해보려고합니다. 사실 아래 참고 사이트만 읽어도 무방하지만 간단하게 정리해보자면 

@@ -7,6 +7,9 @@ categories: graphql
 tags: GraphQL
 ---
 
+* TOC
+{:toc}
+
 
 > ## GraphQL이란?
   GraphQL은 `over-fetch`와 `under-fetch`를 개선해주는 기능을 갖고 있다.  

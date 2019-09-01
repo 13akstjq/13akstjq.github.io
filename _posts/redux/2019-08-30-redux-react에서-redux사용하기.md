@@ -9,7 +9,8 @@ tags: react redux action actioncreator dispatch connect mapstatetoprops mapdispa
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 

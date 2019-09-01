@@ -7,6 +7,9 @@ categories: clonecoding
 tags: react instagram
 ---
 
+* TOC
+{:toc}
+
 > ###  Auth 페이지 
 
 로그인/회원가입 페이지는 기본적으로 아래와 같이 구성이 되어있습니다.  

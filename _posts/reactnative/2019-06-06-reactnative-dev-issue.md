@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative 
 ---
 
+* TOC
+{:toc}
+
 > ## 문법 실수 
 
 - `LinearGradient` 를 `LenriearGradient`라고 했는데 직접적인 error log가 뜨지 않아서 찾는데 어려웠음...  

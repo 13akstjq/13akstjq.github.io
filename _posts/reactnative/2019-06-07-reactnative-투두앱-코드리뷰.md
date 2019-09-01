@@ -7,6 +7,9 @@ categories: reactnative
 tags: reactnative code review
 ---
 
+* TOC
+{:toc}
+
 
 > ### App.js에서 하위 컴포넌트로 함수 넘기기 
 App.js에서 만든 함수를 하위 컴포넌트의 prop으로 넘겨주어야 하는 상황이 있었다.  

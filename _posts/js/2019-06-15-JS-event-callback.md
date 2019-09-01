@@ -7,6 +7,9 @@ categories: js
 tags: js function event callback
 ---
 
+* TOC
+{:toc}
+
 event에 달려있는 callback 함수가 언제 호출되는지 알아보려고 한다. 
 
 > ### 올바른 CallBack 문법

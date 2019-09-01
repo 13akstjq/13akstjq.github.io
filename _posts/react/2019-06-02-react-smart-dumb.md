@@ -7,6 +7,9 @@ categories: react
 tags: react smart dumb
 ---
 
+* TOC
+{:toc}
+
 
 ## smart와 dumb 비교 
 

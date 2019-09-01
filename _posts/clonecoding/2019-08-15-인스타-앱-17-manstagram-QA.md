@@ -7,11 +7,15 @@ categories: clonecoding
 tags: react instagram 
 ---
 
+* TOC
+{:toc}
 
 
 
 
-[TOC]
+
+* TOC
+{:toc}
 
 
 

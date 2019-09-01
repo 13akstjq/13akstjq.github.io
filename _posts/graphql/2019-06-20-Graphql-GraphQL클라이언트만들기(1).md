@@ -7,6 +7,9 @@ categories: graphql
 tags: graphql apollo boost
 ---
 
+* TOC
+{:toc}
+
 > ## GraphQL 클라이언트 부분 만드는 방법 
   **Graphql**을 통해서 RESTAPI와 같은 API서버를 만들었다면 서버에게 데이터를 요청할 클라이언트(front)부분이 필요합니다. 오늘은 클라이언트 부분을 
   만드는 방법을 정리해보려 합니다. Apollo를 사용해서 프로젝트를 만드려고 합니다. 

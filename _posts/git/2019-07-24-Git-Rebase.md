@@ -7,6 +7,9 @@ categories: git
 tags: git github rebase issue 
 ---
 
+* TOC
+{:toc}
+
 
 > ##  Git Rebase 사용해보기 
 

@@ -9,7 +9,8 @@ tags: react router react-transition-group
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 

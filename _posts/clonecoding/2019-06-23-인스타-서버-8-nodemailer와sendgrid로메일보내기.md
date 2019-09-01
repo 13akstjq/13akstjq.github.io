@@ -7,6 +7,9 @@ categories: clonecoding
 tags: graphql nodemailer sendgrid 
 ---
 
+* TOC
+{:toc}
+
 > ## 정리할 내용
 
   이메일로 인증키를 전송해야 하기 때문에 이메일전송하는 모듈인 **nodemailer**에 대해서 정리해보려고 합니다. 

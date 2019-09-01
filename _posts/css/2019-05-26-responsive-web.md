@@ -7,6 +7,9 @@ categories: css
 tags:	html css responsiveweb
 ---
 
+* TOC
+{:toc}
+
 미디어쿼리는 스마트폰, 탭, 컴퓨터화면과 같이 여러 형태의 화면을 제공해야될 때 특성에 맞게 다른 스타일시트를 적용시킬 수 있게 합니다. 
 
 미디어 쿼리는 기존의 css와 굉장히 충돌이 잘나는 것 같다. 

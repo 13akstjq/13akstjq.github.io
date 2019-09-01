@@ -7,6 +7,9 @@ categories: clonecoding
 tags: instagram post fragment
 ---
 
+* TOC
+{:toc}
+
 > ### 정리할 내용 
  
 좋아요 갯수와 같이 Model의 갯수를 세야하는 상황이 있습니다. 그런 경우에 어떻게 하는지 알아보도록 하려고합니다.  

@@ -9,7 +9,8 @@ tags: react instagram app preLoading expo-font
 
 
 
-[TOC]
+* TOC
+{:toc}
 
 
 
