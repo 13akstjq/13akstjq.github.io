@@ -20,6 +20,7 @@ body {
 	font-family: 'Noto Sans KR', sans-serif !important;
 	color :  #333e4c;
 	line-height : 1.5 !important;
+	scroll-behavior: smooth !important;
 }
 h1,h2,h3,h4,h5,h6 {
 font-family: 'Noto Sans KR', sans-serif !important;
@@ -44,6 +45,7 @@ p{
 // TOC 스타일
 #markdown-toc{
 	color : rgba(0,0,0,0.8) !important;
+	white-space:nowrap;
 	margin-left: 300px;
 	padding-left: 80%;
 	a:hover {
