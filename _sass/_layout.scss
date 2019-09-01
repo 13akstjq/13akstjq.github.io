@@ -102,17 +102,23 @@ hr {
 .hljs{
 	font-weight: 100;
 }
-blockquote h2{
-	    border-left: 5px #8565fc solid;
-    padding-left: 10px;
-}
+// blockquote h2{
+// 	    border-left: 5px #8565fc solid;
+//     padding-left: 10px;
+// }
 blockquote{
-	margin-left : 0px;
+	display: block;
+	padding: 1.5em 1.5em 1.5em 1.5em;
+	margin: 0 0 1.5em;
+	position: relative;
+	border-left: 4px solid #dd4c39;
+	border-right: 2px solid #dd4c39;
+	font-weight: 300;
 }
-blockquote h3{
-	    border-left: 3px #8565fc solid;
-    padding-left: 10px;
-}
+// blockquote h3{
+// 	    border-left: 3px #8565fc solid;
+//     padding-left: 10px;
+// }
 a {
 	color : rgba(0,0,0,.87);
 	text-decoration:none !important;
