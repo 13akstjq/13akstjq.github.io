@@ -49,10 +49,10 @@ p{
 #markdown-toc{
 	position: sticky;
 	top: 100px;
-	
+	font-size : 15px;
 	white-space:nowrap;
 	margin-left: 300px;
-	padding-left: 80%;
+	padding-left: 73%;
 	a{
 		color : rgba(0,0,0,0.5) !important;
 		opacity : 0.5;
@@ -137,7 +137,7 @@ hr {
 .language-error{ // error highlighting
 	color : red; 
 }
-.highlighter-rouge{
+code.highlighter-rouge{
 	   color : $titleColor;
     font-weight: 900;
 	background-color : #f7f8f8;
