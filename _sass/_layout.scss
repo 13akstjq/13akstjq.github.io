@@ -84,6 +84,12 @@ p{
 		img:hover {
 			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 		}
+		
+		.post-content {
+			a {
+				color :  $titleColor;
+			}
+		}
 	}
 
 
@@ -124,7 +130,7 @@ blockquote{
 //     padding-left: 10px;
 // }
 a {
-	color : $titleColor;
+	color : rgba(0,0,0,0.8);
 	text-decoration:none !important;
 }
 
