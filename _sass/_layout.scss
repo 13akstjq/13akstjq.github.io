@@ -16,11 +16,14 @@ $titleColor : #8565fc;
 *	Global
 */
 
+html {
+	scroll-behavior: smooth ;
+}
+
 body {
 	font-family: 'Noto Sans KR', sans-serif !important;
 	color :  #333e4c;
 	line-height : 1.5 !important;
-	scroll-behavior: smooth !important;
 }
 h1,h2,h3,h4,h5,h6 {
 font-family: 'Noto Sans KR', sans-serif !important;
