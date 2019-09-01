@@ -9,6 +9,8 @@ $b2: 768px;
 $tablet: $b2;
 $b1: 960px;
 $desktop: $b1;
+$titleColor : #8565fc;
+
 
 /*
 *	Global
@@ -34,18 +36,18 @@ p{
 	transition :0.1s linear;
 }
 .post-item:hover{
-	border-left : 5px solid #8565fc;
+	border-left : 5px solid $titleColor;
 }
 
 // 타이틀 왼쪽 border 효과 
 	.post {
 		.wrapper {
 			h1 {
-				border-left: 8px #8565fc solid;
+				border-left: 8px $titleColor solid;
 				padding-left: 10px;
 			}
 			h2 {
-				border-left: 5px #8565fc solid;
+				border-left: 5px $titleColor solid;
 				padding-left: 10px;
 			}	
 		}
@@ -65,7 +67,7 @@ p{
 				vertical-align: middle;
 				padding: 0px 5px 6px 0px;
 			 font-weight : bold;
-			 color : #8565fc;
+			 color : $titleColor;
 			}
 		}
 		
@@ -95,7 +97,7 @@ hr {
 	color : red; 
 }
 .highlighter-rouge{
-	   color : #8565fc;
+	   color : $titleColor;
     font-weight: 900;
 	background-color : #f7f8f8;
 }
@@ -103,7 +105,7 @@ hr {
 	font-weight: 100;
 }
 // blockquote h2{
-// 	    border-left: 5px #8565fc solid;
+// 	    border-left: 5px $titleColor solid;
 //     padding-left: 10px;
 // }
 blockquote{
