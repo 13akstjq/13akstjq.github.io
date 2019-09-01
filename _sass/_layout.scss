@@ -54,11 +54,17 @@ p{
 	margin-left: 300px;
 	padding-left: 80%;
 	a{
-		color : #titleColor !important;
+		color : rgba(0,0,0,0.5) !important;
 		opacity : 0.5;
+		transition : 0.3s ease-in-out;
 	}	
 	a:hover {
-		color : rgba(0,0,0,0.5) !important;
+		color : #titleColor !important;
+		opacity : 0.8;
+	}
+	a:focus {
+		color : #titleColor !important;
+		opacity : 0.8;
 	}
 	.page-content .post ul {
     position: sticky;
