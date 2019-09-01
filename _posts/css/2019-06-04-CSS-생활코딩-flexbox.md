@@ -3,7 +3,7 @@ layout: post
 title:  "[CSS] Flex Box  "
 date:   2019-06-04 15:30:00
 author: 한만섭
-categories: html/css
+categories: css
 tags: css Flex
 ---
 
@@ -80,7 +80,7 @@ flex-direction : row-reverse;
 - tag의 기본 크기를 지정해주는 방법 
 ```
 flex-basis : 150px;
-```  
+```
 크기의 기준이 width 인지 height 인지는 상위 태그의 `flex-direction:row;이면 width `flex-direction : column;`이면 height 이다. 
 
 
@@ -104,12 +104,12 @@ html에 작성한 코드의 순서가 아닌 style에서 적용한 order의 순�
  flex-wrap : wrap; 화면을 줄였을 때 개행이 될지 안될지 정하는 것
  jusify-content : center, flex-start,flex-end,space-between,space-around; 왼, 중앙, 오른쪽 결정함.
  align-items: flex-start
-```  
+```
 
 > ### inline 과 block
 inline은 자기자신읜 크기만큼만 할당.
 block은 화면전체를 의미함. 
- 
+
 > ### box Model 
 inline방식에서는 width와 height가 무시된다. 
 

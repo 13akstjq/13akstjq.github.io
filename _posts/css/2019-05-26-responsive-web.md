@@ -3,7 +3,7 @@ layout: post
 title:  "[responsive web] media query"
 date:   2019-05-26 22:28:59
 author: 한만섭
-categories: html/css
+categories: css
 tags:	html css responsiveweb
 ---
 
