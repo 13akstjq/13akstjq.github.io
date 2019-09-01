@@ -54,6 +54,10 @@ p{
 	white-space:nowrap;
 	margin-left: 300px;
 	padding-left: 73%;
+	list-style : none;
+	ul {
+		list-style : none;
+	}
 	a{
 		color : rgba(0,0,0,0.5) !important;
 		opacity : 0.7;
