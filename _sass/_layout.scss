@@ -59,11 +59,11 @@ p{
 		transition : 0.3s ease-in-out;
 	}	
 	a:hover {
-		color : #titleColor !important;
+		color : $titleColor !important;
 		opacity : 0.8;
 	}
 	a:focus {
-		color : #titleColor !important;
+		color : $titleColor !important;
 		opacity : 0.8;
 	}
 	.page-content .post ul {
