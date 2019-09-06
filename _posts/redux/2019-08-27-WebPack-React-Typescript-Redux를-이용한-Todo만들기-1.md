@@ -7,7 +7,7 @@ categories: redux
 tags: redux WebPack react Typescript redux
 ---
 
-## 
+
 
 
 
@@ -199,6 +199,8 @@ npm i react react-dom
 
 #### 웹팩 설정파일 수정 
 
+`module` 부분과 `resolve`부분을 추가해줍니다. 
+
 ```js
 module.exports = {
   entry: ["./src/index.tsx"],
@@ -247,6 +249,8 @@ typescript 를 사용할 것이기 때문에 코드를 위와 같이 수정
 기본적인 문법은 허용한다는 설정을 해야합니다.  tsconfig.json을 아래와 같이 수정해줍니다.  
 
 `tsconfig.json`
+
+`"allowSyntheticDefaultImports": true`추가 
 
 ```json
 {
@@ -309,13 +313,25 @@ ts-loader가 babel-loader의 역할을 해주기 때문에 babel을 일단은 �
 
 ### 5. Redux 설치 
 
+_Redux_는 `@types`버전과 원래버전 둘다 설치를 해야합니다.  
 
+- 원래 버전 설치 
 
+```bash
+npm install react-redux redux 
+```
 
+- @types 버전 설치 
+
+```bash
+npm install @types/react-redux @types/redux
+```
 
 
 
 
 
 ## 결론 
+
+위와 같이 프로젝트 설정이 끝났으니 다음 포스팅에서는 Todo를 제작하는 것을 정리하도록 하겠습니다. 
 

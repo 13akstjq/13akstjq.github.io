@@ -10,15 +10,21 @@ tags: expo redux reactnative
 * TOC
 {:toc}
 
+
+
+
+
+
+
 > ## 시작하기전에... 
-redux를 사용하려고 이것저것 시도해봤는데 redux에 대한 개념이 제대로 잡히지도 않은채로 시도하다보니 삽질을 정말 많이했다.  
-결론적으로 깨달은 것은 `component`를 `export default`해서 `App.js`에서 사용하는 것이 아니라, `connect`를 해서 사용해야한다는 것이다.  
-　  
+>
+> redux를 사용하려고 이것저것 시도해봤는데 redux에 대한 개념이 제대로 잡히지도 않은채로 시도하다보니 삽질을 정말 많이했다.  
+> 결론적으로 깨달은 것은 `component`를 `export default`해서 `App.js`에서 사용하는 것이 아니라, `connect`를 해서 사용해야한다는 것이다.  
 
 ***
 
 　  
-   
+
 > ### App.js 
 우선 각 파일 별로 코드를 먼저 살펴보겠다.  
 
@@ -43,11 +49,10 @@ export default class App extends React.Component {
   }
 }
 ```
-　  
 
 ***
 
-　  
+
 > ### presenter.js
 
 ```javascript
@@ -130,7 +135,7 @@ export default Timer;
  ```javascript
  export default connect(mapStateToProps)(Timer);
  ```
- 
+
 
 
 
