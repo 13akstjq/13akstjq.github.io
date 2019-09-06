@@ -158,13 +158,17 @@ code.highlighter-rouge{
 // }
 blockquote{
 	display: block;
-	padding: 1.5em 1.5em 1.5em 1.5em;
+	padding: 1em 1em 1em 1em;
 	margin: 0 0 1.5em;
 	position: relative;
 	border-left: 4px solid #dd4c39;
 	border-right: 2px solid #dd4c39;
 	background-color: rgba(0,0,0,0.03);
 	font-weight: 300;
+	
+	p{
+		margin : 7px 0px;
+	}
 }
 // blockquote h3{
 // 	    border-left: 3px #8565fc solid;
