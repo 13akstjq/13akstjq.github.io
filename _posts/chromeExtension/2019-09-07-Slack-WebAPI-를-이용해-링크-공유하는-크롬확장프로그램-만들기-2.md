@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Copy link to slack(1) - 크롬확장프로그램에서 슬랙으로 메세지 보내기"
+title:  "Copy link to slack(2) - 채널리스트 가져와서 메세지 보내기"
 date:   2019-09-06-20:21:00
 author: 한만섭
 categories: chrome-extension
-tags: google chrome extension copy link to slack
+tags: google chrome extension copy link to slack 
 
 ---
 
