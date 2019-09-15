@@ -7,8 +7,15 @@ categories: clonecoding
 tags: graphql nodemailer sendgrid
 ---
 
-- TOC
-  {:toc}
+
+
+* TOC
+{:toc}
+
+
+* TOC
+{:toc}
+
 
 ## 정리할 내용
 
@@ -45,29 +52,30 @@ tags: graphql nodemailer sendgrid
   import dotenv from "dotenv";
   import path from "path";
   dotenv.config({path : path.resolve(__dirname, ".env")});
-
-
-  const sendMail = (email) => {
-  const options = {
-      auth: {
-          api_user: process.env.SENDGRID_USERNAME,
-          api_key: process.env.SENDGRID_PASSWORD
-        }
-  };
-  const client = nodemailer.createTransport(sgTransport(options));
-  return client.sendMail(email);
-  };
-
-  export const sendSecretMail = (address,secret) => {
-      const email = {
-          from : "mshan7@prismagram.com",
-          to : address,
-          subject : "confirm for login",
-          html : `secret key is ${secret}`
-      };
-      return sendMail(email);
-  }
   ```
+
+const sendMail = (email) => {
+const options = {
+auth: {
+api_user: process.env.SENDGRID_USERNAME,
+api_key: process.env.SENDGRID_PASSWORD
+}
+};
+const client = nodemailer.createTransport(sgTransport(options));
+return client.sendMail(email);
+};
+
+export const sendSecretMail = (address,secret) => {
+const email = {
+from : "mshan7@prismagram.com",
+to : address,
+subject : "confirm for login",
+html : `secret key is ${secret}`
+};
+return sendMail(email);
+}
+
+```
 
 ---
 
@@ -75,9 +83,13 @@ tags: graphql nodemailer sendgrid
 
 - import시에 {}를 사용하고 안하고 동작에 영향을 주기 때문에 문제가 되었습니다.
 
-  아래와 같이 작성하면 동작하지 않습니다.
+아래와 같이 작성하면 동작하지 않습니다.
 
-  ```
-  import {nodemailer} from 'nodemailer';
-  import {sgTransport} from "nodemailer-sendgrid-transport";
-  ```
+```
+
+import {nodemailer} from 'nodemailer';
+import {sgTransport} from "nodemailer-sendgrid-transport";
+
+```
+
+```

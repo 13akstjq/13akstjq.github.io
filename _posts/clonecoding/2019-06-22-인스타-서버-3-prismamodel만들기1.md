@@ -5,11 +5,13 @@ date: 2019-06-22-19:11:00
 author: 한만섭
 categories: clonecoding
 tags: graphql prisma
+
 ---
 
-- TOC
-  {:toc}
 
+
+* TOC
+{:toc}
 ## datamodel 추가하기
 
 - ### model을 추가할 때 주의사항
