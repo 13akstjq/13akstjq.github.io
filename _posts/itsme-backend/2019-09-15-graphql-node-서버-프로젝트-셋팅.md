@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[It's me] JobSlider "
+title: "[It's me][backend] 기본 프로젝트 셋팅"
 date: 2019-09-14-16:47:00
 author: 한만섭
-categories: portfolio
+categories: itsme-backend
 tags: itsme jobSlider component
 ---
 
