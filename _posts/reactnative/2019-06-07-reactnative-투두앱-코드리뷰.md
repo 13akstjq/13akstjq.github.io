@@ -11,7 +11,8 @@ tags: reactnative code review
 {:toc}
 
 
-> ### App.js에서 하위 컴포넌트로 함수 넘기기 
+### 1. App.js에서 하위 컴포넌트로 함수 넘기기 
+
 App.js에서 만든 함수를 하위 컴포넌트의 prop으로 넘겨주어야 하는 상황이 있었다.  
 To Do 객체의 isCompleted 를 true 혹은 false로 바꾸어 주어야 하는 상황이었다.  
 
@@ -38,12 +39,12 @@ _completeToDo = (id) =>{
       return {...newState} // 새로 생성한 newState를 this의 state로 return 하기 
     });
   };
-```  
+```
 
 　  
-   
-   
-# >>> 객체를 통해서 하위컴포넌트를 생성하기 
+
+### 2. 객체를 통해서 하위컴포넌트를 생성하기 
+
 toDos라는 object를 통해서 Todo라는 하위 컴포넌트를 여러개 만들어야 했다. 그러기 위해서는 반복적인 코딩이 필요하다.  
 하지만 object를 통해서 하위 컴포넌트들을 생성할 때는 효율적으로 할 수 있다.  
 
@@ -69,8 +70,9 @@ for(toDo in toDos) //이 느낌과 동일함
 
 
 
-> ### 하위 컴포넌트에서 function받기 
+### 3. 하위 컴포넌트에서 function받기 
 아래 코드 처럼 상위 컴포넌트는 하위 컴포넌트에게 functnion도 전달 가능함.
+
 ```
     static propTypes = {
         text : propTypes.string.isRequired,
@@ -82,22 +84,23 @@ for(toDo in toDos) //이 느낌과 동일함
     }
 ```
 
+### 4. render()에서 prop혹은 state사용하기 
 
-> ### render()에서 prop혹은 state사용하기 
 ```
  const {isEditing,toDoValue} = this.state;
 const {text,deleteToDo,id ,isCompleted} = this.props;
 ```
 
-> ### TouchableOpacity 에서 click event 
+### 5. TouchableOpacity 에서 click event 
+
 ```
 <TouchableOpacity onPressOut={this._toggleComplete}>
       <View style={[styles.circle, isCompleted ? styles.completeCircle : styles.uncompletedCircle]}></View>
 </TouchableOpacity>
 ```
 
+### 6. 메서드 에서 state및 prop사용하기 
 
-> ### 메서드 에서 state및 prop사용하기 
 ```
   _toggleComplete = () => {
         //isCompleted를 App.js에서 직접 주지 않지만 toDos의 object안에 있는 속성이라 알아서 props로 해주는것 같음. 

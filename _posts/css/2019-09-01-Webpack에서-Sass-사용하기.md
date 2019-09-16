@@ -7,8 +7,11 @@ categories: scss
 tags: scss
 ---
 
-- TOC
-  {:toc}
+
+
+* TOC
+{:toc}
+
 
 ## 정리할 내용
 
@@ -104,7 +107,6 @@ module.exports = {
 새로운 규칙하나를 추가해주면 됩니다.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"

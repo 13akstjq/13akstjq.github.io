@@ -9,17 +9,17 @@ tags: reactnative android apk
 
 * TOC
 {:toc}
-
-> ## 시작하기 전에... 
+## 정리할 내용
 ios배포는 제가 하지 못하는 관계로 안드로이드만 해보려고 합니다.  
 실제 배포는 앱스토어의 인증체계에 대해 공부한 후에 해보도록 하겠습니다.  
 
 　  
+
    
-   
-   
-> ### apk파일 생성하기 
+
+### 1. apk파일 생성하기 
 안드로이드에서는 .apk 파일이 필요하기 때문에 apk파일을 만들어야합니다. 만드는 코드부터 얘기하자면  
+
 ```
 expo build:android
 ```
@@ -28,16 +28,18 @@ expo build:android
 standalone-apps/#2-configure-appjson
 ```
 
-> ### app.json 수정하기 
+### 2. app.json 수정하기 
 위의 에러코드를 보니 app.json을 수정하라는 것 같습니다. app.json파일에 가서 밑에있는 부분을 이렇게 바꿔줍니다. 
+
 ```
 "android": {
       "package": "com.yourcompany.yourappname"
     }
 ```
 
-> ### build 하기 
+### 3. build 하기 
 이제는 빌드를 할 수 있는 상황이 되었습니다. 
+
 ```
 expo build:android
 ```
@@ -61,7 +63,7 @@ build가 끝나고 나면 아래와 같이 나옵니다.
 Successfully built standalone app: apk다운받을 주소
 ```
 
-> ### 앱 저장및 실행
+### 4. 앱 저장및 실행
 주소를 통해서 들어가면 apk파일을 받게 되는데 apk파일을 받아서 이메일을 통해 기기에 보내 설치하면 완성입니다. 
 
 

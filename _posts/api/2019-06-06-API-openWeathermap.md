@@ -9,13 +9,12 @@ tags: reactnative openweathermap
 
 * TOC
 {:toc}
-
-> ## 날씨 API사용하기
+## 날씨 API사용하기
 ReactNative에서 날씨를 알려주는 App을 만들기 위해 날씨 API를 필요로 했다.  
 날씨 정보를 제공하는 [OpenWeatherMap](https://openweathermap.org/)을 사용했다. 
 현재 위치의 경도와 위도를 기반으로 하기 때문에 혹시 현재 위치정보를 불러오지 못했다면 [ReactNative에서 현재위치 불러오기 ](https://13akstjq.github.io/reactnative/2019/06/06/reactnative-geolocation-solution.html)를 보고오는 것을 추천한다. 
 
-> ## openWeatherMap API사용방법
+## openWeatherMap API사용방법
 
 1. API KEY 발급 받기
 무료로 제공하기 때문에 회원가입을 통해서 API-KEY를 제공한다.  
@@ -65,5 +64,4 @@ Object {
 ```
 
 
-> ## 마치며...
-주워들은 바에 의하면 react는 링크안에 ${}로 넣으면 원래는 되어야 하는데 나는 왜 에러를 발생시키는지 모르겠다. 
+

@@ -342,11 +342,10 @@ update mysql.user set plugin = 'mysql_native_password' where User='root';
 rm ~~.war
 ```
 
-
-> ### 에러 기록 
+### 에러 기록 
 
 진짜 AWS + MYSQL조합은 너무 힘들게 하는것 같다. 저번에 배포한 프로젝트가 잘 있는지 확인하기 위해 들어갔는데 갑자기 MYSQL에러????  
 구글링을 통해 알아보니 MYSQL이 장시간 Request를 받지 않으면 발생한다고 한다.  
 
-> ### 해결 
+### 해결 
 단순하게 tomcat을 stop 하고 다시 start해주면 해결되지만 다른 방법이 있는지 한번 찾아봐야겠다. 

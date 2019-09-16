@@ -8,9 +8,10 @@ tags: react typescript styledcomponents
 ---
 
 - TOC
+  
   {:toc}
 
-## 타입스크립트
+## 1. 타입스크립트
 
 ---
 
@@ -22,7 +23,7 @@ tags: react typescript styledcomponents
 
 ?로 `optional value`를 지정할 수 있다.
 
-> ### TypeScript 와 React 같이 사용하기
+### 1.1 TypeScript 와 React 같이 사용하기
 
 - typescript를 사용할 프로젝트 만들기
 
@@ -40,7 +41,7 @@ tags: react typescript styledcomponents
 
 ---
 
-> ### 라이브러리 사용하기
+### 1.2 라이브러리 사용하기
 
 typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 정보도 제공해줘야 합니다.
 
@@ -91,7 +92,6 @@ typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 
 ![1563721078647](../../../../assets/image/1563721078647.png)
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -103,7 +103,7 @@ typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-> ### TypeScript 와 React 의 State
+### 1.3 TypeScript 와 React 의 State
 
 아래와 같이 `state`를 선언하고 값을 변경하려고 하면 typescript는 component의 `props`와 `state`값이 어떤 것이 있는지 알지 못합니다.
 
@@ -121,7 +121,7 @@ typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 
 
 ---
 
-> ### react event에 typescript 사용하기
+### 1.4 react event에 typescript 사용하기
 
 우선 이벤트를 적용해보기 위해 `input`과 `form` 컴포넌트를 만들어 줍니다.
 
@@ -186,7 +186,7 @@ export const Form: React.FunctionComponent = ({ children }) => <form />;
 
 위 사진은 `onChange`를 추가한 모습입니다. 하지만 `Input`에서 정의한 `IInputProp`에서는 `onChange`가 어떠한 인자도 받지 않는 함수라고 했지만 `App.tsx`에서 정의한 `onChange`는 `e`라는 이벤트 인자를 받기 때문에 서로 맞지 않아서 오류가 발생하는 모습입니다.
 
-### 이벤트 type정해주기
+### 1.5 이벤트 type정해주기
 
 위와 같은 이슈를 해결하기 위해 이벤트의 type을 정해주어야 합니다. form의 event다... 아니면 input의 이벤트다...라고 알려줘야 하는 것 입니다.
 
@@ -206,7 +206,7 @@ event와 상관 없는 얘기지만 children에 대해 얘기하고 넘어가겠
 
 위와 같이 `Form`안에 `Input`을 사용하게 되면 `Form`태그는 `children` `props`를 사용해서 `form`안에 넣어줄 수 있습니다.
 
-> ### onSubmit 만들기
+### 1.6 onSubmit 만들기
 
 ![1563729970699](../../../../assets/image/1563729970699.png)
 
@@ -221,7 +221,6 @@ onSubmit도 역시 `e`만 쓰게 되면 event의 `type`을 정해주지 않았�
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -233,7 +232,7 @@ onSubmit도 역시 `e`만 쓰게 되면 event의 `type`을 정해주지 않았�
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-> ### styled component 에 typescript 적용시키기
+### 1.7 styled component 에 typescript 적용시키기
 
 [공식사이트](https://www.styled-components.com/docs/api#typescript)
 

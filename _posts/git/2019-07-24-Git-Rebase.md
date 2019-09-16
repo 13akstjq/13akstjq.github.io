@@ -11,13 +11,13 @@ tags: git github rebase issue
 {:toc}
 
 
-> ##  Git Rebase 사용해보기 
+##  1. Git Rebase 사용해보기 
 
 평소에는 `master`branch에서 새로운 `branch`를 만들어서 작성을 하다가 기능이 완성되면 `master`에서 `merge`를 하는 방식으로 개발을 했었는데, 이번에 팀원들과 프로젝트를 진행하면서 `rebase`와 `squash` `issue`를 사용해서 좀 더 깊이 있게 사용해보려고 합니다.  
 
 
 
-> ### Rebase란 ?
+### 1.1 Rebase란 ?
 
 `re + base`말 그대로 base를 재설정 한다는 의미입니다.  
 
@@ -68,7 +68,7 @@ git merge dev
 
 
 
-## Rebase
+## 2. Rebase
 
 그렇다면 `rebase`를 사용하면 어떻게 되는지 확인해보겠습니다.  
 
@@ -97,7 +97,7 @@ git rebase master
 
 
 
-> ## 내 프로젝트에 적용해보기 
+## 3. 내 프로젝트에 적용해보기 
 
 
 

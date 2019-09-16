@@ -8,6 +8,7 @@ tags: reactnative dev issue
 ---
 
 - TOC
+  
   {:toc}
 
 ---
@@ -76,7 +77,7 @@ export default { width, height };
 
 ### 3. TextInput OnChangeText
 
-```react
+```js
 const AuthInput = ({ value, onChange, placeholder, keyboardType }) => {
   return (
     <InputContainer>
@@ -111,7 +112,7 @@ import gql from 'apoolo-boost';
 
 ### 5. backend에 보내야 하기 때문에 `setContext`
 
-```react
+```js
  //create apolloClient
       const client = new ApolloClient({
         cache,
@@ -132,7 +133,7 @@ import gql from 'apoolo-boost';
 
 위에 보이는 navigationOptions는 navigator의 안에 있는 screen 에 넣는 것을 의미한다.
 
-```react
+```js
 const PhotoTabs = createMaterialTopTabNavigator(
   {
     Take: {

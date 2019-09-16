@@ -9,9 +9,9 @@ tags: GraphQL
 
 * TOC
 {:toc}
-
-> ### 1. query의 argument를 정하는 방법
+### 1. query의 argument를 정하는 방법
 ![image](https://user-images.githubusercontent.com/46010705/59738578-b625e100-929c-11e9-88f4-e2ee76a3ddac.png)
+
 ```
 {
 	person(id:3){
@@ -26,16 +26,15 @@ tags: GraphQL
 
 　  
 
-> ### 2. resolver에서 query 선언하기 
-	
+### 2. resolver에서 query 선언하기 
+
   ```
   person : (_,{id}) => getById(id)
   ```
   위와 같이 첫번째 인자는 아직 사용하지 않기 떄문에 자세히 잘 모르기 때문에 `_`로 사용하고, 두번째에 인자를 적어넣는다. {id} == args.id
 
+### 3. filter를 하면 배열 형태로 나오기 때문에 하나를 원하면 [0]해야함.
 
-> ### 3. filter를 하면 배열 형태로 나오기 때문에 하나를 원하면 [0]해야함.
-	
 	```
 	export const getById = (id) => {
 	    const filteredmovies = movies.filter(movie => movie.id === id);
@@ -45,17 +44,23 @@ tags: GraphQL
 	```
 
 
-> ## 포트 4000번 중복 이슈 
 
-> ### 시작하기전에
+***
+
+
+
+### 4. 포트 4000번 중복 이슈 
+
+
+
   server를 시작하려하는데 자꾸 에러가 발생해서 자꾸 내 코드를 의심했던 에러.... 내 지식에 대한 확신이 없는건 더 큰 화를 부른다는 좋은 예시. 
   개념을 잘 잡고 공부해야 실수도 적고 실수했을 때 어떤 부분일지 예상이 쉽게 되는 것 같다. 
 
 　  
-   
-*** 
 
-　  
+***
+
+
 아래와 같은 에러가 발생하면 포트를 죽였을 때 될 가능성이 높다!
 ```
 > movie-graphql@1.0.0 start C:\Users\mshan\Desktop\react-workspace\movie-graphql
@@ -108,4 +113,3 @@ netstat -a -o
 taskkill /f /pid [PIDNUMBER]
 ```
 
-# 포트 자식 죽여버리기 성공. 아주 정당한 죽임!

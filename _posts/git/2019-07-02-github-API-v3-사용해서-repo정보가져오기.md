@@ -9,13 +9,12 @@ tags: git API
 
 * TOC
 {:toc}
-
-> ### 정리할 내용 
+### 정리할 내용 
 
   git 정보를 REST API를 통해서 가져오는 방법을 정리해보려고합니다. 사실 아래 참고 사이트만 읽어도 무방하지만 간단하게 정리해보자면 
   owner : user명 
   repo : repository
-  
+
 * user repo얻을 수 있는 call
   ```
   async function getRepos() {
@@ -41,6 +40,7 @@ tags: git API
   
   
   
+
 [참고사이트1](https://mingrammer.com/dev-commit-alarm-bot/)  
 [참고사이트2](https://blog.outsider.ne.kr/1182)  
 [github DOC](https://developer.github.com/v3/repos/#list-user-repositories)  
