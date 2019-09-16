@@ -41,17 +41,7 @@ tags: AWS tomcat8 war
 위치 무관으로 한 이유는 개발하는 컴퓨터가 바뀔경우 다른 ip도 허용되어야 하기 때문이다. 실제 할때는 ip를 지정해주는 방식 사용하자 linㅣ
 `linux`를 사용할떄는 `SSH`로 하면된다 .   
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- displayAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="2489269721"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  
 
 
 
@@ -159,17 +149,7 @@ tomcat을 실행시켰다면 `인스턴스ip:8080'으로 접속해서 확인해�
 
 이런 화면이 나오면 성공적으로 설치된 것이다.   
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- displayAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="2489269721"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  
 
 
 ### 5. 프로젝트 옮기기 
@@ -305,17 +285,7 @@ FLUSH PRIVILEGES;
 
 ![image](https://user-images.githubusercontent.com/46010705/58637396-5f785780-832d-11e9-8e8a-065e7e7f31ff.png)  
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- displayAd -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="2489269721"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  
 
 
 
