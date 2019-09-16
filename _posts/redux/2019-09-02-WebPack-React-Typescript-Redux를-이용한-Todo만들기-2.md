@@ -1,28 +1,23 @@
 ---
 layout: post
-title:  "[redux] WebPack React Typescript Redux를 이용한 Todo만들기"
-date:   2019-08-27 22:05:00
+title: "[redux] WebPack React Typescript Redux를 이용한 Todo만들기 -2 "
+date: 2019-08-27 22:05:00
 author: 한만섭
 categories: redux
 tags: redux WebPack react Typescript redux
 ---
 
+- TOC
+  
+  {:toc}
 
+## 1. reducer types 정의하기
 
+todo reducer를 만들 경우, 파일 경로는 `./store/todo/`에 만들어주면 됩니다.
 
+reducer의 type을 정의 하기위해 types 파일을 만들어줍니다. 여기에는 reducer의 *initialState*의 type
 
-* TOC
-{:toc}
-
-
-<<<<<<< HEAD
-## 1. reducer types 정의하기 
-
-todo reducer를 만들 경우, 파일 경로는 `./store/todo/`에 만들어주면 됩니다.   
-
-reducer의 type을 정의 하기위해 types 파일을 만들어줍니다. 여기에는 reducer의 _initialState_의 type 
-
-과 _action_의 type을 정의합니다.  
+과 *action*의 type을 정의합니다.
 
 `./store/todo/types.tsx`
 
@@ -64,18 +59,9 @@ export type TodoActionTypes =
   | AddTodoAction
   | ToggleTodoAction
   | DeleteTodoAction;
-
 ```
 
-
-
-
-
-
-
-## 2. Action Creator, Action 만들기 
-
-
+## 2. Action Creator, Action 만들기
 
 `./store/todo/action.tsx`
 
@@ -102,83 +88,16 @@ export const DeleteTodoAction = (index: number) => {
     index
   };
 };
-=======
-
-## 서론 
-
-
-
-
-
-## 본론 
-
-
-
-### 1. 프로젝트 설정 
-
-
-
-#### 프로젝트 생성
-
-```bash
-mkdir redux-todo
 ```
 
+## 3. reducer 만들기
 
+reducer를 만들 때는 type들을 지정해줄 것이 많기 때문에 주의해야합니다.
 
-#### 프로젝트로 이동
+### 3-1. reducer를 만들 때 주의할 점
 
-```bash
-cd redux-todo
-```
-
-
-
-#### npm 셋팅 
-
-```bash
-npm init -y
-```
-
-
-
-`dist/index.html`
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="/bundle.js"></script>
-  </body>
-</html>
->>>>>>> 51de72354e1f216cd2909a5398c7e582b64ede92
-
-```
-
-
-
-
-
-<<<<<<< HEAD
-
-
-## 3. reducer 만들기 
-
-reducer를 만들 때는 type들을 지정해줄 것이 많기 때문에 주의해야합니다.  
-
-
-
-### 3-1. reducer를 만들 때 주의할 점  
-
-1.  각 **case**마다 return 을 해주는 데 그 값은 state를 return 해주는 것 입니다.  
-2. **map**으로 코드를 작성할 떄는 매번 **return**을 해줘야 합니다.  
+1.  각 **case**마다 return 을 해주는 데 그 값은 state를 return 해주는 것 입니다.
+2.  **map**으로 코드를 작성할 떄는 매번 **return**을 해줘야 합니다.
 
 `./store/todo/reducer.tsx`
 
@@ -233,90 +152,13 @@ const todoReducer = (state = initialState, action: TodoActionTypes) => {
 };
 
 export default todoReducer;
-
-=======
-### 2. webpack 설정 
-
-
-
-#### webpack 설치 
-
-```bash
-npm install --save-dev webpack webpack-dev-server webpack-cli
 ```
 
+## 4. Input, Form 만들기
 
+`input`의 onChange를 사용하기 위해서는 `React.ChangeEvent<HTMLInputElement>`를 사용해야합니다.
 
-#### pakage.json 설정   
-
-`pakage.json`
-
-```json
-{
-  "name": "redux-todo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development ",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
-  }
-}
-
-```
-
-
-
-#### webpack 설정 
-
-`webpack.config.js`
-
-```js
-module.exports = {
-  entry: ["./src/index.js"],
-  output: {
-    path: __dirname + "/dist",
-    publicPath: "/",
-    filename: "bundle.js"
-  },
-  devServer: {
-    contentBase: "./dist"
-  }
-};
-
-```
-
-
-
-#### 엔트리 코드 작성
-
-`./src/index.js`
-
-```js
-console.log("webpack test");
->>>>>>> 51de72354e1f216cd2909a5398c7e582b64ede92
-```
-
-
-
-<<<<<<< HEAD
-
-
-## 4. Input, Form 만들기 
-
-`input`의 onChange를 사용하기 위해서는 `React.ChangeEvent<HTMLInputElement>`를 사용해야합니다.  
-
-`form`의 제출 이벤트는 `React.FormEvent`를 사용해야합니다.  
-
-
+`form`의 제출 이벤트는 `React.FormEvent`를 사용해야합니다.
 
 `./Components/TodoInput.tsx`
 
@@ -349,18 +191,11 @@ const TodoInput: FunctionComponent = () => {
 };
 
 export default TodoInput;
-
 ```
 
+## 5. List 만들기
 
-
-
-
-
-
-## 5. List 만들기 
-
-여기서 잘못 작성한 것은 **_ActionCreator_**를 사용하지 않고 _inline_으로 바로 넣은 것에서 문제가 있었습니다.  
+여기서 잘못 작성한 것은 **_ActionCreator_**를 사용하지 않고 *inline*으로 바로 넣은 것에서 문제가 있었습니다.
 
 `Components/TodList.tsx`
 
@@ -377,7 +212,10 @@ const Wrapper = styled.div`
 
 const Todo = styled.div``;
 
-const Text = styled.span<{ isCompleted: boolean }>`
+const Text =
+  styled.span <
+  { isCompleted: boolean } >
+  `
   color: ${props => (props.isCompleted ? "#999" : "black")};
 `;
 const TodoList: FunctionComponent = () => {
@@ -393,12 +231,7 @@ const TodoList: FunctionComponent = () => {
             onClick={() => dispatch({ type: TOGGLE_TODO, index: todo.index })}
           >
             완료
-          </button>{" "}
-          <button
-            onClick={() => dispatch({ type: DELETE_TODO, index: todo.index })}
-          >
-            삭제
-          </button>
+          </button> <button onClick={() => dispatch({ type: DELETE_TODO, index: todo.index })}>삭제</button>
         </Todo>
       ))}
     </Wrapper>
@@ -406,195 +239,4 @@ const TodoList: FunctionComponent = () => {
 };
 
 export default TodoList;
-
 ```
-
-=======
-#### 실행 
-
-![1566912258396](../../../../assets/image/1566912258396.png)
-
-![1566912285167](../../../../assets/image/1566912285167.png)
-
-위와 같이 웹팩 셋팅 후 실행 되는 것 확인 
-
-
-
-### 3. React 설치 
-
-```bash
-npm i react react-dom
-```
-
-
-
-### 4. Typescript 설치   
-
-
-
-#### 설치 
-
-![1566912897704](../../../../assets/image/1566912897704.png)
-
-
-
-
-
-#### 설정 
-
-![1566912935783](../../../../assets/image/1566912935783.png)
-
-````json
-{
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true
-  }
-}
-````
-
-
-
-#### 웹팩 설정파일 수정 
-
-`module` 부분과 `resolve`부분을 추가해줍니다. 
-
-```js
-module.exports = {
-  entry: ["./src/index.tsx"],
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/
-      }
-    ]
-  },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"]
-  },
-  output: {
-    path: __dirname + "/dist",
-    publicPath: "/",
-    filename: "bundle.js"
-  },
-  devServer: {
-    contentBase: "./dist"
-  }
-};
-
-```
-
-
-
-`src/index.tsx`
-
-```js
-import React from "react";
-import ReactDOM from "react-dom";
-
-ReactDOM.render(<div>typescript test</div>, document.getElementById("root"));
-
-```
-
-typescript 를 사용할 것이기 때문에 코드를 위와 같이 수정 
-
-
-
-![1566913399923](../../../../assets/image/1566913399923.png)
-
-기본적인 문법은 허용한다는 설정을 해야합니다.  tsconfig.json을 아래와 같이 수정해줍니다.  
-
-`tsconfig.json`
-
-`"allowSyntheticDefaultImports": true`추가 
-
-```json
-{
-  "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true
-  }
-}
-
-```
-
-
-
-`index.tsx`
-
-```js
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-
-ReactDOM.render(<App></App>, document.getElementById("root"));
-
-```
-
-
-
-`App.tsx`
-
-```js
-import React from "react";
-
-const add = (a, b) => a + b;
-
-export default () => {
-  return <div>typescript Test</div>;
-};
-
-```
-
-![1566913699125](../../../../assets/image/1566913699125.png)
-
-![1566913747810](../../../../assets/image/1566913747810.png)
-
-타입이 적용되지 않을 경우 위와 같은 이슈를 띄어주는 것을 보아 typescript가 정상적으로 setting 된 것 같습니다.  타입을 지정해주면 아래와 같이 정상적으로 동작합니다.  
-
-![1566913797276](../../../../assets/image/1566913797276.png)
-
-
-
-ts-loader가 babel-loader의 역할을 해주기 때문에 babel을 일단은 사용하지 않아도 이슈가 없어보임.  
-
-
-
-
-
-### 5. Redux 설치 
-
-_Redux_는 `@types`버전과 원래버전 둘다 설치를 해야합니다.  
-
-- 원래 버전 설치 
-
-```bash
-npm install react-redux redux 
-```
-
-- @types 버전 설치 
-
-```bash
-npm install @types/react-redux @types/redux
-```
-
-
-
-
-
-## 결론 
-
-위와 같이 프로젝트 설정이 끝났으니 다음 포스팅에서는 Todo를 제작하는 것을 정리하도록 하겠습니다. 
-
->>>>>>> 51de72354e1f216cd2909a5398c7e582b64ede92
