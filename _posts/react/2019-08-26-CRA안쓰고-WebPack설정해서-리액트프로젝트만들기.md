@@ -8,6 +8,7 @@ tags: react router Webpack Babel setting
 ---
 
 - TOC
+  
   {:toc}
 
 ## 서론
@@ -73,7 +74,6 @@ npm init -y
 script는 js파일들을 하나의 Bundle로 만들고난 후에 사용할 것이기 때문에 여기서는 설명하지 않고 넘어가겠습니다.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -232,6 +232,21 @@ npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-
 }
 ```
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ### 3-2. .babelrc 파일 생성
 
 babel도 설정이 필요하기 때문에 설정 파일을 만들어줍니다.
@@ -296,7 +311,6 @@ module.exports = {
 ```
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"

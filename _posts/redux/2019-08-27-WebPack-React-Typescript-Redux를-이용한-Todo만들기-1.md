@@ -158,6 +158,21 @@ console.log("webpack test");
 
 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
 ### 3. React 설치 
 
 ```bash
@@ -241,6 +256,19 @@ ReactDOM.render(<div>typescript test</div>, document.getElementById("root"));
 ```
 
 typescript 를 사용할 것이기 때문에 코드를 위와 같이 수정 
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 

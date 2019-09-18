@@ -123,6 +123,19 @@ useEffect(() => {
 
  
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ### 2.2 componentDidMount
 
 state가 달라질 때마다 호출하는 함수 말고 컴포넌트가 처음에 마운트 될 때만 함수를 호출하고싶다면 이 방법을 사용하시면 됩니다.
@@ -244,6 +257,23 @@ export default ({ name }) => {
 3. `name`의 데이터가 어디서 온지 쉽게 알 수 없다.    
 
 위와 같이 데이터를 불필요하게 하위 컴포넌트에게 전달하는 상황을 막기 위해서 `name`을 저장소에서 꺼내서 사용하면 편리하지 않을까? 라는 생각을 통해`Context`개념을 사용하는 것입니다.  
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
 
 ### 3.2 Context 만들기
 

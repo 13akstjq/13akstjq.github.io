@@ -36,13 +36,19 @@ class Content extends Component{
   }
   export default Content;
 ```
-  
+
+
+
+
+
+
+
   - App.js에서 import 해서 사용하기  
     놓여진 파일 경로만 맞춰주면 import해서 사용할 수 있다. 
  ```javascript
   import TOC from "./components/TOC";
   import Subject from "./components/Subject";
   import Content from "./components/Content";
-```
-  
+ ```
+
   

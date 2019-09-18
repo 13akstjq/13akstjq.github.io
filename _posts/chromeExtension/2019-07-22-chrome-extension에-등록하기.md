@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[chrome Extension] 크롬 확장프로그램 등록 방법 "
+title:  "[chrome Extension] 크롬 확장프로그램에 프로젝트 등록하기 "
 date:   2019-07-22-20:21:00
 author: 한만섭
 categories: chrome-extension

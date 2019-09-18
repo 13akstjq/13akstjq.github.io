@@ -43,6 +43,17 @@ tags: AWS tomcat8 war
 
   
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 
 
 ### 2. 인스턴스에 접속하기 
@@ -151,6 +162,21 @@ tomcat을 실행시켰다면 `인스턴스ip:8080'으로 접속해서 확인해�
 
   
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
 
 ### 5. 프로젝트 옮기기 
 
@@ -225,6 +251,21 @@ http://서버ip:8080/SocketTest(프로젝트명)/파일이나 url
 [zulu설치 참고 사이트](http://geeks.underslow.com/36/)
 [tomcat 배포참고 사이트](http://blog.naver.com/PostView.nhn?blogId=loverman85&logNo=221073024524&categoryNo=35&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView)
 [권한 command 참고 사이트](https://conory.com/blog/19194)
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
 
 

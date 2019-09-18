@@ -8,6 +8,7 @@ tags: google chrome extension copy link to slack
 ---
 
 - TOC
+  
   {:toc}
 
 ## 개발할 내용
@@ -141,7 +142,6 @@ const getChannelList = () => {
 ---
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"

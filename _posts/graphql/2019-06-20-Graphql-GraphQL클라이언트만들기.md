@@ -54,6 +54,19 @@ tags: graphql apollo boost
 
 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ### 1.3 apolloClient.js 만들기 
 
    * ApolloClient.js
@@ -160,6 +173,19 @@ export const MOVIE_DETAILS = gql`
 
 
 ***
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 

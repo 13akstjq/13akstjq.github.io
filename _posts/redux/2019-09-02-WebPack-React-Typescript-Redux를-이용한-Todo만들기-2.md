@@ -154,6 +154,23 @@ const todoReducer = (state = initialState, action: TodoActionTypes) => {
 export default todoReducer;
 ```
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
 ## 4. Input, Form 만들기
 
 `input`의 onChange를 사용하기 위해서는 `React.ChangeEvent<HTMLInputElement>`를 사용해야합니다.

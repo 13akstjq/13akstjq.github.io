@@ -27,7 +27,23 @@ ReactNative에서 날씨를 알려주는 App을 만들기 위해 날씨 API를 �
 나는 위도와 경도로 날씨를 불러올 것이기 때문에 아래와 같은 부분의 문서를 참고했다. 각자 가지고 있는 정보를 통해서 호출하면 될 것같다.   
 ![image](https://user-images.githubusercontent.com/46010705/59019894-d0ff5b00-8883-11e9-8764-75182b88db89.png)
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 발급 받은 APIKEY를 뒤에 붙혀서 호출하면 된다고 한다. 매우 간단하다. 
+
 ```
 api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=b6907d289e10d714a6e88b30761fae22
 ```

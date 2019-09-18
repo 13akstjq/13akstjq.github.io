@@ -191,6 +191,23 @@ export const Form: React.FunctionComponent = ({ children }) => <form />;
 
 위 사진은 `onChange`를 추가한 모습입니다. 하지만 `Input`에서 정의한 `IInputProp`에서는 `onChange`가 어떠한 인자도 받지 않는 함수라고 했지만 `App.tsx`에서 정의한 `onChange`는 `e`라는 이벤트 인자를 받기 때문에 서로 맞지 않아서 오류가 발생하는 모습입니다.
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
 ### 1.5 이벤트 type정해주기
 
 위와 같은 이슈를 해결하기 위해 이벤트의 type을 정해주어야 합니다. form의 event다... 아니면 input의 이벤트다...라고 알려줘야 하는 것 입니다.

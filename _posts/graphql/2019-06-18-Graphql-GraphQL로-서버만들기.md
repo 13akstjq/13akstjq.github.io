@@ -101,6 +101,12 @@ hello
 
 앞으로 해야할 작업은 graphql yoga를 가져와야하는데 여기서 옛날 코드를 사용하지 않기 위해서 예쁜(?)코드를 작성하고 babel로 변환시켜줄 겁니다. 
 
+
+
+
+
+
+
 *index.js*에 다음과 같이 코딩합니다. 
 
 ```
@@ -147,6 +153,17 @@ npm install babel-cli babel-preset-env babel-preset-stage-3 --save-dev
 ***
 
 
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 

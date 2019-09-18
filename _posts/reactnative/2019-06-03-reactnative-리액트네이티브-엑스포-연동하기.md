@@ -64,6 +64,19 @@ $ npm start
 
 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ### 3. Expo 설치 
 
 RN의 능력을 더욱 빛나게 해줄 Expo를 설치하려고 한다. Expo는 Reactnative로 수정한 프로젝트를 hot-code로 적용시킬 수 있다. 
@@ -150,6 +163,19 @@ Expo를 사용해서 하면 분명 편하겠지만 어쩔 수 없었음....
   ![image](https://user-images.githubusercontent.com/46010705/58807833-c9f20600-8653-11e9-9e8a-b92c0c4af154.png)  
 - 규칙 만들어주기 
   ![image](https://user-images.githubusercontent.com/46010705/58807943-032a7600-8654-11e9-8354-38147281a7aa.png)
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 

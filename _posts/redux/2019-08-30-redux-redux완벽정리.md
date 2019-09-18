@@ -94,6 +94,19 @@ import { ADD_TODO, REMOVE_TODO } from '../actionTypes'
 
 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ### 1-2. Action Creaters
 
 Action Creaters는 사실 redux에 있는 기능은 아닙니다. 뒤에 정리할 **Dispatch**라는 열차에 **Action**을 태워서 보내야하는데, 그때 Dispatch에 inline으로 action을 넣는 것이 불편하기 때문에 action객체를 return 해주는 함수를 만들어놓는 것입니다. 무조건 필요하다! 라는 것은 아닌 것 같습니다.  
@@ -225,13 +238,22 @@ userReducer에서는 **login, logout, changePw**와 같은 type을 가지고 있
 
 
 
-> 
->
-> ### redux는 기본적으로 하나의 Store 멀티 Reducer의 형태를 갖는다.  
->
-> 
->
-> 
+### redux는 기본적으로 하나의 Store 멀티 Reducer의 형태를 갖는다.  
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
 
 

@@ -9,14 +9,13 @@ tags: reactnative react-navigation
 
 * TOC
 {:toc}
-
-> ## Navigation
+## Navigation
 
 `Navigation`이란 `React`에 존재하는 `Router`와 동일한 역할을 합니다. 기존에 나온 RN에서 제공해주는 navigation이 복잡하다고 해서 다양한 곳에서 navigation라이브러리를 만들었고, 그 중 facebook에서 만든 `react-navigation`을 정리해보도록 하겠습니다.
 
 ---
 
-> ### TabNavigation ? StackNavigation ?
+### TabNavigation ? StackNavigation ?
 
 이 두개가 어떤 관계가 있는지 정리해보도록 하겠습니다.
 
@@ -75,7 +74,24 @@ export default createAppContainer(AuthNavigation);
 
 ---
 
-> ### Navigation Prop
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
+### Navigation Prop
 
 react에서는 현재 주소를 알기 위해서 Router에서 기본적으로 자식 컴포넌트에게 제공했던 props인 `match,location,`가 있었습니다. 그것이 `react-navigation`에도 존재합니다. 위에서 얘기했다 시피 Router === Navigation인 느낌이기 때문에 Navigation이 갖고 있는 component,navigation에게는 `navigation`이라는 prop을 넘겨줍니다. 그럼 [공식문서](https://reactnavigation.org/docs/en/navigation-prop.html)를 통해서 `navigation`에 어떤 속성이 있는지 알아보겠습니다.
 
@@ -145,9 +161,3 @@ export default createAppContainer(AuthNavigation);
 이것으로 보아 prop로 넘겨받은 `navigate`를 사용할 때는 나에게 navigation을 넘겨준 `stackNavigation`에 있는 `Route`에게만 이동이 가능한 것 같습니다.
 
 
-
-
-
-
-
-> ### 
