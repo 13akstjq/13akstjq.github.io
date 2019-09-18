@@ -167,6 +167,8 @@ npm install babel-cli babel-preset-env babel-preset-stage-3 --save-dev
 
 
 
+
+
 ### 1.2 schema.graphql 파일 만들기 
 
 프로젝트 내에 `schema.graphql`이라는 폴더를 만듭니다. 이 파일에서는 사용자가 어떤 정보를 원할지 정의해놓는 곳입니다. 정의를 할 때는 두가지가 있습니다. 
