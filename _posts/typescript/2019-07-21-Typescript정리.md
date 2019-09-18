@@ -91,6 +91,8 @@ typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 
 
 ![1563721078647](../../../../assets/image/1563721078647.png)
 
+
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
@@ -102,6 +104,11 @@ typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
+
+
+
 
 ### 1.3 TypeScript 와 React 의 State
 
@@ -218,9 +225,14 @@ onSubmit도 역시 `e`만 쓰게 되면 event의 `type`을 정해주지 않았�
 
 위와 같이 추가를 해주게 되면 자동완성까지 가능하게 됩니다.
 
----
+
+
+
+
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
@@ -231,6 +243,11 @@ onSubmit도 역시 `e`만 쓰게 되면 event의 `type`을 정해주지 않았�
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
+
+
+
 
 ### 1.7 styled component 에 typescript 적용시키기
 
@@ -260,3 +277,4 @@ const Number: React.FunctionComponent<IProps> = ({ number }) => (
 
 export default Number;
 ```
+
