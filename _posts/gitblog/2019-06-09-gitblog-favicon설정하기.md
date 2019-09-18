@@ -26,7 +26,25 @@ tags: favicon githubio
 다운로드를 받고 아래 코드를 복사한다. 아래 코드를 gitblog에서 초기화하는 부분에 넣어주면 된다.  
 다운받은 파일을 압축풀고 git `/assets/`에 업로드해준다.  
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+
 ### 파일경로 정해주기  
+
 나같은 경우는 `_includes/head.html`에 아래와 같이 미리 정해져 있는 경로가 있었다. ( 지킬테마를 사용한 블로그이기 때문에)
 ![image](https://user-images.githubusercontent.com/46010705/59157076-a8739d00-8adf-11e9-89a0-58fb5a784a69.png)  
 기존의 icon경로를 모두 새로 업로드한 icon경로로 바꿔주면 끝난다.  
