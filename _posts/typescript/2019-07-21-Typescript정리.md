@@ -93,20 +93,18 @@ typescript는 강력하기 때문에 `npm`을 통해서 설치한 것에 대한 
 
 
 
+
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
      data-ad-format="fluid"
      data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="9095928724"></ins>
-
+     data-ad-slot="4307878116"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
-
-
 
 
 
@@ -224,26 +222,6 @@ onSubmit도 역시 `e`만 쓰게 되면 event의 `type`을 정해주지 않았�
 ![1563730150576](../../../../assets/image/1563730150576.png)
 
 위와 같이 추가를 해주게 되면 자동완성까지 가능하게 됩니다.
-
-
-
-
-
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="9095928724"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 
 
 
