@@ -7,10 +7,10 @@ categories: portfolio
 tags: itsme jobSlider component
 ---
 
-- TOC
-  
-  {:toc}
 
+
+* TOC
+{:toc}
 
 
 
