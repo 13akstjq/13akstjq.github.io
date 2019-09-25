@@ -13,7 +13,7 @@ tags: react hooks useState useInput useEffect useContext
 
 ## 정리할 내용
 
-![1568095581110](img/1568095581110.png)
+![1568095581110](../../../../assets/image/1568095581110.png)
 
 React Hooks에 대해서 정리해보겠습니다. 리액트 훅은 리액트 16.8v에 나온 기능입니다. 나오게 된 배경은 함수형 컴포넌트에서도 클래스 컴포넌트처럼 상태관리를 할 수 있는 State를 사용할 수 있게 해주고, **componentDidMount** , **componentDidUpdate** 와 같은 라이프 사이클을 사용할 수 도 있게 해줍니다. 이처럼 훅의 장점은 원래 함수형에서 할 수 없었던 동작을 하게 해주는 것입니다.
 

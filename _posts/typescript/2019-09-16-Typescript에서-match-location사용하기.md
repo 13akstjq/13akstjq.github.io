@@ -21,7 +21,7 @@ tags: react typescript location
 
 기존의 리액트 프로젝트에서 현재 route에 대한 정보를 얻고 싶다면 **match,locaton,history**를 사용할 수 있었습니다. 하지만 typescript에서 사용할 경우 
 
-![1568624133415](img/1568624133415.png)
+![1568624133415](../../../../assets/image/1568624133415-1569413663787.png)
 
 
 
@@ -186,7 +186,7 @@ const CarDetailPresenter: React.FunctionComponent<
 
 하지만 여기까지 하게 될 경우 아래와 같은 에러를 발생시킵니다.  
 
-![1568959399202](img/1568959399202.png)
+![1568959399202](../../../../assets/image/1568959399202-1569413655769.png)
 
 
 

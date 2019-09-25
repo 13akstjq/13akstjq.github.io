@@ -184,7 +184,7 @@ export default () => {
 
 만일 admin페이지에서는 Header를 사용하지 않는다고 가정해보겠습니다. 그러허게 될 경우 switch태그 밖에 있는 Header를 경로가 `/admin`일 경우에 보이지 않게 해야합니다. 그렇게 하기 위해선 아래와 같이 **Route**태그의 **Render**를 이용하시면 됩니다. (Route 태그의 속성 중 무언가를 그리기 위한 메소드는 아래 3개 입니다.)
 
-![1569313524743](img/1569313524743.png)
+![1569313524743](../../../../assets/image/1569313524743-1569413559460.png)
 
 ```js
 import React from "react";
@@ -236,7 +236,7 @@ Route에는 component를 넣어줄 수 도 있지만 **Render**라는 옵션을 
 
 
 
-![1569313555552](img/1569313555552.png)
+![1569313555552](../../../../assets/image/1569313555552-1569413553102.png)
 
 그리고 현재 **Route**는 props로 **match**, **history**, **location**을 받을 수 있습니다. 이 점을 이용해서 아래와 같이 location의 상태가 admin일 경우 adminHeader를 보여주고 일반 경로일 경우 Header와 Sidebar를 보여주는 설계를 할 수 있었습니다.  
 
