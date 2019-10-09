@@ -51,9 +51,9 @@ p{
 	height: 0px;
 	position: sticky;
 	top: 50px;
-	font-size : 15px;
+	font-size : 12px;
 	white-space:nowrap;
-	margin-left: 300px;
+	margin-left: 270px;
 	padding-left: 73%;
 	list-style : none;
 	ul {
@@ -62,7 +62,7 @@ p{
 	a{
 		color : rgba(0,0,0,0.5) !important;
 		opacity : 0.7;
-		transition : 0.3s ease-in-out;
+		transition : 0.2s ease-in-out;
 	}	
 	a:hover {
 		color : $titleColor !important;
