@@ -638,3 +638,15 @@ pre code.hljs {
 		}
 	}
 }
+@media(max-width: $tablet){
+	#markdown-toc{
+		display : none;
+	}
+}
+@media(max-width: $mobile){
+	#markdown-toc{
+		display : none;
+	}
+}
+
+
