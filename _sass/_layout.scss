@@ -146,8 +146,9 @@ hr {
 code.highlighter-rouge{
 	   color : $titleColor;
 	line-height : 1.2;
-	background-color : #f7f8f8;
+	background-color : #F6F8FA;
 	font-family: 'Source Code Pro', monospace;
+	
 }
 .hljs{
 	font-weight: 100;
@@ -217,11 +218,12 @@ ul.default {
 }
 
 code {
-	background-color: #eee;
+	background-color: #F6F8FA;
 	display: inline-block;
 	border-radius: 4px;
 	font-size : 15px;
 	padding: 0 5px;
+	font-family: 'Source Code Pro', monospace;
 	
 }
 
