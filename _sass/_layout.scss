@@ -77,6 +77,12 @@ p{
     margin-bottom: 1em;
     top: 100px;
 	}
+	@include media($tablet) {
+				display : none;
+			}
+	@include media($mobile) {
+				display : none;
+			}
 }
 
 // 타이틀 왼쪽 border 효과 
