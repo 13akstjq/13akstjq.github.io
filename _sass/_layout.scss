@@ -77,6 +77,7 @@ p{
     margin-bottom: 1em;
     top: 100px;
 	}
+
 }
 
 // 타이틀 왼쪽 border 효과 
@@ -145,12 +146,14 @@ hr {
 }
 code.highlighter-rouge{
 	   color : $titleColor;
-    font-weight: 900;
-	background-color : #f7f8f8;
-	font-style: oblique;
+	line-height : 1.2;   
+	background-color : rgba(27,31,35,.05);
+	font-family: 'Source Code Pro', monospace;
+	
 }
 .hljs{
 	font-weight: 100;
+	background-color : #f6f8fa;
 }
 // blockquote h2{
 // 	    border-left: 5px $titleColor solid;
@@ -217,11 +220,12 @@ ul.default {
 }
 
 code {
-	background-color: #eee;
+	background-color: #F6F8FA;
 	display: inline-block;
 	border-radius: 4px;
-	font-size : 15px;
+	font-size : 13.6px !important;
 	padding: 0 5px;
+	font-family: 'Source Code Pro', monospace;
 	
 }
 
@@ -634,3 +638,15 @@ pre code.hljs {
 		}
 	}
 }
+
+@media(max-width: $tablet){
+	#markdown-toc{
+		display : none;
+	}
+}
+@media(max-width: $mobile){
+	#markdown-toc{
+		display : none;
+	}
+}
+
