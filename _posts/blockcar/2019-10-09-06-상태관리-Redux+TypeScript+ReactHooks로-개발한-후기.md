@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[상태관리] Redux"
+title:  "[상태관리] ReactHooks + TypeScript + Redux 개발후기 "
 date:   2019-10-10-22:28:00
 author: 한만섭
 categories: blockcar
