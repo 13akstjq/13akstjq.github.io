@@ -15,7 +15,7 @@ tags: react webpack png
 
 
 
-### webpack 프로젝트에서 png파일 사용하기 
+웹팩 환경에서 png파일을 로드하기 위해서는 webpack설정을 추가적으로 해줘야 합니다. 
 
 `webpack.config.js`
 
