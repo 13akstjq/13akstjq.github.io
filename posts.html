@@ -4,10 +4,12 @@ title: "Posts"
 permalink: /posts/
 ---
 
-<script>console.log({{site.categories | json}});</script>
+{% for category in site.categories %}
+	{% capture cat %}{{ category | first }}{% endcapture %}
+  <span data-aos="fade-up" style="overflow-x: hidden" id="{{cat}}">{{ cat | capitalize }}</span>
+{% endfor %}
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
-	{% if cat != "BigProject" and cat != "SmallStuff"  %}
   <h2 data-aos="fade-up" style="overflow-x: hidden" id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
@@ -25,6 +27,5 @@ permalink: /posts/
   {% endfor %}
   </ul>
   {% if forloop.last == false %}<hr>{% endif %}
-	{% endif %}
 {% endfor %}
 <br data-aos="fade-up" style="overflow-x: hidden">
