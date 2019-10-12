@@ -4,7 +4,7 @@ title: "Posts"
 permalink: /posts/
 ---
 
-<script>console.log({{site | json}});</script>
+<script>console.log({{site.categories | json}});</script>
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
 	{% if cat != "BigProject" and cat != "SmallStuff"  %}
