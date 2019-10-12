@@ -6,7 +6,7 @@ permalink: /posts/
 
 {% for category in site.categories %}
 	{% capture cat %}{{ category | first }}{% endcapture %}
-  <a data-aos="fade-up" class="post__category"  href="#{{cat}}">{{ cat | capitalize }}</a>
+  <a  class="post__category"  href="#{{cat}}">{{ cat | capitalize }}</a>
 {% endfor %}
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
