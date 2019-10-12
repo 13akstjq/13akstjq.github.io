@@ -46,7 +46,7 @@ p{
 }
 
 // category tag style
-.post__category{
+a.post__category{
 	display: inline-block;
     height: 24px;
     line-height: 24px;
@@ -67,8 +67,8 @@ p{
     font-weight: bold;
 	transition : .1s linear;
 	&:hover {
-		color : red;
-		transfrom : translateY(3px);
+		
+		transfrom : translateY(3px) !important;
 	}
 }
 .post__category:before {
