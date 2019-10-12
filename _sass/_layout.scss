@@ -65,7 +65,7 @@ p{
     text-decoration: none;
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
     font-weight: bold;
-	translation : .1s linear;
+	transition : .1s linear;
 	&:hover {
 		color : red;
 		transfrom : translateY(3px);
