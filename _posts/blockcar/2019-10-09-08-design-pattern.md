@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[design pattern] 프론트엔드 개발자 2명에서 디자인 패턴 적용하며 개발한 후기"
+title:  "[BlockCar][design pattern] 프론트엔드 개발자 2명에서 디자인 패턴 적용하며 개발한 후기"
 date:   2019-10-10-23:28:00
 author: 한만섭
 categories: blockcar
