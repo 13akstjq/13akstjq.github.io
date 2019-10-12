@@ -8,6 +8,7 @@ permalink: /posts/
 	{% capture cat %}{{ category | first }}{% endcapture %}
   <a  class="post__category"  href="#{{cat}}">{{ cat | capitalize }}</a>
 {% endfor %}
+<hr>
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
   <h2 data-aos="fade-up" style="overflow-x: hidden" id="{{cat}}">{{ cat | capitalize }}</h2>
