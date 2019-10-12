@@ -67,8 +67,8 @@ a.post__category{
     font-weight: bold;
 	transition : .1s linear;
 	&:hover {
-		box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-		transform : translateY(-3px) !important;
+		box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+		transform : translateY(-2px) !important;
 	}
 }
 .post__category:before {
