@@ -67,6 +67,7 @@ p{
     font-weight: bold;
 	translation : .1s linear;
 	&:hover {
+		color : red;
 		transfrom : translateY(3px);
 	}
 }
