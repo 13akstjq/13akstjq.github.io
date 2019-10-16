@@ -1,0 +1,631 @@
+---
+layout: post
+title: "Manstagram-app.4-ReactNative 사진 권한 접근 및 업로드 구현하기"
+date: 2019-10-14-15:23:00
+author: 한만섭
+categories: manstagram
+tags: React ReactHooks ReactNative Graphql Prisma Apollo
+---
+
+
+
+* TOC
+{:toc}
+
+
+[TOC]
+
+
+
+
+
+
+
+### 1. 앨범 접근 권한 요청 
+
+expo를 이용한 rn 프로젝트를 진행할 때는 expo의 `Permission`을 사용하면 앨범에 접근할 수 있습니다.  
+
+[expo Docs](https://docs.expo.io/versions/latest/sdk/permissions/)  
+
+#### 1-1. 설치    
+
+```bash
+expo install expo-permissions
+```
+
+![1565020950332](../../../../../바탕화면 정리/assets/image/1565020950332.png)
+
+#### 1-2. 사용 
+
+![1565020888492](../../../../../바탕화면 정리/assets/image/1565020888492.png)
+
+```js
+import * as Permissions from 'expo-permissions';
+```
+
+
+
+#### 1-3. 접근 권한 허용 함수 만들기 
+
+접근 권한을 허용하기 위해서 함수를 만들어서 사용하려고 합니다.  
+
+![1565021128000](../../../../../바탕화면 정리/assets/image/1565021128000.png)
+
+위의 `NOTIFICATION`에 자신이 원하는 접근 권한을 넣어주면 됩니다.  `status`가 `granted`상태 일 경우 권한을 허락한 것 입니다.  
+
+```react
+ const requestPermisison = async () => {
+    const response = await Permissions.askAsync(Permissions.CAMERA);
+    console.log(response);
+  };
+
+  useEffect(() => {
+    requestPermisison();
+  }, []);
+```
+
+
+
+![1565022762199](../../../../../바탕화면 정리/assets/image/1565022762199.png)
+
+![1565022745775](../../../../../바탕화면 정리/assets/image/1565022745775.png)
+
+위처럼 요청을 하고 허용하게 되면 `status`가 `granted`가 됩니다.  
+
+
+
+#### 1-4. MediaLibrary를 이용해 사진 정보 가져오기 
+
+권한은 허용했으니 이제 앨범에 접근해 사진을 가져와야 합니다. 이 작업을 도와주는 것이 expo의 MediaLibrary입니다. 
+
+[expo Docs](https://docs.expo.io/versions/v34.0.0/sdk/media-library/) 
+
+![1565023043981](../../../../../바탕화면 정리/assets/image/1565023043981.png)
+
+- install 
+
+  ```bash
+  expo install expo-media-library
+  ```
+
+- import 
+
+  ```react
+  import * as MediaLibrary from 'expo-media-library';
+  ```
+
+
+
+#### 1-5. 안드로이드 저장소 권한 허용
+
+```
+need READ_EXTERNAL_STORAGE permission
+```
+
+위와같은 에러가 발생시 설정에 직접 가서 앱의 저장소 권한을 허용해줍니다.  
+
+
+
+#### 1-6. setState
+
+```
+ setLoading(true);
+      console.log(loading);
+```
+
+이렇게 해도 false임 
+
+
+
+
+
+#### 1-7. state 만들기 
+
+```react
+  // 선택된 사진 
+  const [selected, setSelected] = useState();
+  // 로딩 
+  const [loading, setLoading] = useState(false);
+  //접근 권한 허용했는지 
+  const [hasAllow , setHasAllow] = useState(false);
+```
+
+
+
+### 2. 사진 로드해서 띄우기 
+
+
+
+[contentContainerStyle](https://facebook.github.io/react-native/docs/scrollview.html)
+
+`background-size : cover`과 같은 역할을 해주는 것이 `resizeMode : "contain"`입니다. 
+
+ 선택된 사진은 위에 위치하며 아래의 사진을 고르면 교체되는 방식입니다.  
+
+
+
+------
+
+  
+
+### 3. expo camera사용하기 
+
+expo 카메라를 사용하기 위해서도 역시 권한 요청이 필요합니다.  
+
+#### 3-1. 설치 
+
+```bash
+expo install expo-camera
+```
+
+
+
+#### 3-2. 사용 
+
+```
+import { Camera } from 'expo-camera';
+```
+
+
+
+#### 3-3. 권한 허용 
+
+`CAMERA`에 대한 권한 요청을 하고 `status`의 `granted` 를 통해서 권한 허용 여부를 확인할 수 있습니다.  
+
+```react
+const { status } = await Permissions.askAsync(Permissions.CAMERA);
+    this.setState({ hasCameraPermission: status === 'granted' });
+```
+
+
+
+#### 3-4. 카메라 사용 
+
+카메라는 `View`태그 안에 `Camera`태그를 작성해 사용할 수 있습니다. 하지만 카메라를 찍고 저장하는 메소드를 사용하기 위해서는 `ref`를 작성해놓아야 합니다.  
+
+```react
+return (
+    <View>
+      {loading ? (
+        <Loader />
+      ) : hasAllow ? (
+        <Camera
+          style={{ width: constants.width, height: constants.height / 1.5 }}
+        />
+      ) : null}
+    </View>
+  );
+```
+
+권한이 허용되었을 경우 `Camera`를 보여줍니다.  
+
+
+
+- ##### `ref`
+
+  ref는 camera의 method를 사용하기 위해서 필요합니다.  
+
+![1565093178206](../../../../../바탕화면 정리/assets/image/1565093178206.png)
+
+하지만 위와 같이 작성하지 않고 `useRef()`를 사용하려고 합니다.  
+
+#### 3-5. 사진 촬영
+
+`takePictureAsync`를 통해서 사진을 찍을 수 있습니다. 
+
+#### 3-6. 사진 저장 
+
+사진을 저장하는 것은 앨범을 불러왔던 것과 마찬가지로 `MediaLibrary`를 사용해야 합니다. 
+
+![1565093531427](../../../../../바탕화면 정리/assets/image/1565093531427.png)
+
+위 코드는 사진을 찍고 그 사진의 `uri`를 앨점에 저장해주는 코드를 작성한 것입니다.  
+
+
+
+  
+
+
+
+### 4. 사진 업로드 
+
+사진업로드를 위해서는 [`multer`](https://github.com/expressjs/multer/blob/master/doc/README-ko.md)를 사용하겠습니다. multer는 미들웨어로써 사진을 업로드를 중간에서 해주는 역할을 합니다.  
+
+#### 4-1. multer
+
+##### 설치
+
+```
+$ npm install --save multer
+```
+
+##### single 파일 사용법
+
+```react
+var express = require('express')
+var multer  = require('multer')
+var upload = multer({ dest: 'uploads/' })
+
+var app = express()
+
+app.post('/profile', upload.single('avatar'), function (req, res, next) {
+  // req.file 은 `avatar` 라는 필드의 파일 정보입니다.
+  // 텍스트 필드가 있는 경우, req.body가 이를 포함할 것입니다.
+})
+```
+
+multer를 만드는데 그 안에 `dest`혹은 `storage`를 선택할 수 있습니다. 처음에는 파일에 직접 업로드를 해보기 위해서 `dest`를 사용해보겠습니다.  위의 설명에 따라서 제 서버 프로젝트에 적용해보도록 하겠습니다.  
+
+`backend - upload.js`
+
+```react
+import multer from 'multer';
+
+export const upload = multer({ dest: 'uploads/' });
+
+```
+
+multer를 사용해서 로컬 경로인 `uploads/`에 업로드된 이미지가 저장될 수 있도록 작성했습니다.  이제는 작성한 `upload`를 서버에서 사용해야합니다. 
+
+
+
+`backend - server.js`
+
+```react
+import './env';
+import logger from 'morgan';
+import { GraphQLServer } from 'graphql-yoga';
+import schema from './schema';
+import passport from 'passport';
+import { authenticateJwt } from './passport';
+import { isAuthenticated } from './middlewares';
+import { upload } from './upload';
+
+const PORT = process.env.PORT || 4000;
+const server = new GraphQLServer({
+    schema,
+    context: ({ request }) => ({ request, isAuthenticated })
+});
+
+server.express.use(logger('dev'));
+server.express.use(authenticateJwt);
+server.express.post(
+    '/upload/post',
+    upload.single('post'),
+    ({ req, res, next }) => {
+        const { file } = req;
+        console.log(file);
+    }
+);
+
+server.start({ port: PORT }, () =>
+    console.log(`server is running http://localhost:${PORT}`)
+);
+
+```
+
+위에서 봐야할 부분만 따로 보겠습니다.  
+
+
+
+```react
+server.express.post(
+    '/upload/post',
+    upload.single('post'),
+    ({ req, res, next }) => {
+        const { file } = req;
+        console.log(file);
+    }
+);
+
+```
+
+위 코드를 설명하면 `upload/post`라는 **url**로 `post`요청을 받으면 `upload.single('post')`라는 미들웨어가 처리한 후에 `req`에 존재하는 `file`이라는 것을 콘솔에 찍어보겠다는 의미입니다.  
+
+
+
+위 상태까지 작성하고 url로 접속하면 아래와 같이 뜹니다 . 
+
+![1565525856416](../../../../../바탕화면 정리/assets/image/1565525856416.png)
+
+이유는 post방식은 url로 요청할 수 없기 때문입니다.  
+
+
+
+이제는 front에서 사진을 업로드 시 `axios`로 post요청을 하는 것을 구현해야 합니다.  
+
+#### 4-2. axios
+
+[axios](https://github.com/axios/axios)
+
+##### 설치 
+
+```bash
+$ npm install axios
+```
+
+##### 사용
+
+업로드 버튼을 눌렀을 경우 호출되는 함수인 `handleSubmit`에 작성하도록 하겠습니다.  여기서 주의할 점은 `multer`공식문서를 보면 `multipart/form-data`을 사용하라고 합니다.  ![1565526391944](../../../../../바탕화면 정리/assets/image/1565526391944.png)
+
+`Upload.js`
+
+```react
+const handleSubmit = () => {
+    if (captionInput.value === "" || locationInput.value === "") {
+      Alert.alert("게시물 정보를 입력해주세요.");
+    } else {
+      const formData = new FormData();
+      formData.append("photo", photo);
+      axios.post("http://localhost:4000/api/post", formData, {
+        header: {
+          "content-type": "multipart/form-data"
+        }
+      });
+    }
+  };
+```
+
+`Axios.post`의 첫번째 인자는 `url`, 두번째 인자는 `data`, 세번째 인자는 `header`를 받습니다.  
+
+multer는 `multipart/form-data`가 아닌 폼에서는 동작하지 않는다고 했기 때문에 header에 설정해줍니다.  
+
+그리고 photo라는 이름으로 업로드 할 photo객체를 `FormData`형식으로 만들서서 요청합니다. 
+
+위 방식으로 작성하면 두가지 이슈가 발생합니다.  
+
+### 1. 안드로이드  IP port issue 
+
+![1565528233845](../../../../../바탕화면 정리/assets/image/1565528233845.png)
+
+업로드를 요청하게 되면 위와 같은 에러가 발생하는데 RN을 ㄱEmulator 환경에서 개발하면 흔하게 발생하느 이슈입니다.  
+
+localhost로 요청을 보내는 것이 아니라 ip주소로 직접 요청을 보내줘야 합니다.  
+
+```react
+xios.post("http://192.xxx.xx.x:4000/api/upload", formData, null);
+```
+
+### 2. multer jpeg issue
+
+multer에서는 `jpeg`파일만 지원하기 때문에 `type : "image/jpeg"`로 작성해야합니다.  
+
+```react
+ const formData = new FormData();
+      formData.append("file", {
+        name: photo.filename,
+        type: "image/jpeg",
+        uri: photo.uri
+      });
+      
+```
+
+```react
+ const handleSubmit = () => {
+    if (captionInput.value === "" || locationInput.value === "") {
+      Alert.alert("게시물 정보를 입력해주세요.");
+    } else {
+      const formData = new FormData();
+      formData.append("file", {
+        name: photo.filename,
+        type: "image/jpeg",
+        uri: photo.uri
+      });
+      console.log(photo.filename);
+      // axios.post("http://192.168.56.1:4000/api/upload", formData, {
+      //   header: {
+      //     "content-type": "multipart/form-data"
+      //   }
+      // });
+      axios.post("http://192.xxx.xx.x:4000/api/upload", formData, null);
+    }
+  };
+```
+
+위와 같이 작성 한 후에 이미지 업로드 버튼을 누르게 되면, 아래와 같은 결과를 얻을 수 있습니다.  
+
+![1565531417342](../../../../../바탕화면 정리/assets/image/1565531417342.png)
+
+
+
+#### 4-3. 서버에서 경로 return 해주기 
+
+서버에 이미지 업로드를 요청해서 서버에서는 `multer`라는 미들웨어를 통해서 이미지를 업로드 했다면 클라이언트에게 이미지가 업로드된 **경로**를 알려줘야 합니다. 그래야 클라이언트에서 그 경로 혹은 url 을 통해서 사진을 볼 수 있기 때문입니다.  
+
+```react
+export const uploadController = (req, res) => {
+    const { file: path } = req;
+    console.log(path);
+    res.json(path);
+};
+```
+
+위 코드처럼 `req`에 있는 **file** 안에 있는 **path**를 return해주면 됩니다.  그럴 때는 `res`의 **json**을 사용하게 되면 미들웨어에서 나온 결과 값을 클라이언트에게 **json**형태로 제공해 줄 수 있습니다.  
+
+##### front-end console
+
+![1565539618274](../../../../../바탕화면 정리/assets/image/1565539618274.png)
+
+위와 같이 파일 경로가 클라이언트에 찍히는 것을 확인할 수 있습니다.  
+
+  
+
+
+
+### 5. AWS S3에 사진 업로드 하기 
+
+사진을 로컬에 저장하는데에는 한계가 있기 때문에 **AWS S3**를 사용해서 이미지를 클라우드에 저장하려고 합니다.  
+
+#### 5-1. S3 bucket 생성 
+
+S3메뉴에서 버킷 만들기버튼 클릭
+
+![1565540178305](../../../../../바탕화면 정리/assets/image/1565540178305.png)
+
+
+
+버킷 이름과 지역 입력
+
+![1565540255851](../../../../../바탕화면 정리/assets/image/1565540255851.png)
+
+할거없이 다음 
+
+![1565540362979](../../../../../바탕화면 정리/assets/image/1565540362979.png)
+
+
+
+원래 선택되어있던 **모든 퍼블릭 엑세스 차단**을 해제하고 다음 
+
+![1565540435099](../../../../../바탕화면 정리/assets/image/1565540435099.png)
+
+
+
+버킷 만들기 
+
+![1565540460161](../../../../../바탕화면 정리/assets/image/1565540460161.png)
+
+
+
+------
+
+
+
+#### 5-2. IAM User 만들기 
+
+IAM메뉴에서 사용자 및 사용자 추가 클릭 
+
+![1565540546948](../../../../../바탕화면 정리/assets/image/1565540546948.png)
+
+
+
+사용자 이름 및 엑세스 유형 체크 
+
+![1565540600033](../../../../../바탕화면 정리/assets/image/1565540600033.png)
+
+
+
+s3 권한을 주고 user를 만들면 됩니다.  
+
+
+
+#### 5-3. multer S3 
+
+![1565543137849](../../../../../바탕화면 정리/assets/image/1565543137849.png)
+
+사용을 하기 위해서는 `multer-s3`, `aws-sdk` 를 install 해야합니다. 그리고 `s3`객체를 만듭니다.  만든 **s3**객체를 기존에 **dest**방식으로 만들었던 **upload**에서 **storage**방식으로 변경해주면 됩니다.  
+
+
+
+##### 설치 
+
+```bash
+npm install --save multer-s3
+```
+
+```bash
+npm install aws-sdk
+```
+
+
+
+##### s3 객체 만들기 
+
+```react
+const s3 = new aws.S3({
+    accessKeyId: process.env.AWS_KEY,
+    secretAccessKey: process.env.AWS_SECRET_KEY,
+    region: 'ap-northeast-2'
+});
+```
+
+
+
+##### upload
+
+```react
+const upload = multer({
+    storage: multerS3({
+        s3,
+        acl: 'public-read',
+        bucket: 'manstagram',
+        metadata: function(req, file, cb) {
+            cb(null, { fieldName: file.fieldname });
+        },
+        key: function(req, file, cb) {
+            cb(null, Date.now().toString());
+        }
+    })
+});
+```
+
+```react
+ acl: 'public-read',
+```
+
+한줄을 빼먹으니 권한 설정이 제대로 안됨,,,, 주의해야함
+
+
+
+업로드 결과 
+
+![1565544180958](../../../../../바탕화면 정리/assets/image/1565544180958.png)
+
+
+
+로컬로 업로드 했던 것과 달리 `location`을 응답으로 주기 때문에 클라이언트에게 이 url주소를 넘겨 주어야 합니다.  
+
+
+
+```react
+export const uploadController = (req, res) => {
+    const { file: location } = req;
+    console.log(location);
+    res.json(location);
+};
+
+```
+
+위와 같이 location을 res에 담에서 줄 수 있습니다.  
+
+
+
+`front-end console`
+
+![1565544421500](../../../../../바탕화면 정리/assets/image/1565544421500.png)
+
+front-end 의 **axios** 리턴 값의 **data**를 콘솔로 확인하면 위와 같은 결과가 나옵니다.  
+
+
+
+##### AWS S3 bucket화면 
+
+![1565544535956](../../../../../바탕화면 정리/assets/image/1565544535956.png)
+
+위와 같이 사진이 클라우드에 추가된 것을 확인할 수 있습니다.  
+
+
+
+#### AWS S3 IAM 권한
+
+![1565551751432](../../../../../바탕화면 정리/assets/image/1565551751432.png)
+
+S3에 fullAccess할 수 있는 것으로 주면 됨.  
+
+
+
+![1565551912290](../../../../../바탕화면 정리/assets/image/1565551912290.png)
+
+위와 같이 public 권한은 주지 않아야함!  
+
+
+
+이렇게 하면 사진이 업로드 되고 새로운 게시물이 생깁니다. 하지만 새로운 게시물을 업로드 했을 경우 새로고침을 해주는 것이 좋기 때문에 useMutation의 `refetchQuery`를 사용하려고 합니다.  
+
+![1565552126838](../../../../../바탕화면 정리/assets/image/1565552126838.png)
+
+```react
+ const [uploadPost] = useMutation(UPLOAD_POST, {
+    refetchQueries: () => [{ query: FEED_QUERY }]
+  });
+```
+

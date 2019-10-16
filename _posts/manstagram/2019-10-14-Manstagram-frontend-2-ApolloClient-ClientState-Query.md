@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manstagram - frontend.2 - ApolloClient & ClientState & Query"
+title: "Manstagram - frontend.2 - React + Graphql + Apollo Client 셋팅 방법"
 date: 2019-10-14-15:23:00
 author: 한만섭
 categories: manstagram

@@ -13,4 +13,530 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 {:toc}
 
 
+## 1. server 배포하기 
+
+
+
+서버를 배포하기 위해서는 최종적으로는 **heroku**를 사용할 것이지만 우선 로컬 컴퓨터에서 **testing**을 해보고 배포해보도록 하겠습니다.  
+
+### 1-1. @bable/cli 설치 
+
+![1565616351228](../../../../../바탕화면 정리/assets/image/1565616351228.png)
+
+저는 기존에 설치가 되어 있었기 때문에 따로 설치하지는 않도록 하겠습니다. 설치를 했다면이제 빌드를 진행할 수 있습니다.  
+
+### 1-2. src 파일 build하기 
+
+`pakage.json`의 `scripts`에 `build`명령어를 추가해줍니다. 지금 사용하는 것은 **Heroku**에 배포하기 전에 테스트를 하는 과정입니다.  build는 **src**파일만 하도록 하겠습니다.  
+
+![1565616588931](../../../../../바탕화면 정리/assets/image/1565616588931.png)
+
+
+
+이 과정 후에 빌드 명령어를 작성했지만 에러가 발생했습니다.  
+
+```bash
+npm run build
+```
+
+![1565616748735](../../../../../바탕화면 정리/assets/image/1565616748735.png)
+
+아마 **babel**이 뭔가 문제가 있는 것 같습니다.  
+
+![1565616948652](../../../../../바탕화면 정리/assets/image/1565616948652.png)
+
+재설치를 한 후에 다시 build를 해주었더니 정상적으로 동작했습니다.  
+
+```bash
+$ npm install @babel/cli
+```
+
+![1565616991273](../../../../../바탕화면 정리/assets/image/1565616991273.png)
+
+여기까지 하게 되면 폴더에 build라는 파일이 생기게 됩니다. 여기까지 왔다면 성공적으로 build를 진행한 것입니다.  
+
+**.gitignore**에 build추가하기! 
+
+
+
+
+
+### 1-3. graphql 파일 복사해서 넣기 
+
+빌드된 곳에가서 **node server.js**를 실행시키게 되면 아래와 같은 에러를 발생시킵니다.  
+
+![1565617169811](../../../../../바탕화면 정리/assets/image/1565617169811.png)
+
+**async await**를 building process에 추가시켜야합니다.  
+
+
+
+이것을 하기 위해 `.babelrc`에 몇가지 **plugin**을 추가해야합니다.  
+
+[babel-plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
+
+#### - plugin 설치 
+
+```bash
+npm install --save-dev @babel/plugin-transform-runtime
+```
+
+```bash
+npm install --save @babel/runtime
+```
+
+  
+
+#### - plugin 사용
+
+![1565617371412](../../../../../바탕화면 정리/assets/image/1565617371412.png)
+
+```json
+// .babelrc
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-transform-runtime"]
+}
+```
+
+
+
+두가지를 설치하고 **.babelrc**에 위 코드를 집어 넣고나서 아래 명령어를 실행시켜 줍니다. 
+
+```bash
+npm server.js
+```
+
+저는 **build**파일 경로까지 **cd**명령어를 들어간 후에 명령어를 사용한 것이기 때문에 build에 들어가지 않았다면  아래처럼 작성해주면 됩니다.  
+
+```
+npm build/server.js
+```
+
+
+
+그러면 아래와 같은 에러가 발생하게 됩니다.  
+
+![1565617892843](../../../../../바탕화면 정리/assets/image/1565617892843.png)
+
+graphql에 대한 정보가 build파일에 없기 때문에 발생하는 에러이기 때문에 정상적인 에러입니다. 여기까지 마쳤다면 다음으로는 build폴더 안에 graphql 파일을 복사해서 붙혀넣는 작업을 하도록 하겠습니다.  
+
+
+
+### 1-4. Copy 모듈 사용해서 .graphql 파일 옮기기 
+
+`.graphql`파일을 옮기는 것을 직접 해도 가능 하지만 다시 정리하면 지금 하는 동작은 **heroku**가 자동으로 할 수 있는 동작이어야 자동 빌드 및 배포가 가능해집니다. 그렇기 때문에 **npm**의 **copy**를 사용해서 **heroku**가 자동 빌드를 해줄 수 있도록 하려고 합니다.  
+
+
+
+[npm copy DOC](https://www.npmjs.com/package/copy)
+
+
+
+#### - copy 설치 
+
+```bash
+$ npm install --save copy
+```
+
+
+
+#### - copy 사용법
+
+![1565689775247](../../../../../바탕화면 정리/assets/image/1565689775247.png)
+
+위 사진 처럼 **<pattern>**에는 복사할 파일의 패턴을 입려갛는 곳이고, **<dir>**은 패턴 파일을 복사할 파일의 경로를 말합니다.  
+
+
+
+#### - commandline에서 Test하기 
+
+script를 만들어보기 전에 우선 command로 실행 해보도록 하겠습니다. 무엇을 해야하는지 먼저 생각해보면, 
+
+![1565690044805](../../../../../바탕화면 정리/assets/image/1565690044805.png)
+
+위 사진처럼 **build**폴더의 **api**에는 graphql 파일이 없기 때문에 graphql파일을 복사하는 것을 진행해야 합니다.  
+
+
+
+우선 빌드를 해주도록 하겠습니다.  
+
+```bash
+npm run build
+```
+
+![1565690146120](../../../../../바탕화면 정리/assets/image/1565690146120.png)
+
+
+
+다음으로 위에 나온 **copy**의 사용법대로 작성을 해보도록 하겠습니다.  
+
+```bash
+$ npx copy src/api/**/*.graphql ./build/
+```
+
+`**` : api 하위에 있는 모든 폴더 
+
+`*` : 모든 폴더명 다 해당 
+
+![1565690385009](../../../../../바탕화면 정리/assets/image/1565690385009.png)
+
+위와 같이 작성할 경우 build에 원하는대로 복사가 되지 않았습니다. 원하는 것은 `api`안에 복사가 되었어야 했는데, 그러지 않았기 때문에 다른 방법으로 시도해보록 하겠습니다.  
+
+
+
+다시 시도할 때는 `build`폴더를 삭제한 후에 다시 빌드 명령어를 실행시키면 됩니다.  
+
+```bash
+npm run build
+```
+
+
+
+
+
+다른 방법을 해보도록 하겠습니다.  
+
+```bash
+$ npx copy src/api/**/**.graphql .\build\api\
+```
+
+![1565690866880](../../../../../바탕화면 정리/assets/image/1565690866880.png)
+
+위와 같이 코드를 작성한다는 것은 **src**폴더안에 위치한 **api**폴더 하위의 모든 폴더들 하위에 있는 **.graphql**파일을 **root**를 기준으로 하위에 있는 **build** 의 하위 폴더인 **api**에 복사하겠다! 라는 뜻입니다.  
+
+
+
+보시는바와 같이 성공적으로 복사가 되었습니다.  command에서 실험을 해봤기 때문에 이제 heroku가 자동빌드를 할 수 있도록 **script**에 넣어주도록 하겠습니다.  
+
+
+
+#### - script 추가하기 
+
+**script**명령어를 추가하는 방법은 **pakage.json**에 위치한 
+
+**"scripts"**에 아래와 같이 명령어를 등록해놓으면 됩니다.  
+
+![1565691167917](../../../../../바탕화면 정리/assets/image/1565691167917.png)
+
+
+
+그러면 아까 커맨드에서 실행했던 명령어를 입력하도록 하겠습니다.  
+
+```json
+"postbuild": "npx copy src/api/**/**.graphql ./build/api"
+```
+
+![1565691390425](../../../../../바탕화면 정리/assets/image/1565691390425.png)
+
+**postbuild**란 **build**명령어를 끝내고난 후에 실행할 명령어를 입력하는 곳 입니다. **post**가 있으니 **prebuild**도 있고, 저도 **prebuild**를 사용해서 빌드를 할 예정입니다.  
+
+
+
+저렇게 작성을 해놓고, **build**폴더를 다시 지우고, 빌드 명령어를 실행했을 때 커맨드에서 했던 것과 같이 **build**폴더의 **api**에 **.graphql**파일이 생겼다면 **성공**입니다!.  
+
+
+
+성공했다면, build폴더의 **server**를 실행시켜보도록 하겠습니다.  build/server.js는 제 프로젝트의 server파일의 위치입니다! 
+
+```bash
+node build/server.js
+```
+
+##### - 결과 
+
+![1565691694203](../../../../../바탕화면 정리/assets/image/1565691694203.png)
+
+서버를 실행시키게 되면 위와 같이 **JWT**를 찾을 수 없다는 에러를 발생시킵니다. 정말 너무 당연한 것이 원래 프로젝트에 있던 **.env**파일을 보면 **JWT_SECRET**을 환경변수로 갖고 있습니다. 하지만 저는 그것을 **build**파일에 넣지 않았기 때문입니다.  
+
+
+
+그렇다고 **build**폴더에 **.env**를 직접 넣지는 않을 것입니다. 이제 **heroku**를 사용할 시간입니다. **heroku**에 **.env**에 있는 데이터를 저장해놓고 불러서 사용해보려고 합니다.  
+
+
+
+
+
+## 2. heroku
+
+우선 당연히 회원가입/로그인을 해야합니다.  여기까지는 했다는 가정하에 설명하도록 하겠습니다!  
+
+
+
+### 2-1. App 만들기 
+
+heroku관련해서는 공식문서에서 시키는대로 하면 app을 만들 수 
+
+#### - 앱 생성 버튼 클릭
+
+![1565692706251](../../../../../바탕화면 정리/assets/image/1565692706251.png)
+
+#### - 앱 이름 및 지역 입력 
+
+![1565692796040](../../../../../바탕화면 정리/assets/image/1565692796040.png)
+
+#### - heroku cli 설치하기 
+
+cmd창에서 
+
+```bash
+$ npm install -g heroku
+```
+
+![1565699905952](../../../../../바탕화면 정리/assets/image/1565699905952.png)
+
+![1565699887633](../../../../../바탕화면 정리/assets/image/1565699887633.png)
+
+
+
+#### - heroku version 확인 
+
+![1565700022332](../../../../../바탕화면 정리/assets/image/1565700022332.png)
+
+
+
+#### - heroku 로그인 
+
+![1565711469687](../../../../../바탕화면 정리/assets/image/1565711469687.png)
+
+
+
+#### - heroku git remote 연결
+
+![1565711680514](../../../../../바탕화면 정리/assets/image/1565711680514.png)
+
+저는 이미 git repository 가 있기 때문에 빨간 네모를 따라하도록 하겠습니다.  
+
+```bash
+heroku git:remote -a manstagram-backend
+```
+
+![1565712007534](../../../../../바탕화면 정리/assets/image/1565712007534.png)
+
+위와 같이 **heroku**서버에 push를 하게 되면 다음과 같은 에러를 발생시켜 줍니다.  
+
+![1565712048967](../../../../../바탕화면 정리/assets/image/1565712048967.png)
+
+이 에러가 발생하는 이유는 heroku서버에 push를 하는 것도 Git을 사용하는 것이기 때문에 .gitignore의 영향을 받기 때문입니다. **genereted**를 git에 올리지 안힉 때문에 서버에 generate를 만들어야 합니다.  
+
+
+
+![1565712666648](../../../../../바탕화면 정리/assets/image/1565712666648.png)
+
+endpoint를 .env로 빼서 위와 같이 불러서 사용합니다.  하지만 아직 env:PRISMA_ENDPOINT를 찾을 수 없습니다.  
+
+![1565712717266](../../../../../바탕화면 정리/assets/image/1565712717266.png)
+
+
+
+`.env`파일을 src폴더 밖으로 빼줍니다.  
+
+```js
+// env.js
+import dotenv from 'dotenv';
+dotenv.config();
+```
+
+위와 같이 작성하고 아래 명령어를 작성하면 이제는 성공적으로 읽어줍니다.  
+
+```bash
+npm run-script prisma
+```
+
+
+
+![1565713189038](../../../../../바탕화면 정리/assets/image/1565713189038.png)
+
+
+
+이 상태에서 scripts에 아래 코드를 추가해줍니다.  
+
+```json
+"prebuild": "npm run prisma",
+```
+
+
+
+이제 다시 heroku에 push를 해줍니다. 근데 저는 아래와 같은 에러가 발생했습니다.  
+
+![1565714857090](../../../../../바탕화면 정리/assets/image/1565714857090.png)
+
+에러 내용을 보니 버전 충돌 에러인 것 같았습니다.  
+
+제 pakage.json에 babel-cli 버전이 예전 버전이 설치가 되어있었는데 그것은 unintall하고 나서 다시 push를 했더니 정상적으로 동작했습니다.  
+
+![1565714965022](../../../../../바탕화면 정리/assets/image/1565714965022.png)
+
+중간에 env를 찾지 못했다고 하는데 아직 **heroku**에는 env가 올라가 있지 않기 때문에 발생하는 에러입니다.  
+
+![1565715019836](../../../../../바탕화면 정리/assets/image/1565715019836.png)
+
+env에러와 상관없이 build succeeded가 나오면 성공한 것입니다.  
+
+![1565715160657](../../../../../바탕화면 정리/assets/image/1565715160657.png)
+
+아직은 위와 같이 접속할 수 없는 것이 맞으니 나머지 에러는 다음에 해결하도록 하겠습니다.  
+
+
+
+------
+
+
+
+## 요약 
+
+heroku가  src의 코드들을 이해하지 못하기 때문에 babel을 이용해서 오래된 js 코드로 build해줍니다.   
+
+**babel**은 **graphql**파일은 신경쓰지 않기 때문에 **copy**모듈을 사용해서 heroku가 자동으로 build폴더에 **graphql**파일을 복사할 수 있도록 해줬습니다.  이 명령어는 build를 한 후에 복사해야하기 때문에 **postbuild**를 사용했습니다.   
+
+
+
+이것들을 heroku에 올리려고 할때 올라가긴 하지만 genereted 파일을 읽지 못합니다. 왜냐하면 heroku git에 push를 해야하는데  genereted파일을 gitignore 해놓았기 때문입니다.   
+
+
+
+그래서 build를 하기전에 prisma client를 생성해주는 방법을 썼습니다.  prebuild를 할 때 npm run-script prisma를 넣어주었습니다.  
+
+
+
+prisma.yml도 endpoint때문에 ignore시켜놨지만 .env에 endpoint를 넣음으로써 heroku에 prisma.yml을 업로드 할 수 있었습니다.  이렇게 까지 하면 heroku의 prisma.yml은 .env파일을 읽을 수 없습니다. 이제 환경변수를 heroku 서버에 넣어주는 일을 하려고 합니다.  
+
+
+
+### 2-2. heroku에 환경변수 추가 
+
+![1565715896034](../../../../../바탕화면 정리/assets/image/1565715896034.png)
+
+
+
+환경 변수를 모두 추가해준 후에 scripts의 npm start 부분을  아래처럼 바꿔줍니다. 
+
+```json
+"start": "node build/server.js"
+```
+
+왜냐하면 heroku에서 자동으로 npm start를 하는데 기존의 npm start는 로컬에서의 개발을 할 때 아래 처럼 nodemon 과 babel을 사용해서 개발환경의 server를 실행시켰기 때문입니다. 
+
+```json
+"localstart": "nodemon --exec babel-node src/server.js",
+```
+
+
+
+![1565716375431](../../../../../바탕화면 정리/assets/image/1565716375431.png)
+
+
+
+
+
+prisma server만들고 service 만들기 부터 하면됨 . 
+
+
+
+## 3. prisma 
+
+이제 데모 데이터 베이스 가 아닌 실제 produnction database를 만들어야 하기 때문에 **prisma server**를 만들어보겠습니다.  
+
+### 3-1. prisma 서버 만들기 
+
+![1565845340504](../../../../../바탕화면 정리/assets/image/1565845340504.png)
+
+원하는 서버명으로 서버를 만들어줍니다.  
+
+
+
+![1565845527949](../../../../../바탕화면 정리/assets/image/1565845527949.png)
+
+데이터베이스 선택.   
+
+저는 데이터베이스를 갖고 있지 않기 때문에 위에 것을 선택하도록 하겠습니다.   
+
+
+
+![1565845591866](../../../../../바탕화면 정리/assets/image/1565845591866.png)
+
+database를 제공해줄 곳 선택.  
+
+아직은 heroku만 제공하네요. heroku를 선택하겠습니다.  
+
+
+
+![1565845657346](../../../../../바탕화면 정리/assets/image/1565845657346.png)
+
+heroku 계정에 연결하라는 내용입니다. 클릭해주고 넘어가겠습니다.   
+
+
+
+![1565845689704](../../../../../바탕화면 정리/assets/image/1565845689704.png)
+
+승인 버튼을 눌러줍니다.  
+
+
+
+![1565845734984](../../../../../바탕화면 정리/assets/image/1565845734984.png)
+
+위 선택 그대로 놔둔 후에 create버튼을 눌러줍니다.  
+
+
+
+![1565846016742](../../../../../바탕화면 정리/assets/image/1565846016742.png)
+
+![1565846058803](../../../../../바탕화면 정리/assets/image/1565846058803.png)
+
+
+
+![1565846132020](../../../../../바탕화면 정리/assets/image/1565846132020.png)
+
+위와 같이 나오면 **prisma server** 만들기에 성공한 것입니다!!!!  
+
+![1565846158390](../../../../../바탕화면 정리/assets/image/1565846158390.png)
+
+**view the server**을 누르게 되면 다음과 같이 만들어 놓은 서버를 확인할 수 있습니다.  
+
+
+
+### 3-2. service 만들기   
+
+현재 heroku에 저장된 endpoint에는 데모서버의 **endpoint**가 적용되어 있습니다.  그 부분을 방금 만든 server의 endpoint로 바꿔보도록 하겠습니다.  
+
+![1565850707936](../../../../../바탕화면 정리/assets/image/1565850707936.png)
+
+
+
+로컬의 prisma.yml에서 endpoint를 heroku 서버의 url로 바꿔준 후에 prisma를 deploy 해줍니다.  
+
+```bash
+npm run-script deploy
+```
+
+
+
+### 3-3. heroku url 바꿔주기 
+
+heroku의 환경변수에 들어있는 endpoint를 배포된 사이트로 바꾸준 후에  
+
+```bash
+git add .
+git commit --allow-empty -m ""
+```
+
+ 
+
+```bash
+git push heroku master
+```
+
+
+
+## 4. front-end  url 설정
+
+```js
+process.env.NODE_ENV
+```
+
+![1565852736073](../../../../../바탕화면 정리/assets/image/1565852736073.png)
+
+
+
+배포된 서버 주소를 넣어주면 됩니다!!
 
