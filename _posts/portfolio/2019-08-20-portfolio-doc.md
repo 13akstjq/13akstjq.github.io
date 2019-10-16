@@ -17,7 +17,9 @@ tags: portfolio
 
   - 제 포트폴리오 사이트를 직접 만들었습니다. **프로젝트**와 **포스팅한 글**을 볼 수 있으며 궁금하신 점이 있다면 바로 연락할 수 있도록 **실시간 챗봇**을 구현했고, 모바일 화면에서 편하게 볼 수 있도록 반응형을 적용했습니다. 
 
-  
+***
+
+
 
 - ### 기술 스택
 
@@ -26,6 +28,8 @@ tags: portfolio
   - 컴포넌트 스타일링 : styled-components
   - 상태관리 : reactHooks - useContext
   - 배포 : netlify
+
+***
 
 
 
@@ -41,7 +45,9 @@ tags: portfolio
   - [7. 프로젝트 폴더 구조](https://13akstjq.github.io/portfolio/2019/09/28/portfolio-07-폴더-트리-구조.html)
   - [8. 포트폴리오 프로젝트 netlify에 배포해보기](https://13akstjq.github.io/portfolio/2019/09/28/portfolio-08-포트폴리오-프로젝트-netlify에-배포해보기.html)
 
-  #### 
+***
+
+
 
 #### 
 
