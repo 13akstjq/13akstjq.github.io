@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manstagram - app.2 - React Navigation 정리"
+title: "Manstagram - app.3 - React Navigation 정리"
 date: 2019-10-14-15:23:00
 author: 한만섭
 categories: manstagram

@@ -11,7 +11,7 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 
 * TOC
 {:toc}
-![image](img/66882057-ee97ba80-f003-11e9-98f5-a4bb86148828.png)
+![66882057-ee97ba80-f003-11e9-98f5-a4bb86148828](https://user-images.githubusercontent.com/46010705/66895636-3d5a4a00-f02e-11e9-90c6-3d5c6eb63ecf.png)
 
 사용자 인증을 위해 `passport`라는 인증 모듈을 사용하려고 합니다. Token에 대한 개념과 로그인 인증 방법에 대해서 정리해보려고 합니다.
 

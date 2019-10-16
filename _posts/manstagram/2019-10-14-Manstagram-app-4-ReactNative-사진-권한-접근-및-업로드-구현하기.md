@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manstagram-app.4-ReactNative 사진 권한 접근 및 업로드 구현하기"
+title: "Manstagram - app.4 - ReactNative 사진 권한 접근 및 업로드 구현하기"
 date: 2019-10-14-15:23:00
 author: 한만섭
 categories: manstagram

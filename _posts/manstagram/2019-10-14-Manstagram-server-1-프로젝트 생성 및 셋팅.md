@@ -11,7 +11,7 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 
 * TOC
 {:toc}
-![image](img/66882204-767dc480-f004-11e9-8099-234cc6aac9e6.png)
+![image](https://user-images.githubusercontent.com/46010705/66895178-1c452980-f02d-11e9-9a0a-eaab7ad03dde.png)
 
 ### 1 .프로젝트 셋팅
 

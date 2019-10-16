@@ -13,7 +13,7 @@ tags: graphqlserver nodemailer
 {:toc}
 
 
-![image](img/66882445-69150a00-f005-11e9-8bbe-ed5f08a8b152.png)
+![66882445-69150a00-f005-11e9-8bbe-ed5f08a8b152](https://user-images.githubusercontent.com/46010705/66895558-14d25000-f02e-11e9-8cc1-c9d235a1dd87.png)
 
 이메일로 인증키를 전송해야 하기 때문에 이메일전송하는 모듈인 **nodemailer**에 대해서 정리해보려고 합니다.
 
