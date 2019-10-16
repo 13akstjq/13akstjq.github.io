@@ -45,11 +45,11 @@ POST / 200 7.729 ms - 15747
 
 ### merge 에 필요한 라이브러리 다운
 
-```
+```bash
 npm add graphql-tools merge-graphql-schemas
 ```
 
-```
+```js
 import path from 'path';
 import {makeExecutableSchema} from 'graphql-tools';
 import {fileLoader , mergeResolvers,mergeTypes} from 'merge-graphql-schemas';
@@ -65,12 +65,13 @@ schema를 만들었기 때문에 이제 server에서 schema를 사용할 수 있
 
 - import
 
-```
+```js
 import schema from './schema';
 ```
 
 - #### schema로 server 실행시키기
 
-```
+```js
 const server = new GraphQLServer({schema});
 ```
+

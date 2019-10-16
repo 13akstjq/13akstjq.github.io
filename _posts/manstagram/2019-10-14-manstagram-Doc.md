@@ -33,7 +33,7 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 
 ***
 
-### Mobile - ReactNative
+### App - ReactNative
 
 \- [Manstagram - app.1 - 프로젝트 셋팅]()
 
@@ -42,6 +42,10 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 \- [Manstagram - app.3- Navigation 정리]()
 
 \- [Manstagram - app.4 - ReactNative 사진 권한 접근 및 업로드 구현하기]()
+
+***
+
+### Deploy
 
 \- [Manstagram - deploy.1 - React프론트엔드 Netlify에 배포하기]()
 
