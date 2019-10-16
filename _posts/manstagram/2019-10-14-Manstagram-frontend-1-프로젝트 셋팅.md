@@ -29,12 +29,12 @@ tags: React graphql apollo
   npx create-react-app prismagram-frontend
   ```
 
-  ![image](img/60510911-9d411500-9d0b-11e9-9c8f-dca0e88d126e.png)
+  ![image](https://user-images.githubusercontent.com/46010705/60510911-9d411500-9d0b-11e9-9c8f-dca0e88d126e.png)
 
 - react 프로젝트 정리 
 
   아래와 같은 프로젝트 형태가 되도록 필요없는 파일을 삭제합니다.  
-  ![image](img/60510983-d24d6780-9d0b-11e9-9202-e04c8c823e37.png)
+  ![image](https://user-images.githubusercontent.com/46010705/60510983-d24d6780-9d0b-11e9-9202-e04c8c823e37.png)
 
 - git 연동하기 
 
@@ -145,7 +145,7 @@ GlobalStyles는 import 후 tag형태로 작성해놓으면 적용됩니다. App.
 만들면 됩니다.  
 AppRouter가 경로를 결정해주는 파일이고, Routes에 있는 파일들이 실제 인스타그램에서 보여지는 페이지들입니다.  
 전체적인 흐름을 돕기위해 얘기하자면, 만들 프로젝트에 보여질 페이지들을 **Routes**로 정해놓고 **Routes**에는 많은 **Components**들이 보여지고 가려지는 것입니다.  
-![image](img/60531046-15700080-9d35-11e9-9218-b1eb8ef6fbc1.png)
+![image](https://user-images.githubusercontent.com/46010705/60531046-15700080-9d35-11e9-9218-b1eb8ef6fbc1.png)
 
 각 Routes에는 확인을 위한 코드를 작성해보도록 하겠습니다.  
 

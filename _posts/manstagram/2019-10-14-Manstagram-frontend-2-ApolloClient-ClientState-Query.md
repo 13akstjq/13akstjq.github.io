@@ -30,7 +30,9 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 클라이언트 프로젝트에서 `Apollo/Client.js`를 만들어서 내부에서 **apollo-boost**의 **ApolloClient**를 이용해서 
 클라이언트를 쉽게 제작할 수 있습니다. 
 
-![image](img/60556335-c26d6c00-9d7b-11e9-8aeb-a336ef3bd80f.png)
+클라이언트를 쉽게 제작할 수 있습니다. 
+
+![image](https://user-images.githubusercontent.com/46010705/60556335-c26d6c00-9d7b-11e9-8aeb-a336ef3bd80f.png)
 
 **apollo-boost**의 **ApolloClient**를 import해서 새로운 **ApolloClient**를 사용합니다. uri는 서버의 주소인 `localhost:4000`를 사용합니다.  
 
@@ -75,11 +77,11 @@ export default () => (
 
 실행하고 **apollo-dev-tools**를 실행시키면 아래와 같이 뜹니다. 아직 서버를 켜지 않아서 그런 것입니다.  
 
-![image](img/60556699-7a4f4900-9d7d-11e9-8176-08636d34b123.png)  
+![image](https://user-images.githubusercontent.com/46010705/60556699-7a4f4900-9d7d-11e9-8176-08636d34b123.png)  
 
 서버 프로젝트로 가서 서버를 켜주고 나면 아래와 같이 동작합니다.   
 
-![image](img/60556772-b2ef2280-9d7d-11e9-83af-40f9522b48c8.png)  
+![image](https://user-images.githubusercontent.com/46010705/60556772-b2ef2280-9d7d-11e9-83af-40f9522b48c8.png)  
 
 ------
 
@@ -219,10 +221,10 @@ const {data} = useQuery(QUERY);
 
 
 로그인 상태일 경우 아래와 같이 Feed 페이지를 보여줍니다.   
-![image](img/60563356-6c59f200-9d96-11e9-979d-e3a95f9bc368.png)
+![image](https://user-images.githubusercontent.com/46010705/60563356-6c59f200-9d96-11e9-979d-e3a95f9bc368.png)
 
 로그아웃 상태일 경우 아래와 같이 Auth 페이지를 보여줍니다.   
-![image](img/60563398-a9be7f80-9d96-11e9-9014-dc4bb45e2b72.png)  
+![image](https://user-images.githubusercontent.com/46010705/60563398-a9be7f80-9d96-11e9-9014-dc4bb45e2b72.png)  
 
 #### 7.7 Apollo-Client 셋팅 요약
 
