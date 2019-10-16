@@ -27,13 +27,13 @@ tags: React ReactHooks ReactNative Graphql Prisma Apollo
 
 - TabNavigation
 
-  ![1564300647676](../../../../../바탕화면 정리/assets/image/1564300647676.png)
+  ![1564300647676](https://user-images.githubusercontent.com/46010705/66907633-9d5beb00-f044-11e9-896f-98e8d7a3db31.png)
 
   위와 같은 형태가 tabnavigation이고 HOME 혹은 BOOKMARKS를 눌렀을때 새로운 화면을 보여주는 방식입니다.
 
 - `StackNavigation`
 
-  ![1564300798339](../../../../../바탕화면 정리/assets/image/1564300798339.png)
+  ![1564300798339](../../../../assets/image/1564300798339.png)
 
   위 사진 같이 새로운 창이 아닌 기존 화면에 새로운 화면을 쌓아놓는 방식이 `StackNavigation`입니다. 이것을 사용할 경우에 뒤로가기를 할 수 있습니다. 하지만 reloading이 되지는 않습니다.
 
@@ -47,7 +47,7 @@ Navigation도 React의 Router의 개념과 크게 벗어나지 않습니다.
 
   [react-navigation 공식문서](https://reactnavigation.org/docs/en/stack-navigator.html)
 
-  ![1564301109089](../../../../../바탕화면 정리/assets/image/1564301109089.png)
+  ![1564301109089](../../../../assets/image/1564301109089.png)
 
   위에서 보다시피 `createStackNavigator`를 통해서 만들 수 있습니다. 첫번째 인자로는 navigation에 사용될 `Route`를 설정하고, 두번째 인자로는 StackNavigator의 config를 작성하는 곳입니다. 아래 코드는 Home,Login,Signup,Confirm 네개의 화면을 가지고 있는 `AuthNavigation`을 만든 코드입니다. 코드를 보면 각 컴포넌트를 import 하고, `react-navigation`의 `createStackNavigator`를 사용합니다. 그렇다면 `createAppContainer`는 언제 사용하는 것일까요?
 

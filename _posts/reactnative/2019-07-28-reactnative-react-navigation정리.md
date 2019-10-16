@@ -21,7 +21,7 @@ tags: reactnative react-navigation
 
 - TabNavigation
 
-  ![1564300647676](../../../../assets/image/1564300647676.png)
+  ![1564300647676](https://user-images.githubusercontent.com/46010705/66907633-9d5beb00-f044-11e9-896f-98e8d7a3db31.png)
 
   위와 같은 형태가 tabnavigation이고 HOME 혹은 BOOKMARKS를 눌렀을때 새로운 화면을 보여주는 방식입니다.
 
