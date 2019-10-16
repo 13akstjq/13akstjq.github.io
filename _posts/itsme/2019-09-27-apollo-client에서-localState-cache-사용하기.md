@@ -3,7 +3,7 @@ layout: post
 title: "[It's me] apollo-client에서 localState 및 cache사용하기 "
 date: 2019-09-25-20:47:00
 author: 한만섭
-categories: portfolio
+categories: itsme
 tags: itsme apollo client localState cache
 ---
 

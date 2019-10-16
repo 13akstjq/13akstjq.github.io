@@ -3,7 +3,7 @@ layout: post
 title: "[It's me] JobSlider "
 date: 2019-09-14-16:47:00
 author: 한만섭
-categories: portfolio
+categories: itsme
 tags: itsme jobSlider component
 ---
 
