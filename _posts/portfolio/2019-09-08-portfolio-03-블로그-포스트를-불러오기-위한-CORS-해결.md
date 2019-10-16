@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Portfolio] netlify 배포 "
+title:  "[Portfolio][03] 블로그 포스트를 불러오기 위한 CORS 해결"
 date:   2019-08-20-21:16:00
 author: 한만섭
 categories: portfolio
@@ -13,110 +13,7 @@ tags: portfolio
 
 * TOC
 {:toc}
-
-
-```json
-# Global settings applied to the whole site.  
-# 
-# “base” is the directory to change to before starting build. If you set base:
-#        that is where we will look for package.json/.nvmrc/etc, not repo root!
-# “command” is your build command.
-# “publish” is the directory to publish (relative to the root of your repo).
-
-[build]
-  base    = "site"
-  command = "make"
-  publish = "site/public"
-
-# Production context: All deploys from the main
-# repository branch will inherit these settings.
-[context.production]
-  command = "make production"
-  [context.production.environment]
-    ACCESS_TOKEN = "super secret"
-
-# Deploy Preview context: All deploys generated from a pull/merge request
-# will inherit these settings.
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
-
-# Branch deploy context: All deploys that are not from a pull/merge request
-# or from the production branch will inherit these settings.
-[context.branch-deploy]
-  command = "make staging"
-
-# Specific branch context: Deploys from this branch
-# will take these settings and override their
-# current ones.
-[context.feature]
-  command = "make feature"
-
-[context."features/branch"]
-  command = "gulp"
-```
-
-[공식사이트](https://www.netlify.com/docs/netlify-toml-reference/)
-
-![1569675891685](../../../../assets/image/1569675891685.png)
-
-
-
-`netlify.toml`
-
-```json
-# Global settings applied to the whole site.  
-# 
-# “base” is the directory to change to before starting build. If you set base:
-#        that is where we will look for package.json/.nvmrc/etc, not repo root!
-# “command” is your build command.
-# “publish” is the directory to publish (relative to the root of your repo).
-
-[build]
-  base    = "site"
-  command = "make"
-  publish = "site/public"
-
-# Production context: All deploys from the main
-# repository branch will inherit these settings.
-[context.production]
-  command = "make production"
-  [context.production.environment]
-    ACCESS_TOKEN = "super secret"
-
-# Deploy Preview context: All deploys generated from a pull/merge request
-# will inherit these settings.
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
-  REACT_APP_SLACK_WEB_TOKEN = "not no secret"
-    REACT_APP_SLACK_USER_TOKEN = "not no secret"
-    REACT_APP_FIREBASE_API_KEY = "not no secret"
-
-# Branch deploy context: All deploys that are not from a pull/merge request
-# or from the production branch will inherit these settings.
-[context.branch-deploy]
-  command = "make staging"
-
-# Specific branch context: Deploys from this branch
-# will take these settings and override their
-# current ones.
-[context.feature]
-  command = "make feature"
-
-[context."features/branch"]
-  command = "gulp"
-```
-
-위와 같이 파일을 생성해줍니다.  
-
-```json
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
-  REACT_APP_SLACK_WEB_TOKEN = "not no secret"
-  REACT_APP_SLACK_USER_TOKEN = "not no secret"
-  REACT_APP_FIREBASE_API_KEY = "not no secret"
-```
-
-제가 수정한 부분은 위 부분인데 netlify에 설정해준 환경변수 이름과 동일하게 사용해주면 됩니다.  
+  
 
 
 

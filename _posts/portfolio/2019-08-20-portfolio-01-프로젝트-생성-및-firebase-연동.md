@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Portfolio] 프로젝트 생성 및 firebase 연동"
+title:  "[Portfolio][01] 프로젝트 생성 및 firebase 연동"
 date:   2019-08-20-21:16:00
 author: 한만섭
 categories: portfolio
