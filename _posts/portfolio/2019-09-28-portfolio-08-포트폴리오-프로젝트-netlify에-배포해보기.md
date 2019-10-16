@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Portfolio][08] 포트폴리오 프로젝트 netlify에 배포해보기 "
-date:   2019-08-20-21:16:00
+date:   2019-09-28-22:16:00
 author: 한만섭
 categories: portfolio
 tags: portfolio
