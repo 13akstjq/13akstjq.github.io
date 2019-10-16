@@ -15,7 +15,7 @@ tags: portfolio
 {:toc}
 
 
-#### [1. 프로젝트 생성 및 설정]()
+#### [1. 프로젝트 생성 및 firebase 연동]()
 
 #### [2. React Transition Group으로 인터렉티브한 페이지전환 구현하기 ]()
 

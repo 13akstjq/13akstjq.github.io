@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Portfolio][Day 1] 프로젝트 생성 및 firebase 연동"
+title:  "[Portfolio] 프로젝트 생성 및 firebase 연동"
 date:   2019-08-20-21:16:00
 author: 한만섭
 categories: portfolio
@@ -15,11 +15,11 @@ tags: portfolio
 {:toc}
 
 
+![1571222266483](../../../../assets/image/1571222266483.png)
 
+프로젝트로 제 포트폴리오를 만들어보려고 합니다. firebase로 backend를 구현할 예정이며 front는 create-react-app을 통해 제작하려고 합니다.  
 
-오늘부터 토이(?) 프로젝트로 제 포트폴리오를 만들어보려고 합니다. firebase로 backend를 구현할 예정이며 front는 create-react-app을 통해 제작하려고 합니다.  
-
-
+***
 
 ## 1. 프로젝트 생성 
 
@@ -38,8 +38,6 @@ npx create-react-app mansub-portfolio
 ### 1.2 프로젝트 정리 후 hello world
 
 ![1566236642279](../../../../assets/image/1566236642279.png)
-
-### 
 
 ## 2. Firebase 연동하기 
 
@@ -200,40 +198,25 @@ firestore
 
 firebase에 페이스북 로그인을 추가하기 위해서는 **Facebook**에서 앱을 만들어야합니다.
 
-![1566299650037](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566299650037.png)
+![1566299650037](https://user-images.githubusercontent.com/46010705/66911548-b2884800-f04b-11e9-97a0-62ed7de60182.png)
 
 firebase Auth의 facebook에 url 정보가 나와있습니다.
 
-![1566300009294](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566300009294.png)
+![1566300009294](https://user-images.githubusercontent.com/46010705/66911600-cdf35300-f04b-11e9-9539-b284d72a4b6e.png)
 
 그 url을 facebook App을 만들고 아래에 있는 곳에 입력해줍니다.
 
-![1566299975663](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566299975663.png)
+![1566299975663](https://user-images.githubusercontent.com/46010705/66911634-dfd4f600-f04b-11e9-98f9-6bbdbcef7253.png)
 
-![1566310814710](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566310814710.png)
-
-
+![1566310814710](https://user-images.githubusercontent.com/46010705/66911667-f4b18980-f04b-11e9-92c0-b6007d052fee.png)
 
 ### 2.4 github로그인
 
 앱을 만들어서 clientID 와 KEY를 발급받습니다. 이것을 firebase Authentication에 입력해줍니다.
 
-![1566311538622](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566311538622.png)
+![1566311538622](https://user-images.githubusercontent.com/46010705/66911690-0430d280-f04c-11e9-8052-c1022c845198.png)
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!-- displayAd -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="2489269721"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ### 2.4 firebase ui react
 
@@ -245,13 +228,13 @@ firebase Auth의 facebook에 url 정보가 나와있습니다.
 npm install --save react-firebaseui
 ```
 
-![1566311884557](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566311884557.png)
+![1566311884557](https://user-images.githubusercontent.com/46010705/66911730-127eee80-f04c-11e9-851a-0b892b97333e.png)
 
 firebaseui는 기본적인 ui를 제공하는 것과 styling할 수 있는 ui가 있습니다.
 
 저는 firebaseui를 사용하지만 스타일은 제가 원하는 대로 변경하고 싶기 때문에 **styledFirebaseAuth**를 사용해보도록 하겠습니다.
 
-![1566311830571](../../../../../%EB%B0%94%ED%83%95%ED%99%94%EB%A9%B4%20%EC%A0%95%EB%A6%AC/assets/image/1566311830571.png)
+![1566311830571](https://user-images.githubusercontent.com/46010705/66911763-20347400-f04c-11e9-9e4c-c451168ec98f.png)
 
 ```js
 // Import FirebaseAuth and firebase.

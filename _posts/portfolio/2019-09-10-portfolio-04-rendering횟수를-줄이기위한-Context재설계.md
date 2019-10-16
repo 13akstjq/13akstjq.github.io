@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Portfolio][Day 6] 리액트 프로젝트 느려짐 현상 해결"
+title: "[Portfolio][04] rendering횟수를 줄이기위한 Context재설계"
 date: 2019-09-10-02:13:00
 author: 한만섭
 categories: portfolio
@@ -8,6 +8,7 @@ tags: portfolio React
 ---
 
 - TOC
+  
   {:toc}
 
 ## 정리할 내용
@@ -57,19 +58,7 @@ return (
 
 그래서 Context를 사용하고 있기 때문에 하위 컴포넌트에서 직접 Context의 값을 가져와서 사용했고, 이렇게 하게 될 경우 Contex의 State를 가져다가 쓰고 있는 컴포넌트만 다시 render가 되는 구조가 됩니다.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- displayAd -->
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="2489269721"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ---
 
@@ -78,3 +67,106 @@ return (
 설계를 할 때 각 컴포넌트의 **라이프사이클**을 이해하고 해당 컴포넌트가 언제 **rerender**되는지 생각한 후에 설계를 해야하는 것 같습니다.
 
 또한, 컴포넌트가 **rerender**되는 것을 **console**로 확인한채로 개발하면 미리 이런 일을 방지할 수 있을 것 같습니다.
+
+
+
+***
+
+
+
+## 해결방법
+
+- 우선 하나로 사용하던 Context를 기능별로 나눠줬습니다. 
+
+![image](https://user-images.githubusercontent.com/46010705/66912781-32afad00-f04e-11e9-9861-39e916a6cb80.png)
+
+- `AuthContext.js`
+
+  ```js
+  import React, { createContext, useState } from "react";
+  
+  //컨텍스트 생성
+  export const AuthContext = createContext();
+  
+  const AuthContextProvider = ({ children }) => {
+    const [isAuthOpen, setIsAuthOpen] = useState(false);
+  
+    return (
+      <AuthContext.Provider
+        value={{
+          isAuthOpen,
+          setIsAuthOpen
+        }}
+      >
+        {children}
+      </AuthContext.Provider>
+    );
+  };
+  
+  export default AuthContextProvider;
+  
+  ```
+
+  
+
+- AppContext.js`에서 모든 컨텍스트들을 받은 후에 내보내는 방법을 사용했습니다.  
+
+  `AppContext.js`
+
+  ```js
+  import React from "react";
+  import AuthContextProvider from "./AuthContext";
+  import BlogContextProvider from "./BlogContext";
+  import ProjectContextProvider from "./ProjectContext";
+  import ChatbotContextProvider from "./ChatbotContext";
+  import SideBarContextProvider from "./SideBarContext";
+  import UserContextProvider from "./UserContext";
+  
+  const AppContext = ({ children }) => {
+    return (
+      <AuthContextProvider>
+        <BlogContextProvider>
+          <ProjectContextProvider>
+            <ChatbotContextProvider>
+              <SideBarContextProvider>
+                <UserContextProvider>{children}</UserContextProvider>
+              </SideBarContextProvider>
+            </ChatbotContextProvider>
+          </ProjectContextProvider>
+        </BlogContextProvider>
+      </AuthContextProvider>
+    );
+  };
+  
+  export default AppContext;
+  
+  ```
+
+- `App.js`
+
+  ```js
+  import React from "react";
+  import Router from "./Router";
+  import GlobalStyle from "./Styles/GlobalStyle";
+  import { ThemeProvider } from "styled-components";
+  import Theme from "./Styles/Theme";
+  import AppContext from "./Context/AppContext";
+  
+  function App() {
+    return (
+      <div className="App">
+        <AppContext>
+          <ThemeProvider theme={Theme}>
+            <>
+              <GlobalStyle />
+              <Router />
+            </>
+          </ThemeProvider>
+        </AppContext>
+      </div>
+    );
+  }
+  
+  export default App;
+  
+  ```
