@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[GraphQL] GraphQL로 서버만들기 "
-date:   2019-06-18-20:31:00
+date:   2019-11-19-20:31:00
 author: 한만섭
 categories: graphql
 tags: GraphQL

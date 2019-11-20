@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[redux] redux 완벽 정리하기 "
+title:  "[redux] react-redux 정리 "
 date:   2019-08-30 18:41:00
 author: 한만섭
 categories: redux

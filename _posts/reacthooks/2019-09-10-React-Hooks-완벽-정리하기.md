@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[React Hooks] 리액트 훅 완벽 정리하기"
+title: "[React Hooks] ReactHooks 정리"
 date: 2019-09-10-15:15:00
 author: 한만섭
 categories: reacthooks
