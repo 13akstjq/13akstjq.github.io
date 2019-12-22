@@ -3,7 +3,7 @@ layout: post
 title: "[React Hooks] ReactHooks 정리"
 date: 2019-11-06-15:15:00
 author: 한만섭
-categories: reacthooks
+categories: react
 tags: react hooks useState useInput useEffect useContext
 ---
 
