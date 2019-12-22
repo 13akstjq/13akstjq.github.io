@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[React] react-transition-group으로 router간 animation구현하기"
-date: 2019-11-16-20:03:00
+date: 2019-11-08-20:03:00
 author: 한만섭
 categories: react
 tags: react router react-transition-group

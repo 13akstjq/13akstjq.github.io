@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[typescript] typescript에서 match, location 사용하기"
-date: 2019-09-16-17:21:00
+date: 2019-11-14-17:21:00
 author: 한만섭
 categories: typescript
 tags: react typescript location
