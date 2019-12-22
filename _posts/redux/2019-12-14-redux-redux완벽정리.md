@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[redux] react-redux 정리 "
-date:   2019-08-30 18:41:00
+date:   2019-12-14 18:41:00
 author: 한만섭
 categories: redux
 tags: react redux action actioncreator dispatch connect mapstatetoprops mapdispatchtoprops 
