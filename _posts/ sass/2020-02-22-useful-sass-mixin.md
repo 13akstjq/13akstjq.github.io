@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[sass] 유용한 sass mixing"
+title:  "[sass] 유용한 sass mixin"
 date:   2020-02-22 22:28:59
 author: 한만섭
 categories: sass
-tags:	sass mixing
+tags:	sass mixin
 ---
 
 * TOC
