@@ -9,220 +9,222 @@ $b2: 768px;
 $tablet: $b2;
 $b1: 960px;
 $desktop: $b1;
-$titleColor : #8565fc;
-
+$titleColor: #8565fc;
 
 /*
 *	Global
 */
 
 html {
-	scroll-behavior: smooth ;
-	    overflow-x: hidden;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
-	font-family: 'Noto Sans KR', sans-serif !important;
-	color :  #333e4c;
-	line-height : 1.5 !important;
+	font-family: "Noto Sans KR", sans-serif !important;
+	color: #333e4c;
+	line-height: 1.5 !important;
 }
-h1,h2,h3,h4,h5,h6 {
-font-family: 'Noto Sans KR', sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Noto Sans KR", sans-serif !important;
 }
 
-a:hover{
-	color : rgba(0,0,0,0.6) !important;
+a:hover {
+	color: rgba(0, 0, 0, 0.6) !important;
 }
-p{
-	  font-size: 18px;
-//     word-spacing: 0.1em;
+p {
+	font-size: 18px;
+	//     word-spacing: 0.1em;
 }
 .post-item {
-	padding-left : 20px;
-	transition :0.1s linear;
+	padding-left: 20px;
+	transition: 0.1s linear;
 }
-.post-item:hover{
-	border-left : 5px solid $titleColor;
+.post-item:hover {
+	border-left: 5px solid $titleColor;
 }
 
 // category tag style
-a.post__category{
+a.post__category {
 	display: inline-block;
-    height: 24px;
-    line-height: 24px;
-    position: relative;
-    margin: 0 16px 8px 0;
-    padding: 0 12px 0 14px;
-    background: #e1eaf5;    
-    -webkit-border-bottom-right-radius: 3px;    
-    border-bottom-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;    
-    border-top-right-radius: 3px;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    color: #333e4c;
-    font-size: 12px;
-    text-decoration: none;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    font-weight: bold;
-	transition : .1s linear;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	margin: 0 16px 8px 0;
+	padding: 0 12px 0 14px;
+	background: #e1eaf5;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	color: #333e4c;
+	font-size: 12px;
+	text-decoration: none;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	transition: 0.1s linear;
 	&:hover {
-		box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-		transform : translateY(-2px) !important;
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+		transform: translateY(-2px) !important;
 	}
 }
 .post__category:before {
-    content: "";
-    position: absolute;
-    top:0;
-    left: -12px;
-    width: 0;
-    height: 0;
-    border-color:transparent #e1eaf5 transparent transparent;
-    border-style: solid;
-    border-width: 12px 12px 12px 0;        
-    }
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -12px;
+	width: 0;
+	height: 0;
+	border-color: transparent #e1eaf5 transparent transparent;
+	border-style: solid;
+	border-width: 12px 12px 12px 0;
+}
 
 .post__category:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 1px;
-    float: left;
-    width: 5px;
-    height: 5px;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #fff;
-    -webkit-box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
-    box-shadow: -1px -1px 2px rgba(0,0,0,0.4);
-    }
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 1px;
+	float: left;
+	width: 5px;
+	height: 5px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #fff;
+	-webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+}
 
 // TOC 스타일
-#markdown-toc{
+#markdown-toc {
 	height: 0px;
 	position: sticky;
 	top: 50px;
-	font-size : 12px;
-	white-space:nowrap;
+	font-size: 12px;
+	white-space: nowrap;
 	margin-left: 270px;
 	padding-left: 73%;
-	list-style : none;
+	list-style: none;
 	ul {
-		list-style : none;
+		list-style: none;
 	}
-	a{
-		color : rgba(0,0,0,0.5) !important;
-		opacity : 0.7;
-		transition : 0.2s ease-in-out;
-	}	
+	a {
+		color: rgba(0, 0, 0, 0.5) !important;
+		opacity: 0.7;
+		transition: 0.2s ease-in-out;
+	}
 	a:hover {
-		color : $titleColor !important;
-		opacity : 0.8;
+		color: $titleColor !important;
+		opacity: 0.8;
 	}
 	a:focus {
-		color : $titleColor !important;
-		opacity : 0.8;
+		color: $titleColor !important;
+		opacity: 0.8;
 	}
 	.page-content .post ul {
-    position: sticky;
-    margin-bottom: 1em;
-    top: 100px;
+		position: sticky;
+		margin-bottom: 1em;
+		top: 100px;
 	}
-
 }
 
-// 타이틀 왼쪽 border 효과 
-	.post {
-		.wrapper {
-			h1 {
-				border-left: 8px $titleColor solid;
-				padding-left: 10px;
-			}
-			h2 {
-				border-left: 5px $titleColor solid;
-				padding-left: 10px;
-			}	
+// 타이틀 왼쪽 border 효과
+.post {
+	.wrapper {
+		h1 {
+			border-left: 8px $titleColor solid;
+			padding-left: 10px;
 		}
-	
-
-		//리스트 스타일 변경 
-// 		ul {
-// 			li {
-// 			list-style : none;
-// 				p {
-// 						 display: inline-block;
-// 				}
-// 			}
-// 			li:before {
-// 				content: ">";
-// 				display: inline-block;
-// 				vertical-align: middle;
-// 				padding: 0px 5px 6px 0px;
-// 			 font-weight : bold;
-// 			 color : $titleColor;
-// 			}
-// 		}
-		
-	 
-
-			//이미지 border 및 호버 효과 
-		img {
-			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24) !important;
-			margin-top : 15px !important;
-			margin-bottom : 15px !important;
-			border : 1px solid rgba(0,0,0,0.3);
-			transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-		}
-		img:hover {
-			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;
-		}
-		
-		.post-content {
-				overflow: visible;
-			a {
-				color :  #443091;
-			}
+		h2 {
+			border-left: 5px $titleColor solid;
+			padding-left: 10px;
 		}
 	}
 
+	//리스트 스타일 변경
+	// 		ul {
+	// 			li {
+	// 			list-style : none;
+	// 				p {
+	// 						 display: inline-block;
+	// 				}
+	// 			}
+	// 			li:before {
+	// 				content: ">";
+	// 				display: inline-block;
+	// 				vertical-align: middle;
+	// 				padding: 0px 5px 6px 0px;
+	// 			 font-weight : bold;
+	// 			 color : $titleColor;
+	// 			}
+	// 		}
 
-//만든거 
+	//이미지 border 및 호버 효과
+	img {
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+		margin-top: 15px !important;
+		margin-bottom: 15px !important;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	}
+	img:hover {
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22) !important;
+	}
+
+	.post-content {
+		overflow: visible;
+		a {
+			color: #443091;
+		}
+	}
+}
+
+//만든거
 
 hr {
-	margin : 40px 0;
+	margin: 40px 0;
 }
 
-.language-error{ // error highlighting
-	color : red; 
+.language-error {
+	// error highlighting
+	color: red;
 }
-code.highlighter-rouge{
-	   color : $titleColor;
-	line-height : 1.2;   
-	background-color : rgba(27,31,35,.05);
-	font-family: 'Source Code Pro', monospace;
-	
+code.highlighter-rouge {
+	color: $titleColor;
+	line-height: 1.2;
+	background-color: rgba(27, 31, 35, 0.05);
+	font-family: "Source Code Pro", monospace;
 }
-.hljs{
+.hljs {
 	font-weight: 100;
-	background-color : #f6f8fa;
+	background-color: #f6f8fa;
 }
 // blockquote h2{
 // 	    border-left: 5px $titleColor solid;
 //     padding-left: 10px;
 // }
-blockquote{
+blockquote {
 	display: block;
 	padding: 1em 1em 1em 1em;
 	margin: 0 0 1.5em;
 	position: relative;
 	border-left: 4px solid #dd4c39;
 	border-right: 2px solid #dd4c39;
-	background-color: rgba(0,0,0,0.03);
+	background-color: rgba(0, 0, 0, 0.03);
 	font-weight: 300;
-	text-align : center;
-	h2,h3,h4,p{
-		margin : 7px 0px;
+	text-align: center;
+	h2,
+	h3,
+	h4,
+	p {
+		margin: 7px 0px;
 	}
 }
 // blockquote h3{
@@ -230,8 +232,8 @@ blockquote{
 //     padding-left: 10px;
 // }
 a {
-	color : rgba(0,0,0,0.8);
-	text-decoration:none !important;
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none !important;
 }
 
 // .page-content .page .posts-list li:hover{
@@ -254,17 +256,16 @@ a {
 
 //만든거 끝
 
-
-
-html, body {
+html,
+body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	font-size : 18px;
+	font-size: 18px;
 }
 
 ol.default {
-  @extend %default-ol;
+	@extend %default-ol;
 }
 
 ul.default {
@@ -272,13 +273,12 @@ ul.default {
 }
 
 code {
-	background-color: #F6F8FA;
+	background-color: #f6f8fa;
 	display: inline-block;
 	border-radius: 4px;
-	font-size : 13.6px !important;
+	font-size: 13.6px !important;
 	padding: 0 5px;
-	font-family: 'Source Code Pro', monospace;
-	
+	font-family: "Source Code Pro", monospace;
 }
 
 pre code.hljs {
@@ -287,57 +287,59 @@ pre code.hljs {
 
 .page-divider {
 	$divider-color: $light-gray;
-  display: block;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  border-top: 1px solid $divider-color;
-  .one {
-    position: relative;
-    top: -9px;
-    display: block;
-    background: $divider-color;
-    width: 18px;
-    height: 18px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-  }
-  .two {
-    position: relative;
-    top: -26px;
-    display: block;
-    background: $white;
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-  }
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid $divider-color;
+	.one {
+		position: relative;
+		top: -9px;
+		display: block;
+		background: $divider-color;
+		width: 18px;
+		height: 18px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+	}
+	.two {
+		position: relative;
+		top: -26px;
+		display: block;
+		background: $white;
+		width: 16px;
+		height: 16px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 50%;
+	}
 }
-.center { 
-	display : block;
-	margin : auto;
+.center {
+	display: block;
+	margin: auto;
 }
-.site-header-container, .post-header-container {
+.site-header-container,
+.post-header-container {
 	width: 100%;
 	text-align: center;
 	&.has-cover {
 		color: $white;
-		text-shadow: 0 2px 1px rgba(0,0,0,0.1) !important;
+		text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1) !important;
 		background-position: 50% 50%;
 		background-size: cover;
 		.title {
 			font-size: modular-scale(6);
 		}
-		.subtitle, .info {
+		.subtitle,
+		.info {
 			font-size: modular-scale(1);
 		}
 	}
 	.scrim {
 		padding: 3em 1em;
 		&.has-cover {
-// 			background-color: rgba(0,0,0,0.2);
+			// 			background-color: rgba(0,0,0,0.2);
 			padding: 6em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
@@ -355,99 +357,97 @@ pre code.hljs {
 	/*
 	*	Navigation Menu - http://refills.bourbon.io/unstyled/ (see "Navigation")
 	*/
-  // Mobile view
-  .navigation-menu-button {
-    display: block;
-    float: right;
-    margin: 0;
-    font-size: 1.5em;
-    padding-top: 0.5em;
-    @include media ($tablet) {
-      display: none;
-    }
-  }
-  // Nav menu
-  .navigation-wrapper {
-  	@include outer-container;
-    @include clearfix;
-    position: relative;
-  }
-  .logo {
-    float: left;
-    height: 4em;
-    @include media ($tablet) {
-    	padding-left: $em-base;
-    }
-    img {
-      max-height: 4em;
-      margin-top: 0.75em;
-      padding-right: 1em;
-    }
-    span {
-    	font-size: 1.25em;
-    }
-  }
-  nav {
-    float: none;
-    padding: 1.25em 0;
-    @include media ($tablet) {
-      float: right;
-      line-height: 1.5em;
-    }
-  }
-  ul.navigation-menu {
-    clear: both;
-    display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    @include media ($tablet) {
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-    &.show {
-      display: block;
-    }
-  }
-  // Nav items
-  ul li.nav-link {
-		margin-right : 40px;
-    display: block;
-    text-align: right;
-    width: 100%;
-    padding: 0.25em 0;
-    @include media ($tablet) {
-      background: transparent;
-      display: inline;
-      text-decoration: none;
-      width: auto;
-    }
-  }
-  li.nav-link {
-		
-  	a {
-// 			color : $google-red !important;
-				color : rgba(0,0,0,0.87);
-				border-bottom : 2px solid rgba(0,0,0,0);
-				transition : 0.2s linear;
-// 			color : #2980b9;
-	    display: inline-block;
-	    @include media ($tablet) {
-// 	      padding-right: 1.5em;
-	    }
-			
-	  }
-		a:hover{
-			border-bottom : 2px solid #8565fc;
+	// Mobile view
+	.navigation-menu-button {
+		display: block;
+		float: right;
+		margin: 0;
+		font-size: 1.5em;
+		padding-top: 0.5em;
+		@include media($tablet) {
+			display: none;
 		}
-	  &:last-child a {
-	  	@include media ($tablet) {
-//     		padding-right: 1em;
-    	}
-    }
-  }
+	}
+	// Nav menu
+	.navigation-wrapper {
+		@include outer-container;
+		@include clearfix;
+		position: relative;
+	}
+	.logo {
+		float: left;
+		height: 4em;
+		@include media($tablet) {
+			padding-left: $em-base;
+		}
+		img {
+			max-height: 4em;
+			margin-top: 0.75em;
+			padding-right: 1em;
+		}
+		span {
+			font-size: 1.25em;
+		}
+	}
+	nav {
+		float: none;
+		padding: 1.25em 0;
+		@include media($tablet) {
+			float: right;
+			line-height: 1.5em;
+		}
+	}
+	ul.navigation-menu {
+		clear: both;
+		display: none;
+		margin: 0 auto;
+		overflow: visible;
+		padding: 0;
+		width: 100%;
+		@include media($tablet) {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+		&.show {
+			display: block;
+		}
+	}
+	// Nav items
+	ul li.nav-link {
+		margin-right: 40px;
+		display: block;
+		text-align: right;
+		width: 100%;
+		padding: 0.25em 0;
+		@include media($tablet) {
+			background: transparent;
+			display: inline;
+			text-decoration: none;
+			width: auto;
+		}
+	}
+	li.nav-link {
+		a {
+			// 			color : $google-red !important;
+			color: rgba(0, 0, 0, 0.87);
+			border-bottom: 2px solid rgba(0, 0, 0, 0);
+			transition: 0.2s linear;
+			// 			color : #2980b9;
+			display: inline-block;
+			@include media($tablet) {
+				// 	      padding-right: 1.5em;
+			}
+		}
+		a:hover {
+			border-bottom: 2px solid #8565fc;
+		}
+		&:last-child a {
+			@include media($tablet) {
+				//     		padding-right: 1em;
+			}
+		}
+	}
 }
 
 /*
@@ -488,15 +488,15 @@ pre code.hljs {
 		.page-number {
 			padding: 0 1em;
 		}
-    a.newer-posts {
-      text-decoration: none;
-    }
+		a.newer-posts {
+			text-decoration: none;
+		}
 	}
 	.site-header-container {
 		color: #000000;
-		text-shadow: 0 2px 1px rgba(0,0,0,0.1);
+		text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
 		background-color: #ffffff;
-		.site-header{
+		.site-header {
 			.title {
 				font-size: modular-scale(6);
 			}
@@ -535,7 +535,7 @@ pre code.hljs {
 		.rss {
 			margin: 1em 0 0 0;
 			@include span-columns(12);
-			@include media ($tablet) {
+			@include media($tablet) {
 				margin: 1em 0;
 				@include span-columns(6);
 			}
@@ -544,7 +544,7 @@ pre code.hljs {
 			font-weight: bold;
 			margin: 0 0 1em 0;
 			@include span-columns(12);
-			@include media ($tablet) {
+			@include media($tablet) {
 				@include span-columns(6);
 				margin: 1em 0;
 				text-align: right;
@@ -602,7 +602,7 @@ pre code.hljs {
 			max-width: 320px;
 			margin: auto;
 			padding-bottom: 0.5em;
- 		}
+		}
 	}
 }
 
@@ -612,36 +612,35 @@ pre code.hljs {
 .site-footer {
 	$link-color: $white;
 	padding: 1em 1em 2em 1em;
-	border-top : 1px solid #D8E0E7;
-	background-color:#f6f9fc;
+	border-top: 1px solid #d8e0e7;
+	background-color: #f6f9fc;
 	color: #8898aa;
 	a {
-	  color: #8898aa;
-	  &:active,
-	  &:focus,
-	  &:hover {
-	    color: darken($link-color, 10%);
-	  }
-	  &:active,
-	  &:focus {
-	    outline: none;
-	  }
+		color: #8898aa;
+		&:active,
+		&:focus,
+		&:hover {
+			color: darken($link-color, 10%);
+		}
+		&:active,
+		&:focus {
+			outline: none;
+		}
 	}
 	.wrapper {
 		@include outer-container;
 	}
 	.footer-heading {
-
 	}
 	/*
 	*	Site Navigation (left)
 	*/
 	.site-navigation {
 		@include span-columns(12);
-		@include media ($mobile) {
+		@include media($mobile) {
 			@include span-columns(6);
 		}
-		@include media ($tablet) {
+		@include media($tablet) {
 			@include span-columns(4);
 		}
 		font-size: 0.9em;
@@ -655,12 +654,12 @@ pre code.hljs {
 	.site-contact {
 		margin-top: 1em;
 		@include span-columns(12);
-		@include media ($mobile) {
+		@include media($mobile) {
 			@include span-columns(6);
 			margin-top: 0;
 			margin-right: 0;
 		}
-		@include media ($tablet) {
+		@include media($tablet) {
 			@include span-columns(4);
 			margin-top: 0;
 		}
@@ -679,7 +678,7 @@ pre code.hljs {
 	.site-signature {
 		margin-top: 1em;
 		@include span-columns(12);
-		@include media ($tablet) {
+		@include media($tablet) {
 			@include span-columns(4);
 			margin-right: 0;
 			margin-top: 0;
@@ -691,14 +690,13 @@ pre code.hljs {
 	}
 }
 
-@media(max-width: $tablet){
-	#markdown-toc{
-		display : none;
+@media (max-width: $tablet) {
+	#markdown-toc {
+		display: none;
 	}
 }
-@media(max-width: $mobile){
-	#markdown-toc{
-		display : none;
+@media (max-width: $mobile) {
+	#markdown-toc {
+		display: none;
 	}
 }
-
