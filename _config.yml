@@ -14,14 +14,14 @@ subtitle: "#JavaScript  #React  #ReactNaive #Node  "
 email: 13akstjq@gmail.com
 name: ManSub Han
 description: >
- 자바스크립트를 공부하는 개발자의 블로그입니다.
+ 공부하는 프론트엔드 개발자의 블로그입니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://13akstjq.github.io" # the base hostname & protocol for your site
 cover: ""
-logo: "/assets/logo_2.png"
+logo: "/assets/main_logo.png"
 
 # Build settings
 markdown: kramdown
