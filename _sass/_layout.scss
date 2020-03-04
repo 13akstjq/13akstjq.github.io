@@ -390,7 +390,7 @@ pre code.hljs {
 	}
 	nav {
 		float: none;
-		padding: 1.25em 0;
+		padding: 1.75em 0 1.25em;
 		@include media($tablet) {
 			float: right;
 			line-height: 1.5em;
