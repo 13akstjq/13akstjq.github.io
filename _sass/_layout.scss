@@ -382,8 +382,7 @@ pre code.hljs {
 		}
 		img {
 			max-height: 4em;
-			margin-top: 0.75em;
-			padding-right: 1em;
+			padding: 1em 1em 0 0 ;
 		}
 		span {
 			font-size: 1.25em;
@@ -391,7 +390,7 @@ pre code.hljs {
 	}
 	nav {
 		float: none;
-		padding: 1.25em 0;
+		padding: 1.75em 0 1.25em;
 		@include media($tablet) {
 			float: right;
 			line-height: 1.5em;
