@@ -43,6 +43,7 @@ p {
 .post-item {
 	padding-left: 20px;
 	transition: 0.1s linear;
+	border-left: 1px solid transparent;
 }
 .post-item:hover {
 	border-left: 5px solid $titleColor;
