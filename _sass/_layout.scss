@@ -52,6 +52,18 @@ p {
 .main_page_post_title { 
 	color : #blackColor;
 }
+.company { 
+	position : relative;
+	&::after { 
+		content :"";
+		position  : absolute;
+		left : 0;
+		right : 0;
+		bottom : 10px;
+		height : 10px;
+		background-color : #03cf5d;
+	}
+}
 // category tag style
 a.post__category {
 	display: inline-block;
