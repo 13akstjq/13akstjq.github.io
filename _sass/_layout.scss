@@ -340,8 +340,10 @@ pre code.hljs {
 	.scrim {
 		padding: 3em 1em;
 		&.has-cover {
-			// 			background-color: rgba(0,0,0,0.2);
-			padding: 6em 1em !important;
+			margin: auto;
+			max-width: 48em;
+			text-align: left;
+			padding: 6em 0 !important;
 			color : $blackColor;
 			.title { 
 				position  :absolute;
@@ -353,7 +355,7 @@ pre code.hljs {
 				clip : rect(0,0,0,0);
 			}
 			@include media($tablet) {
-				padding: 9em 1em !important;
+				padding: 9em 0em !important;
 			}
 		}
 	}
@@ -512,7 +514,7 @@ pre code.hljs {
 			}
 			.subtitle {
 // 				font-style: italic;
-				font-size: modular-scale(1);
+				font-size: 30px;
 			}
 		}
 	}
