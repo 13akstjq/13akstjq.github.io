@@ -350,7 +350,7 @@ pre code.hljs {
 				width : 1px;
 				height : 1px;
 				margin : -1px;
-				rect : clip(0,0,0,0);
+				clip : rect(0,0,0,0);
 			}
 			@include media($tablet) {
 				padding: 9em 1em !important;
