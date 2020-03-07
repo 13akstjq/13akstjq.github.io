@@ -10,7 +10,7 @@ $tablet: $b2;
 $b1: 960px;
 $desktop: $b1;
 $titleColor: #8565fc;
-
+$blackColor : #333e4c;
 /*
 *	Global
 */
@@ -341,6 +341,7 @@ pre code.hljs {
 		&.has-cover {
 			// 			background-color: rgba(0,0,0,0.2);
 			padding: 6em 1em !important;
+			color : $blackColor;
 			@include media($tablet) {
 				padding: 9em 1em !important;
 			}
