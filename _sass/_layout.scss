@@ -49,6 +49,9 @@ p {
 	border-left: 5px solid $titleColor;
 }
 
+.main_page_post_title { 
+	color : #blackColor;
+}
 // category tag style
 a.post__category {
 	display: inline-block;
@@ -513,7 +516,7 @@ pre code.hljs {
 				font-size: modular-scale(6);
 			}
 			.subtitle {
-// 				font-style: italic;
+				font-weight : bold;
 				font-size: 30px;
 			}
 		}
