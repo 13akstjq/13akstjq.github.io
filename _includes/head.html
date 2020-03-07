@@ -106,11 +106,7 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 	
 	<script>
-		$.ajax({
-				url: "https://script.google.com/macros/s/AKfycbx-Y4Qg2KMrYT2AaEww7uJKU_r3u015deqdLg2qNU3Ysd0pWYw/exec",
-				data: {A:"a", B:"b"},
-				type: "POST"
-		});
+		
 		$(document).ready(function(){
 				AOS.init({
   // Global settings:
@@ -143,6 +139,12 @@
 				$(this).css("position","relative");
 				$(this).animate({opacity: '1.0'},"fast");
 			});
+			
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbx-Y4Qg2KMrYT2AaEww7uJKU_r3u015deqdLg2qNU3Ysd0pWYw/exec",
+				data: {A:"a", B:"b"},
+				type: "POST"
+		});
 
 		});
 </script>
