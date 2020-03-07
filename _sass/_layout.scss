@@ -343,6 +343,15 @@ pre code.hljs {
 			// 			background-color: rgba(0,0,0,0.2);
 			padding: 6em 1em !important;
 			color : $blackColor;
+			.title { 
+				position  :absolute;
+				left : 0; 
+				top  :0;
+				width : 1px;
+				height : 1px;
+				margin : -1px;
+				rect : clip(0,0,0,0);
+			}
 			@include media($tablet) {
 				padding: 9em 1em !important;
 			}
