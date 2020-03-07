@@ -57,10 +57,11 @@ p {
 	&::after { 
 		content :"";
 		position  : absolute;
+		z-index: -1;
 		left : 0;
 		right : 0;
 		bottom : 10px;
-		height : 10px;
+		height : 7px;
 		background-color : #03cf5d;
 	}
 }
