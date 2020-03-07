@@ -10,8 +10,9 @@ exclude:
 
 # Site settings
 title: 웹 개발 기술 블로그
-subtitle: "웹 개발에 필요한 내용을 기억하기 위해 기록하는 공간입니다."
-subtitle2: "N-Tech Service에서 개발하고 있습니다. "
+subtitle: "웹 개발에 필요한 내용을 기록하는 공간입니다. 📚"
+company: "N-Tech Service"
+subtitle2: "에서 개발하고 있습니다. "
 email: 13akstjq@gmail.com
 name: ManSub Han
 description: >
