@@ -62,7 +62,7 @@ p {
 		right : 0;
 		bottom : 10px;
 		height : 7px;
-		background-color : #titleColor;
+		background-color : #03cf5d;
 	}
 }
 .blog_topic { 
@@ -75,7 +75,7 @@ p {
 			right : 0;
 			bottom : 10px;
 			height : 7px;
-			background-color : #03cf5d;
+			background-color : $titleColor;
 		}
 }
 // category tag style
