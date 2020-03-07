@@ -10,11 +10,11 @@ exclude:
 
 # Site settings
 title: 웹 개발 기술 블로그
-subtitle: "#JavaScript  #React  #ReactNaive #Node  "
+subtitle: "웹 개발에 필요한 내용을 기억하기 위해 기록하는 공간입니다. N-Tech Service에서 개발하고 있습니다. "
 email: 13akstjq@gmail.com
 name: ManSub Han
 description: >
- 웹 개발에 필요한 지식을 공부하며 기록하는 블로그입니다. 
+ 웹 개발에 필요한 지식을 기록하는 블로그입니다. 
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
