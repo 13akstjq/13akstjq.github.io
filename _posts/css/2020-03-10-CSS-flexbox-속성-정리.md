@@ -15,6 +15,8 @@ tags: css Flex
 
 크게 컨텐츠들을 감싸는  `Flex Container` 와 각 컨텐츠들인 `Flex Item`으로 구성되어있어 각 요소에 적절한 속성과 값을 적용해서 원하는 레이아웃을 구성할 수 있습니다. 
 
+***
+
 ### Flexbox 지원 범위 
 
 Flexbox는 좋은 기능인 만큼 이전 버전의 브라우저에서 지원을 안해주기도 합니다. 실제 서비스를 개발하기 위해선 이를 잘 알고 써야합니다. 
@@ -22,6 +24,8 @@ Flexbox는 좋은 기능인 만큼 이전 버전의 브라우저에서 지원을
 ![image](https://user-images.githubusercontent.com/46010705/76543864-72c66f00-64ca-11ea-818a-c474374a5613.png)
 
 IE는 9버전 이하는 지원을 하지 않으며, 10,11에서도 버그가 존재합니다. 모바일 웹에서는 지원을 잘해주고 있습니다. 서비스가 어떤 브라우저까지 지원하는지에 따라 적절하게 사용하면 될 것 같습니다. 
+
+***
 
 ### Flex Container 주요 속성
 
@@ -83,23 +87,36 @@ IE는 9버전 이하는 지원을 하지 않으며, 10,11에서도 버그가 존
 
 
 
-#### align-content 와 align-item 차이점 
+#### align-content 와 align-items 차이점 
 
-**align-item** : `justify-content`와 반대로 교차 축의 정렬 방법 설정
+**align-items** : `justify-content`와 반대로 교차 축의 정렬 방법 설정
 
 **align-content** : `Flex Container`의  `flex Item`들이 두줄 이상으로 배치되어있을 경우에 각 줄을 어떻게 배치할 것인지 설정. **`flex item`이 한줄로 배치되어 있을 경우 동작 안함.**
+
+![image](https://user-images.githubusercontent.com/46010705/76595501-1fdacf00-653f-11ea-8a34-c2ae8ecb558b.png)
+
+![image](https://user-images.githubusercontent.com/46010705/76595698-a5f71580-653f-11ea-8d3c-b8c0ef92c584.png)
+
+![image](https://user-images.githubusercontent.com/46010705/76595888-29b10200-6540-11ea-86a7-0f0b2abf5efc.png)
+
+위 이미지를 보면 `align-content`와 `align-items`의 차이점을  확인할 수 있습니다. 
+
+단, 컨텐츠가 한줄일 경우 `align-content`와`align-items`는 동일하게 동작합니다. 
+
+***
 
 
 
 ### Flex item 주요 속성
 
-| 속성        | 용도                          |
-| ----------- | ----------------------------- |
-| order       | Flex Item 순서 설정           |
-| flex-grow   | Flex Item 너비 증가 비율 설정 |
-| flex-shrink | Flex Item 너비 감소 비율 설정 |
-| flex-basis  | Flex Item 기본 너비 설정      |
-| align-self  | 교차 축의 item 정렬 방법 설정 |
+| 속성        | 용도                                      |
+| ----------- | ----------------------------------------- |
+| order       | Flex Item 순서 설정                       |
+| flex-grow   | Flex Item 너비 증가 비율 설정             |
+| flex-shrink | Flex Item 너비 감소 비율 설정             |
+| flex-basis  | Flex Item 기본 너비 설정                  |
+| flex        | flex-grow, flex-shrink, flex-basis 축약형 |
+| align-self  | 교차 축의 item 정렬 방법 설정             |
 
 
 
@@ -176,7 +193,26 @@ IE는 9버전 이하는 지원을 하지 않으며, 10,11에서도 버그가 존
 
 위 처럼 축약형으로 작성할 때 **`flex-basis`값을 생략하면 `auto`가 아닌 0 이 적용**되는데 이 점 주의해야합니다. 
 
+`flex_item`의 크기가 변하지 않게 하려면 `flex : none;`으로 속성을 정의하면 됩니다. 
+
+#### align-self
+
+교차 축의 item 정렬 방법을 설정할 수 있습니다. `Flex Container`안의 `Flex Item` 에 개별 적용되는 속성입니다. 
+
+기본 값은 `auto`로써 `Flex Container`에서 정의한 `align-items` 속성을 상속받습니다. 
+
+다른 정렬 방법들과 동일하게 `flex-start`,`flex-end`,`center`,`baseline`과 같은 값을 가지고 있습니다. 
+
+**사용 용도**
+
+![image](https://user-images.githubusercontent.com/46010705/76596404-6df0d200-6541-11ea-9681-8e0405a406ba.png)
+
+위 이미지 처럼`FlexContainer`에서 정의한 `align-items`을 덮어씌어 개별적으로 새로운 교차축 정렬 방법을 정의하고싶을 때 사용 
 
 
 
+**참고 사이트**
+
+- [[Naver D2] flexbox로 만들 수 있는 10가지 레이아웃](https://d2.naver.com/helloworld/8540176)
+- [CSS F(lex(Flexible Box) 완벽 가이드](https://heropy.blog/2018/11/24/css-flexible-box/)
 
