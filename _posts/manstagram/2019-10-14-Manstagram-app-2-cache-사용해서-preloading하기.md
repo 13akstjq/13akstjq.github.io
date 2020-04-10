@@ -59,6 +59,17 @@ export default function App() {
 
 `Ionicons`를 load하고 나서 화면을 보여주기 위해 `useEffect(ComponentDidMount)`에서 load를 해오는 함수를 호출합니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 #### 1.2 logo preLoading 하기
 
 [expo 공식사이트](https://docs.expo.io/versions/v33.0.0/guides/assets/)에 local에 있는 이미지에 대해서 미리 load하는 것에 대해 알려주고 있습니다.
@@ -105,7 +116,16 @@ client에서 작업하기 위해 apolloClient를 사용해야하는데 쉬운 �
 
 ------
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - cache를 만들어야함(`inMemoryCache`) 
 
@@ -155,7 +175,16 @@ client에서 작업하기 위해 apolloClient를 사용해야하는데 쉬운 �
 
 ------
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `App.js`
 
@@ -247,6 +276,17 @@ export default function App() {
   ```
 
   여러개의 loacal image를 load하고 싶을 때는 `[]`를 사용해서 load할 수도  있습니다.  
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-4877378276818686"
+       data-ad-slot="4307878116"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
 - `cache`만들기 
 

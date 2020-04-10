@@ -72,7 +72,16 @@ firebase를 연동하기 전에 firebase가 어떤 것인지 간단하게 알아
   * Parsing할 필요가 없기 때문에 클라이언트와의 연동이 편하고 parse error의 가능성도 없다.
 ```
 
-​      
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 클라우드 함수  
 
@@ -114,7 +123,16 @@ firebase를 연동하기 전에 firebase가 어떤 것인지 간단하게 알아
 
 ​      
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 2.2 firebase 연동하기 
 
@@ -192,7 +210,16 @@ firestore
 
 ![1566238088942](../../../../assets/image/1566238088942.png)
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 2.3  페이스북 로그인
 
@@ -216,7 +243,16 @@ firebase Auth의 facebook에 url 정보가 나와있습니다.
 
 ![1566311538622](https://user-images.githubusercontent.com/46010705/66911690-0430d280-f04c-11e9-8052-c1022c845198.png)
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 2.4 firebase ui react
 

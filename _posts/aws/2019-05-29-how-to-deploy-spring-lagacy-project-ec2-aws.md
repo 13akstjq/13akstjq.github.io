@@ -104,7 +104,19 @@ OpenJDK Runtime Environment (build 1.8.0_212-8u212-b03-0ubuntu1.18.04.1-b03)
 OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)
 ```
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 java 설치 확인 
+
 ```
 $ which javac
 /usr/bin/javac
@@ -217,8 +229,19 @@ $ mv hmProject.war /var/lib/tomcat8/webapps/
 
 아마 permission denied 가 뜰 것임.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 퍼미션 변경하기 
+
 ```
 chmod [변경될 퍼미션값] [변경할 파일]
 ```
@@ -310,7 +333,19 @@ i를 누르면 수정가능해짐
 수정한 후에 ctrl + c로 명령모드로 바꿈 
 :wq 혹은 :w!를 입력하면 저장됨.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 외부 접속 허용 설정해준 후에 mysql 재시작 및 로그인 
+
 ```
 service mysql restart
 mysql -u root -p
@@ -346,7 +381,16 @@ update mysql.user set plugin = 'mysql_native_password' where User='root';
 
 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### tomcat8/webapps 에있는 war 파일 삭제하기 
 ```

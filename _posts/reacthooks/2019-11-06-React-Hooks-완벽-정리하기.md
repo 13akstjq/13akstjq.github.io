@@ -204,7 +204,16 @@ useEffect(() => {
 
 ---
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. useContext
 
@@ -354,6 +363,17 @@ export const useFunctions = () => {
 export default UserContextProvider;
 ```
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 `Header.js`
 
 ```javascript
@@ -387,7 +407,17 @@ export default () => {
 ```
 
 여기서도 `user`와 `loggedUserIn`이라는 것을 Context에서 가져오는 함수를 Context에 만들어 놨기 때문에 코드를 깔끔하게 작성할 수 있었습니다.  
-여기서 `user`는 `{}`가 없는데 `{loggedUserIn}`은 있는 이유는 `useFunctions`는 함수 객체를 return 하기 때문에 그 중에서 하나인 loggedUserIn을 destructuring으로 받아온 것이고 `useUser`은 user만 return 하기때문에 저렇게 작성하는 것입니다.  
+여기서 `user`는 `{}`가 없는데 `{loggedUserIn}`은 있는 이유는 `useFunctions`는 함수 객체를 return 하기 때문에 그 중에서 하나인 loggedUserIn을 destructuring으로 받아온 것이고 `useUser`은 user만 return 하기때문에 저렇게 작성하는 것입니다.  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ------
 

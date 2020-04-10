@@ -44,7 +44,16 @@ export default () => (
 
 위 데이터가 나온다 .  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `switch`가 있을 경우  `./tv/popular`링크에 들어가면   
 
@@ -108,7 +117,16 @@ Route는 위에서 부터 아래로 먼저 맞는 경로가 있을 경우에 보
 
 기존 사이트처럼 `/`만 붙는 방식의 Router  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 4. Redirect  
 
@@ -178,7 +196,16 @@ export default () => {
 
 하지만 위와 같은 상황이 아닐 수도 있습니다. 다음은 그런 경우에 대해 정리해보겠습니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 2. url에 따라 사용하는 컴포넌트가 다를 경우 
 
@@ -234,7 +261,16 @@ export default () => {
 
 Route에는 component를 넣어줄 수 도 있지만 **Render**라는 옵션을 넣어줄 수도 있습니다. Render는 직접 컴포넌트를 넣어줄 수 있습니다. 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![1569313555552](../../../../assets/image/1569313555552-1569413553102.png)
 
@@ -262,7 +298,16 @@ Route에는 component를 넣어줄 수 도 있지만 **Render**라는 옵션을 
 
 이렇게 작성하면 꼭 모든 페이지가 공유하지 않는다고 각 페이지 Presenter에 Header를 넣어주는 행동을 하지 않아도 됩니다.   
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 각 경로마다 어떤 컴포넌트를 사용하는지 더욱 명확히 알 수 있어서 좋은 것 같습니다.   
 

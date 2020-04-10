@@ -52,7 +52,7 @@ static propTypes = {
         title : PropTypes.number, 
         poster : PropTypes.string
     }
-```  
+```
 ```console
 index.js:1375 Warning: Failed prop type: Invalid prop `title` of type `string` supplied to `Movie`, expected `number`.
     in Movie (at App.js:27)

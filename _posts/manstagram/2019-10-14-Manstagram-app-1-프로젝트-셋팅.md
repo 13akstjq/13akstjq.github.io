@@ -64,7 +64,16 @@ $ npm start
 
 이제 npm을 통해서 create-react-native-app 까지 설치를 완료했다. 이제는 RN의 능력을 더욱 극대화 해줄 Expo를 설치하려고 한다. 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ------
 
@@ -126,7 +135,16 @@ Expo를 사용해서 하면 분명 편하겠지만 어쩔 수 없었음....
 - adb sherll 입력해서 아래와 같이 device 가 연결 된다면 완료
   ![image](img/58800425-c30ec780-8642-11e9-94aa-a5446b20ae6a.png)
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 4.1 AndroidStudio SDK 및 ADB 설정 
 
@@ -143,7 +161,16 @@ Expo를 사용해서 하면 분명 편하겠지만 어쩔 수 없었음....
   `android:debuggable="true"`
   다음 코드를 넣어주면 실제 핸드폰 개발자 환경에서 usbDebugging을 풀어주는 것과 같다. 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 4.2 emulator 만들기 
 
@@ -157,6 +184,17 @@ Expo를 사용해서 하면 분명 편하겠지만 어쩔 수 없었음....
   ![image](https://user-images.githubusercontent.com/46010705/58807943-032a7600-8654-11e9-8354-38147281a7aa.png)
 
 
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 4.4Expo 핸드폰 이슈 
 
@@ -204,6 +242,17 @@ expo start --android
 
 expo에는 이런 화면이 나온다.
 ![image](https://user-images.githubusercontent.com/46010705/58807308-c316c380-8652-11e9-805c-acce1be7b91f.png)
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핸드폰 화면
 

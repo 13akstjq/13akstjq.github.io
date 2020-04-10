@@ -21,6 +21,17 @@ tags: react router react-transition-group
 
 ![Honeycam 2019-08-25 20-27-06](../../../../assets/image/Honeycam 2019-08-25 20-27-06.gif)
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 `App.js`
 
 ```js
@@ -139,6 +150,17 @@ export default App;
 
 ![1566733614621](../../../../assets/image/1566733614621.png)
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 그럼 **TransitionGroup**의 상위에 Route를 하나 추가하도록하겠습니다.
 
 ```js
@@ -211,6 +233,17 @@ export default () => <div>"여기는 ABOUT 이구요."</div>;
 ---
 
 ![Honeycam 2019-08-25 21-05-56](../../../../assets/image/Honeycam 2019-08-25 21-05-56.gif)
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ---
 
@@ -316,6 +349,17 @@ develop tool을 통해서 확인해보도록 하겠습니다.
 2. position : absolute이기 때문에 위치가 겹치기 때문입니다.
 
 지금 기존의 글자가 지워지지 않는 것은 fade 효과를 주석처리했기 때문인데 이것을 다시 300ms로 설정하게 될 경우 아래와 같이 정상적으로 동작하는 것을 확인할 수 있습니다.
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 2-4. 결과
 

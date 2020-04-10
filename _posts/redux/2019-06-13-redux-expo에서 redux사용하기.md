@@ -143,6 +143,17 @@ const styles = StyleSheet.create({
 export default connect(mapStateToProps)(Timer); // export default Timer; 대신에 connect해서 export해야하는 것이 문제였음. 
 ```
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 * 처음에는 아래와 같이 Timer 클래스를 export했는데 이렇게 할 경우 connect가 되지 않은 상태로 App.js에서 import를 해서 사용하였다.
 ```javascript
 export default Timer;

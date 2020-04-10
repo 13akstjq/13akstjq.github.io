@@ -56,8 +56,21 @@ import {fileLoader , mergeResolvers,mergeTypes} from 'merge-graphql-schemas';
 ```
 
 - fileLoader : 인자로 path를 받아 파일을 load해줍니다.
+
 - path.join : 해당 경로의 파일들을 가져옵니다.
+
 - makeExecutabelSchema : type, resolver를 schema 형태로 만들어 줍니다.
+
+- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-layout="in-article"
+       data-ad-format="fluid"
+       data-ad-client="ca-pub-4877378276818686"
+       data-ad-slot="4307878116"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
 ### 만든 schema를 서버에서 사용하기
 
