@@ -50,7 +50,17 @@ IE는 9버전 이하는 지원을 하지 않으며, 10,11에서도 버그가 존
 
 `display`속성을 통해 엘리먼트를 `Flex Container`로 만들 수 있는데, `Flex Container`를 `Block`레벨로 만들 것인지 `inline`레벨로 만들 것인지에 따라 속성 값을 정할 수 있습니다. 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평 디스플레이 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4963641784"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### flex-flow
 
@@ -105,7 +115,17 @@ IE는 9버전 이하는 지원을 하지 않으며, 10,11에서도 버그가 존
 
 ***
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평 디스플레이 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4963641784"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Flex item 주요 속성
 
@@ -151,6 +171,18 @@ IE는 9버전 이하는 지원을 하지 않으며, 10,11에서도 버그가 존
 위와 같을 경우 `flex_container`의 크기를 키우면   `flex_item2`과 `flex_item1`은 2:1비율로 너비가 증가하게 됩니다. 
 
 주의해야할 점은 다른 `flex_item`에 따라 **상대적**이라는 것 입니다. 
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 수평 디스플레이 광고 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4963641784"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### flex-shrink
 
