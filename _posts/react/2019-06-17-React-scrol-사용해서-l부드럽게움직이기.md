@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[React] 스크롤 부드럽게 움직이기"
+title:  "[React] react-scroll로 스크롤 부드럽게 움직이기"
 date:   2019-06-17 11:24:00
 author: 한만섭
 categories: react
-tags: react scroll smooth
+tags: react scroll smooth 리액트스크롤 리액트부드러운스크롤 부드러운스크롤 스크롤애니메이션 react-scroll
 ---
 
 * TOC

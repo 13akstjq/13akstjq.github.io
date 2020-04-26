@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitBlog] 사이트 favicon설정하기   "
+title:  "[GitBlog] 깃헙 지킬(jekyll)블로그 사이트 favicon설정하기   "
 date:   2019-06-09 17:46:00
 author: 한만섭
 categories: gitblog

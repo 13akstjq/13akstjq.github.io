@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[SCSS] Webpack 설정으로 만든 React프로젝트에서 Scss사용하기 "
+title: "[SCSS] Webpack 설정으로 만든 React프로젝트에서 Scss(Sass)사용하기 "
 date: 2019-09-01-13:43:59
 author: 한만섭
 categories: scss
-tags: scss
+tags: scss webpack sass reactSass 
 ---
 
 
