@@ -8,6 +8,7 @@ tags: react innerHTML dangerouslySetInnerHTML
 ---
 
 - TOC
+  
   {:toc}
 
 ## 정리할 내용
@@ -32,7 +33,6 @@ export default () => {
 개발자가 "나는 개발자이고 이 문자열을 *html*형식으로 넣어줄게 내가 넣는거니까 안심하고 보여줘도돼~ " 라고 코드에게 얘기해준다면 원하는 결과를 얻을 수 있습니다. 이것을 하기 위해 ‘_dangerouslySetInnerHTML_’ 를 사용해야합니다.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
