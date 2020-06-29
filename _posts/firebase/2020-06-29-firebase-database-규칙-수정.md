@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Firebase] Firebase database 규칙 수정하기"
-date:   2019-06-18-10:34:00
+date:   2019-06-29-10:34:00
 author: 한만섭
 categories: firebase
 tags: google firebase
