@@ -55,7 +55,17 @@ $ npm install @babel/cli
 
 **.gitignore**에 build추가하기! 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 
@@ -83,7 +93,17 @@ npm install --save-dev @babel/plugin-transform-runtime
 npm install --save @babel/runtime
 ```
 
-  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>  
 
 #### - plugin 사용
 
@@ -137,7 +157,17 @@ graphql에 대한 정보가 build파일에 없기 때문에 발생하는 에러�
 $ npm install --save copy
 ```
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### - copy 사용법
 
@@ -207,7 +237,17 @@ $ npx copy src/api/**/**.graphql .\build\api\
 
 보시는바와 같이 성공적으로 복사가 되었습니다.  command에서 실험을 해봤기 때문에 이제 heroku가 자동빌드를 할 수 있도록 **script**에 넣어주도록 하겠습니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### - script 추가하기 
 
@@ -251,7 +291,17 @@ node build/server.js
 
 그렇다고 **build**폴더에 **.env**를 직접 넣지는 않을 것입니다. 이제 **heroku**를 사용할 시간입니다. **heroku**에 **.env**에 있는 데이터를 저장해놓고 불러서 사용해보려고 합니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 
@@ -317,7 +367,17 @@ heroku git:remote -a manstagram-backend
 
 이 에러가 발생하는 이유는 heroku서버에 push를 하는 것도 Git을 사용하는 것이기 때문에 .gitignore의 영향을 받기 때문입니다. **genereted**를 git에 올리지 안힉 때문에 서버에 generate를 만들어야 합니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![1565712666648](../../../../assets/image/1565712666648.png)
 
@@ -363,6 +423,18 @@ npm run-script prisma
 
 제 pakage.json에 babel-cli 버전이 예전 버전이 설치가 되어있었는데 그것은 unintall하고 나서 다시 push를 했더니 정상적으로 동작했습니다.  
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ![1565714965022](../../../../assets/image/1565714965022.png)
 
 중간에 env를 찾지 못했다고 하는데 아직 **heroku**에는 env가 올라가 있지 않기 때문에 발생하는 에러입니다.  
@@ -387,7 +459,17 @@ heroku가  src의 코드들을 이해하지 못하기 때문에 babel을 이용�
 
 **babel**은 **graphql**파일은 신경쓰지 않기 때문에 **copy**모듈을 사용해서 heroku가 자동으로 build폴더에 **graphql**파일을 복사할 수 있도록 해줬습니다.  이 명령어는 build를 한 후에 복사해야하기 때문에 **postbuild**를 사용했습니다.   
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것들을 heroku에 올리려고 할때 올라가긴 하지만 genereted 파일을 읽지 못합니다. 왜냐하면 heroku git에 push를 해야하는데  genereted파일을 gitignore 해놓았기 때문입니다.   
 
@@ -441,7 +523,17 @@ prisma server만들고 service 만들기 부터 하면됨 .
 
 원하는 서버명으로 서버를 만들어줍니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![1565845527949](../../../../assets/image/1565845527949.png)
 
@@ -491,7 +583,17 @@ heroku 계정에 연결하라는 내용입니다. 클릭해주고 넘어가겠�
 
 **view the server**을 누르게 되면 다음과 같이 만들어 놓은 서버를 확인할 수 있습니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 3.2 service 만들기   
 

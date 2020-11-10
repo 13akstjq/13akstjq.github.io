@@ -39,7 +39,17 @@ jwt토큰이나 쿠키에서 정보를 가져와서 사용자 정보에 serializ
 npm install passport-jwt passport
 ```
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 1.2 passport.js 작성
 
@@ -105,7 +115,17 @@ passport.use(new Strategy(JWTOptions,verifyUser));
   }
   ```
 
-  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- n잡 블로그 사각형 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-4877378276818686"
+       data-ad-slot="2552901794"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 
 - utils.js
 
@@ -181,7 +201,17 @@ const server = new GraphQLServer({schema, context : ({request})=>({request})});
 
 ![image](https://user-images.githubusercontent.com/46010705/60036172-8ab25480-96e9-11e9-8836-7b5ccdf85f7c.png)
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 args 다음에 `{request}`로 사용할 수 있습니다.
 

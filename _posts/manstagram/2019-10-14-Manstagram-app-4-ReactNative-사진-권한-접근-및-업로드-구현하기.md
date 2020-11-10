@@ -68,7 +68,17 @@ import * as Permissions from 'expo-permissions';
 
 위처럼 요청을 하고 허용하게 되면 `status`가 `granted`가 됩니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 1-4. MediaLibrary를 이용해 사진 정보 가져오기 
 
@@ -113,7 +123,17 @@ need READ_EXTERNAL_STORAGE permission
 
 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #### 1-7. state 만들기 
 
@@ -217,7 +237,17 @@ return (
 
 위 코드는 사진을 찍고 그 사진의 `uri`를 앨점에 저장해주는 코드를 작성한 것입니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
   
 
@@ -263,7 +293,17 @@ export const upload = multer({ dest: 'uploads/' });
 
 multer를 사용해서 로컬 경로인 `uploads/`에 업로드된 이미지가 저장될 수 있도록 작성했습니다.  이제는 작성한 `upload`를 서버에서 사용해야합니다. 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `backend - server.js`
 
@@ -302,7 +342,17 @@ server.start({ port: PORT }, () =>
 
 위에서 봐야할 부분만 따로 보겠습니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```react
 server.express.post(
@@ -343,6 +393,18 @@ $ npm install axios
 ##### 사용
 
 업로드 버튼을 눌렀을 경우 호출되는 함수인 `handleSubmit`에 작성하도록 하겠습니다.  여기서 주의할 점은 `multer`공식문서를 보면 `multipart/form-data`을 사용하라고 합니다.  ![1565526391944](../../../../assets/image/1565526391944.png)
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `Upload.js`
 
@@ -446,7 +508,17 @@ export const uploadController = (req, res) => {
 
   
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 5. AWS S3에 사진 업로드 하기 
 

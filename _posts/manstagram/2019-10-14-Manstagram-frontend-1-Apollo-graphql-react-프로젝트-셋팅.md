@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manstagram - frontend.1 - 프로젝트 셋팅"
+title: "Manstagram - frontend.1 - Apollo graphql react 프로젝트 셋팅"
 date: 2019-10-14-15:23:00
 author: 한만섭
 categories: manstagram
@@ -85,6 +85,18 @@ styled-components에서 제공하는 모든 tag에 스타일을 적용할 수 �
 
 ### 4. Theme 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Theme.js에서는 자주 사용되는 색상이나 패턴을 저장할 것입니다. 그래서 단순히 작성하고 **export default**로 내보내주면 됩니다.  
 
 - src/Styles/Theme.js
@@ -137,7 +149,17 @@ GlobalStyles는 import 후 tag형태로 작성해놓으면 적용됩니다. App.
 
 ***
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 6. React-Router-Dom
 
@@ -148,6 +170,18 @@ AppRouter가 경로를 결정해주는 파일이고, Routes에 있는 파일들�
 ![image](https://user-images.githubusercontent.com/46010705/60531046-15700080-9d35-11e9-9218-b1eb8ef6fbc1.png)
 
 각 Routes에는 확인을 위한 코드를 작성해보도록 하겠습니다.  
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
   export default () => "EditProfile";
@@ -199,6 +233,18 @@ Router를 만들고 Router의 Props에 따라 Router안에 어떤 **Route**를 �
 ```
 
 - App.js
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 App.js에서는 기존 코드에서 AppRouter를 import 해서 사용하는 것밖에 추가되지 않습니다.  
 

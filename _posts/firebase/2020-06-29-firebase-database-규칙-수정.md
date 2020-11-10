@@ -39,6 +39,18 @@ service cloud.firestore {
 
 이 상태로 계속 파이어베이스를 사용하다보면 아래와 같이 메일이 옵니다. 아래 메일은 Firebase의 데이터 베이스에 아무나 접근할 수 있으니 규칙의 권한을 부여하라는 메일입니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ![image](https://user-images.githubusercontent.com/46010705/86005474-aadcc800-ba4f-11ea-87ce-d41f621038c2.png)
 
 ## firebase database 규칙 수정

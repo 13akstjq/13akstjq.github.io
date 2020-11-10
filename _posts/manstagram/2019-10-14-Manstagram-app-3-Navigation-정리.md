@@ -43,6 +43,18 @@ Router에서는 컴포넌트에 경로를 정해놓으면 사용자가 특정경
 
 Navigation도 React의 Router의 개념과 크게 벗어나지 않습니다.
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 - StackNavigation
 
   [react-navigation 공식문서](https://reactnavigation.org/docs/en/stack-navigator.html)
@@ -120,6 +132,18 @@ export default AuthHome;
 ```
 
 `AuthHome`이 prop으로 navigation의 함수인 navigate를 받고 있습니다.
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 navigate를 사용해서 `signin`버튼을 누르면 `Login`으로 보내줍니다. 여기나와있는 Login은 아래에 정의되어 있습니다.
 

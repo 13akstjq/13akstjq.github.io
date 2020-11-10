@@ -90,6 +90,18 @@ export default () => (
 clientState를 만들기 전에 **ApolloClient**를 **index.js**로 옮기려고 합니다. 옮기는 이유는 
 컴포넌트보다 **Query**를 먼저 생성하고 싶기 때문입니다. **clientState**는 App이 오프라인일때 발생합니다.  
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 처음에 **Router**의 argument로 사용되는 **isLoggedIn**을 `defaults`에서 정의하고 **Mutation**은 `resolvers`에서 정의합니다.  
 
 **isLoggedIn**은 localstorage에 token이 저장되어있을 경우 **true** 아닐경우 **false**를 리턴합니다.  
@@ -179,7 +191,17 @@ const QUERY = gql`
 import {userQuery} from 'react-apollo-hooks';
 ```
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Query 사용코드   
 
@@ -218,7 +240,17 @@ const {data} = useQuery(QUERY);
   };
 ```
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로그인 상태일 경우 아래와 같이 Feed 페이지를 보여줍니다.   
 ![image](https://user-images.githubusercontent.com/46010705/60563356-6c59f200-9d96-11e9-979d-e3a95f9bc368.png)
@@ -227,6 +259,18 @@ const {data} = useQuery(QUERY);
 ![image](https://user-images.githubusercontent.com/46010705/60563398-a9be7f80-9d96-11e9-9014-dc4bb45e2b72.png)  
 
 #### 7.7 Apollo-Client 셋팅 요약
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 apolloClient를 쉽게 제작할 수 있는 **apollo-boost**를 사용해서 Client를 만듭니다. **Client**는 uri와 clientState를 가질 수 있습니다. uri는 서버의 주소를 말하고, clientState는 App이 실행되기 전에 동작하는 State입니다. **defaults**와 **resolvers**를 담고 있는 **LocalState.js**를 만듭니다. **LocalState.js**에서는 **isLoggedIn** 변수를 localStroage의 **token**에 따라 true,false를 결정시켜주게 됩니다. client는 client prop을 필요로 하는 **apolloProvider**를 통해서 만들어집니다. **apolloProvider**은 **index.js**에서 작성합니다. 
 
