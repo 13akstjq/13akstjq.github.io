@@ -72,6 +72,18 @@ tags: AWS tomcat8 war
 
 ### 3. 인스턴스에 java jdk 설치하기 
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 필자가 아직 git command 와 linux command에 익숙하지가 않아서 command 공부는 추가로 해서 업로드 하려고한다...
 
 일단 명령어 마다 `sudo`를 붙히지 않을 거라면 `sudo su root`명령어를 통해 `root`로 접속해야한다.  

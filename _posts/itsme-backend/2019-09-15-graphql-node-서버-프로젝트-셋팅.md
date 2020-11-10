@@ -87,7 +87,17 @@ yarn dev
 
 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. graphql server 셋팅 
 
@@ -133,7 +143,17 @@ yarn dev
 
 그러면 아래와 같은 에러가 발생했습니다.   
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 2.1 .babelrc파일 설정 
 
@@ -192,6 +212,18 @@ yarn remove babel/cli
 ```
 
 `@babel/cli`버전으로 재설치하겠습니다.  
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 yarn add @babel/cli
@@ -255,6 +287,18 @@ DOCS를 확인해보면 **hello**라는 query를 요청하면 string을 return �
 
 typeDefs는 query의 Type을 정하는 부분입니다.  
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 resolvers에서 hello라는 query를 요청하면 string  "hello"를 return 하기로 정해놨기 때문에 graphql playground에서 "hello"가 나온 것입니다.
 
 ```js
@@ -276,6 +320,7 @@ yarn add morgan
 ```
 
 - usage
+- 
 
 ```
 import logger from "morgan";
@@ -284,6 +329,18 @@ import logger from "morgan";
 `server.express`라고 하면 express서버에 접근할 수 있습니다.   
 
 ![1568549075349](../../../../assets/image/1568549075349.png)
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 server.express.use(logger("dev"))
@@ -372,7 +429,17 @@ export default {
 
 `.js` : Query가 실제로 어떤 동작을하는지 작성 (ex. sayHello는 "Hello"를 return 함.)
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 type과 resolver를 api폴더 안에 만들고 그것을 하나의 schema에 묶었으니 이제 server에서 schema를 사용해보겠습니다.  
 

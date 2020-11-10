@@ -19,7 +19,17 @@ tags: itsme passport jwt
 
 jsonwebtoken과 passport를 사용할건데, jsonwebtoken은 말그대로 암호화된 토큰을 사용하기 위한 것이고 passport는 jwt인증을 쉽게 할 수 있도록 도와주는 역할을 합니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우선 passport를 설치해보겠습니다.  
 
@@ -42,7 +52,17 @@ import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
 
 ![1569147102968](../../../../assets/image/1569147102968.png)
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 2. jwtOptions
 
@@ -71,7 +91,17 @@ const jwtOptions = {
 
 ### 3. passport.use()
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설정을 다했다면 passport를 사용해야 합니다. 
 
@@ -155,7 +185,17 @@ passport.initialize();
 3. 해당 id값을 가지고 있는 User가 있는지 확인. 
 4. 있으면 done(null,user) 리턴해줌. 
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 리턴해준 user를 가지고 서버로 보내고 있던 request객체에 같이 실어주는 부분이 필요합니다.  
 
@@ -226,6 +266,18 @@ export const authenticateJWT = (req, res, next) =>
 
 두번째는 session은 사용하지 않는다고 적었습니다.  
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 세번쨰는 verifyUser를 통해서 return 된 error와 user를 파라메터로 하는 함수를 작서하는 부분입니다. 저는 user가 있을 경우에 request객체에 user라는 키값으로 데이터를 넣어서 보내야 하기 때문에 위와 같이 user가 있을 경우 미들웨어를 통해 접근할 수 있던 req객체의 user에 해당 user를 집어넣었습니다.  
 
 
@@ -285,7 +337,17 @@ require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 
 이렇게 작성하면 이제 로그인에 성공했을 경우 사용자에게 token을 발급해주게 됩니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 7. 인증하기 
 
