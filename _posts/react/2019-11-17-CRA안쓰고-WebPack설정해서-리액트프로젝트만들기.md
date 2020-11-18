@@ -180,6 +180,18 @@ console.log("webpack setting");
 
 ![1566835269361](../../../../assets/image/1566835269361.png)
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 위와 같이 console로 작성한 내용이 잘 나온다면 여기까지는 성공한 것입니다~~
 
 이제 웹팩 설정은 마쳤기 때문에 Babel을 설치해보도록 하겠습니다.
@@ -371,7 +383,17 @@ url로 들어가보면 화면도 정상적으로 나오고 react-dev-tools 도 �
 
 [참고사이트](https://pro-self-studier.tistory.com/19)를 기반으로 제작했지만 babel6버전으로 제작하여 버전이슈가 있었는데, babel의 경우 7버전부터 `@`를 붙혀주면 사용이 가능했습니다.
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 요약
 

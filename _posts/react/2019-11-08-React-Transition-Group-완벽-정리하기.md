@@ -151,12 +151,14 @@ export default App;
 ![1566733614621](../../../../assets/image/1566733614621.png)
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
 <ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
+     style="display:block"
      data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="4307878116"></ins>
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -337,6 +339,18 @@ export default () => (
 
 최상위Route의 Location정보 -> Switch -> Route
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 #### 중요 ) 그렇기 때문에 모든 Route가 현재의 location정보가 아닌 각자 자신이 받았던 location정보를 가질 수 있게 되는 것입니다.
 
 develop tool을 통해서 확인해보도록 하겠습니다.
@@ -357,6 +371,7 @@ develop tool을 통해서 확인해보도록 하겠습니다.
      data-ad-format="fluid"
      data-ad-client="ca-pub-4877378276818686"
      data-ad-slot="4307878116"></ins>
+
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

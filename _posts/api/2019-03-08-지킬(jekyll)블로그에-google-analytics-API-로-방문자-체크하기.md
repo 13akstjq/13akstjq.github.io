@@ -21,6 +21,18 @@ tags: GoogleAnalytics API jekyllBlog githubPages
 
 ### 1. Enable the API
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ![image](https://user-images.githubusercontent.com/46010705/76166541-a5a6f500-61a2-11ea-8954-9653d3e694e0.png)
 
 자바스크립트를 누르면 위와 같은 순서로 credential을 create해주라는 설명이 나옵니다. 차근차근 따라해보겠습니다. 
@@ -34,6 +46,18 @@ tags: GoogleAnalytics API jekyllBlog githubPages
 생성된 프로젝트에 사용자 인증정보를 작성해줍니다. URL은 실제 API 사용할 URL주소를 사용해야합니다. 우측에 있는 client_id는 밑에서 사용할 것이기 때문에 복사해둡니다. 
 
 ### 2. Setup the sample
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://user-images.githubusercontent.com/46010705/76166665-9e341b80-61a3-11ea-83b1-1443128bd7af.png)
 
@@ -104,6 +128,18 @@ tags: GoogleAnalytics API jekyllBlog githubPages
 ```
 
 ### 3. Run the sample
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 사각형 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="2552901794"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 까지 했다면 이제 여러분의 용도에 맞게 사용하시면 됩니다. 
 
