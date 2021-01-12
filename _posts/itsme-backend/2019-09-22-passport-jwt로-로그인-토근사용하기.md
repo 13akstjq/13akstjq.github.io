@@ -237,7 +237,17 @@ server.start({ port: PORT }, () =>
 
 그러면 authenticateJWT를 어떻게 작성했는지 보겠습니다.  
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![1569136864755](../../../../assets/image/1569136864755.png)
 
@@ -305,6 +315,18 @@ playground에서 header에 대한 부분을 실험하기 위해서는 아래와 
 ```bash
 yarn add jsonwebtoken
 ```
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![1569133510842](../../../../assets/image/1569133510842.png)
 
