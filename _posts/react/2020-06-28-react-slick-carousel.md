@@ -15,7 +15,21 @@ tags: React carousel react-slick
 
 React-slick은 리액트 프로젝트에서 캐러셀을 구현하기 쉽게 도와주는 모듈입니다. 
 
+아래와 같은 캐러셀을 만들어보도록 하겠습니다. 
 
+![Jun-29-2020 21-50-19](https://user-images.githubusercontent.com/46010705/86007566-8d5d2d80-ba52-11ea-87b9-02c39448e171.gif)
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 설치
 
