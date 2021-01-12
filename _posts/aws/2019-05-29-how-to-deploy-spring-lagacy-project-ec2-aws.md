@@ -35,32 +35,60 @@ tags: AWS tomcat8 war
 
 ### 1.인스턴스를 생성해야한다. 
 ![image](https://user-images.githubusercontent.com/46010705/58495735-29af6380-81b3-11e9-92e9-873419aec222.png)
-![image](https://user-images.githubusercontent.com/46010705/58495769-4350ab00-81b3-11e9-9281-588f90cf2fa7.png)
-![image](https://user-images.githubusercontent.com/46010705/58495818-6b400e80-81b3-11e9-8074-44101b2f837d.png)  
-보안 설정은 중요하다. tomcat을 사용할 경우 사용자 지정 TCP 8080포트를 열어주어야 한다. 
-위치 무관으로 한 이유는 개발하는 컴퓨터가 바뀔경우 다른 ip도 허용되어야 하기 때문이다. 실제 할때는 ip를 지정해주는 방식 사용하자 linㅣ
-`linux`를 사용할떄는 `SSH`로 하면된다 .   
 
-  
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
      data-ad-format="fluid"
      data-ad-client="ca-pub-4877378276818686"
      data-ad-slot="4307878116"></ins>
+
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 
 
+![image](https://user-images.githubusercontent.com/46010705/58495769-4350ab00-81b3-11e9-9281-588f90cf2fa7.png)
+
+![image](https://user-images.githubusercontent.com/46010705/58495818-6b400e80-81b3-11e9-8074-44101b2f837d.png)
+
+
+
+
+보안 설정은 중요하다. tomcat을 사용할 경우 사용자 지정 TCP 8080포트를 열어주어야 한다. 
+위치 무관으로 한 이유는 개발하는 컴퓨터가 바뀔경우 다른 ip도 허용되어야 하기 때문이다. 실제 할때는 ip를 지정해주는 방식 사용하자 linㅣ
+`linux`를 사용할떄는 `SSH`로 하면된다 .   
+
+  
+
 ### 2. 인스턴스에 접속하기 
 
 필자는 [xshell](https://www.netsarang.com/ko/xshell/)을 사용했다.  
 실행시켜서 새로만들기를 누르면 아래와 같은 이미지를 볼 수 있다. 
 ![image](https://user-images.githubusercontent.com/46010705/58496048-ffaa7100-81b3-11e9-85a6-4e6ff414bbf7.png)
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ![image](https://user-images.githubusercontent.com/46010705/58496153-3ed8c200-81b4-11e9-8f79-a992a61f8b5e.png)  
 위에 있는 ip주소를 호스트에 넣으면 된다.  
 
@@ -223,6 +251,7 @@ ls -al
 
 아마 home에 war파일이 있을텐데 이것을 `/var/lib/tomcat8/webapps/` 로 옮겨야 한다.
 하지만 권한과 소유가 설정되어 있지 않았다.
+
 ```
 drwxrwxr-x 4 tomcat8 tomcat8     4096 May 28 14:55 .
 drwxr-xr-x 5 root    root        4096 May 28 14:12 ..
@@ -328,6 +357,23 @@ http://서버ip:8080/SocketTest(프로젝트명)/파일이나 url
 
 보안그룹에서 3306포트를 열어주어야 한다.  
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ![image](https://user-images.githubusercontent.com/46010705/58636903-4b802600-832c-11e9-9595-180dd73cad8c.png)
 
 mysql을 3306포트에서 사용할 수 있도록 해주는 것이다.   
@@ -345,16 +391,7 @@ i를 누르면 수정가능해짐
 수정한 후에 ctrl + c로 명령모드로 바꿈 
 :wq 혹은 :w!를 입력하면 저장됨.
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="4307878116"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 
 외부 접속 허용 설정해준 후에 mysql 재시작 및 로그인 
 
@@ -369,7 +406,22 @@ grant all on *.* to 'root'@'3.16.125.37' identified by 'ssafy';
 FLUSH PRIVILEGES;
 ```
 
-## 5. mysql work brench 를 이용한 접속 확인하기 
+## 5. mysql work brench 를 이용한 접속 확인하기
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
 ![image](https://user-images.githubusercontent.com/46010705/58637396-5f785780-832d-11e9-8e8a-065e7e7f31ff.png)  
 
