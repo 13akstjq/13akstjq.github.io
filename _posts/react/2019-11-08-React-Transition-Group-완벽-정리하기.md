@@ -290,21 +290,26 @@ export default () => (
                 >
 ```
 
-![1566735442448](../../../../assets/image/1566735442448.png)
 
-위와 같이 바꾸고 난 후에 react develop tool을 통해 확인해보도록 하겠습니다.
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <ins class="adsbygoogle"
      style="display:block; text-align:center;"
      data-ad-layout="in-article"
      data-ad-format="fluid"
      data-ad-client="ca-pub-4877378276818686"
-     data-ad-slot="9095928724"></ins>
+     data-ad-slot="4307878116"></ins>
 
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
+
+![1566735442448](../../../../assets/image/1566735442448.png)
+
+위와 같이 바꾸고 난 후에 react develop tool을 통해 확인해보도록 하겠습니다.
 
 ---
 
@@ -313,6 +318,23 @@ export default () => (
 - 사이트 처음 route
 
 ![1566735593235](../../../../assets/image/1566735593235.png)
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
 - about을 눌렀을 경우
 
@@ -355,6 +377,23 @@ export default () => (
 
 develop tool을 통해서 확인해보도록 하겠습니다.
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="4307878116"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
 ![Honeycam 2019-08-25 21-32-42](../../../../assets/image/Honeycam 2019-08-25 21-32-42.gif)
 
 위 영상에서 글자들이 겹쳐보이는 것은 정상적인 결과입니다. 그 이유에 대해 말씀드리겠습니다.
@@ -375,6 +414,8 @@ develop tool을 통해서 확인해보도록 하겠습니다.
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
 
 #### 2-4. 결과
 
