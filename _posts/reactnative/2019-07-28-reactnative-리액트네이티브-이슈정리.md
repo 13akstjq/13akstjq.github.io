@@ -47,7 +47,17 @@ onPress={navigate("Signup")}
 onPress={() => navigate("Signup")}
 ```
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ---
 
@@ -77,7 +87,17 @@ const { width, height } = Dimensions.get("screen");
 export default { width, height };
 ```
 
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ***
 
@@ -157,6 +177,18 @@ import gql from 'apoolo-boost';
 
 ![1565018624154](../../../../assets/image/1565018624154.png)
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 위에 보이는 navigationOptions는 navigator의 안에 있는 screen 에 넣는 것을 의미한다.
 
 ```js
@@ -207,10 +239,24 @@ const PhotoTabs = createMaterialTopTabNavigator(
 - `LinearGradient` 를 `LenriearGradient`라고 했는데 직접적인 error log가 뜨지 않아서 찾는데 어려웠음...  
   ![image](https://user-images.githubusercontent.com/46010705/59009675-8f61b680-8869-11e9-9d14-1fc986c091f7.png)  
 
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- n잡 블로그 수평 -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-4877378276818686"
+       data-ad-slot="1235773082"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
 - const {isLoaded} = this.state;  
   render함수 내에서 const로 state의 변수를 사용할 때 {}사이에 넣어주어야한다. ( react,rn에서의 {}의 의미에 대해서 좀 더 이해할 필요있음)
+  
 - `Ionicons` 를 `ionIcons` 낙타형식으로 써서 에러...
   [expo icon 사이트](https://expo.github.io/vector-icons/)
+  
 - `export default (function or class Name)`
   따로 파일형태로 만든 class 혹은 function은 export를 꼭 해주어야한다.  
   error log에서 export를 잊은거 아니냐고 알려주니 확인해볼 것.
@@ -276,6 +322,18 @@ returnkeytype이 적용되지 않는 버그가 있었다. 안드로이드에서�
 ```
 expo init "프로젝트 명"
 ```
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- n잡 블로그 수평 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4877378276818686"
+     data-ad-slot="1235773082"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 expo 프로젝트를 생성했는데 `react native is not install`이라는 메세지를 볼수도 있다. 
 정확한 이유는 없지만 다시 설치만 해주면 정상적으로 동작하는 이슈이다. 
