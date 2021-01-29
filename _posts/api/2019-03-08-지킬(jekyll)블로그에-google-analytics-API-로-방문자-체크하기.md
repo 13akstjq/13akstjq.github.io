@@ -45,7 +45,7 @@ tags: GoogleAnalytics API jekyllBlog githubPages
 
 생성된 프로젝트에 사용자 인증정보를 작성해줍니다. URL은 실제 API 사용할 URL주소를 사용해야합니다. 우측에 있는 client_id는 밑에서 사용할 것이기 때문에 복사해둡니다. 
 
-### 2. Setup the sample
+### 2. Setup the sample 
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- n잡 블로그 사각형 -->
